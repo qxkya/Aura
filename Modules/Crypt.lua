@@ -1272,17 +1272,16 @@ function v_u_154.checkpublickeys()
 		end
 		local_pq = {}
 		for v158 = 1, v157 do
-			local v159 = v156:GetAttribute("_pq" .. v158)
-			local v160 = local_pq
-			table.insert(v160, v159)
+			table.insert(local_pq, v156:GetAttribute("_pq" .. v158))
 		end
 	end
-	v_u_155 = v_u_155 ~= nil or workspace:GetAttribute("_ch")
-	if v_u_155 then
-		return local_pq, local_pk, v_u_155
-	else
-		return nil
+	if v_u_155 == nil then
+		v_u_155 = workspace:GetAttribute("_ch")
+		if not v_u_155 then
+			return nil
+		end
 	end
+	return local_pq, local_pk, v_u_155
 end
 function v_u_154.setpublickeys(p161, p162, p163)
 	p161:SetAttribute("_pqC", #p162)
