@@ -1,4 +1,4 @@
-return {
+return return {
     ["Barricade Spikes"] = {
         ["durability"] = 500,
         ["itemType"] = {
@@ -273,6 +273,30 @@ return {
         ["PostureBreakTime"] = 5,
         ["description"] = "A steel shield! Light weight, but strong, a must have for the battlefield!",
     },
+    ["Glow Mushroom"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 437,
+        ["itemStats"] = {
+            ["food"] = 20,
+        },
+        ["recipe"] = {
+        },
+        ["effectsOnEat"] = {
+            ["1"] = "Speedy",
+        },
+        ["instantHealth"] = -25,
+        ["weight"] = 0.1,
+        ["itemTier"] = 1,
+        ["price"] = 1,
+        ["description"] = "This mushroom will hurt you, but only a little bit! In return, you'll get a short burst of speed!",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
     ["Tile Roof"] = {
         ["durability"] = 1000,
         ["itemType"] = {
@@ -339,6 +363,28 @@ return {
         },
         ["craftingStyle"] = 1,
         ["description"] = "",
+    },
+    ["Fire Arrow"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 433,
+        ["itemStats"] = {
+            ["damage"] = 1.3,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Black Powder"] = 20,
+            ["Darksteel Bar"] = 1,
+            ["amount"] = 10,
+        },
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["reloadTime"] = 2,
+        ["price"] = 1,
+        ["itemTier"] = 7,
+        ["description"] = "Fire arrows set people and animals on fire for a short time when they hit them, making them run around wildly! Does not work underwater. Duh.",
     },
     ["_deprecated_black_powder"] = {
         ["restricted"] = true,
@@ -797,6 +843,27 @@ return {
         },
         ["description"] = "It's not very good at chopping stuff up, but it will eventually get the job done!",
     },
+    ["Deathwish Mushroom"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 436,
+        ["itemStats"] = {
+            ["food"] = 20,
+        },
+        ["recipe"] = {
+        },
+        ["instantHealth"] = -200,
+        ["weight"] = 0.1,
+        ["itemTier"] = 1,
+        ["price"] = 1,
+        ["description"] = "You really shouldn't eat random mushrooms you find in a cave!",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
     ["Wood Floor Small"] = {
         ["durability"] = 250,
         ["itemType"] = {
@@ -890,6 +957,29 @@ return {
         ["weight"] = 0,
         ["id"] = 429,
         ["description"] = "Kingdom Skulls are collected by slaying a kingdom leader. The more you have, the more you should be feared!",
+    },
+    ["Poison Arrow"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 434,
+        ["itemStats"] = {
+            ["damage"] = 1.25,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Poison Fang"] = 1,
+            ["Darksteel Bar"] = 1,
+            ["amount"] = 10,
+        },
+        ["cantBeDropped"] = true,
+        ["disableHealTime"] = 10,
+        ["weight"] = 0.1,
+        ["reloadTime"] = 2,
+        ["price"] = 1,
+        ["itemTier"] = 7,
+        ["description"] = "Poison arrows aren't very dangerous themselves, but anyone who is hit with one, cannot heal for several seconds, which can be deadly in battle.",
     },
     ["Basic Chair"] = {
         ["durability"] = 100,
@@ -1739,6 +1829,17 @@ return {
         },
         ["description"] = "The most basic kind of armor, not very good, but better than nothing!",
     },
+    ["Kingdom Sitting Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 439,
+        ["recipe"] = {
+            ["Kingdom Skull"] = 1,
+        },
+        ["description"] = "",
+    },
     ["Royal Bed"] = {
         ["durability"] = 500,
         ["isBed"] = true,
@@ -2138,6 +2239,115 @@ return {
         },
         ["price"] = 999,
     },
+    ["Samurai Spear"] = {
+        ["description"] = "A very powerful Spear",
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 448,
+        ["itemStats"] = {
+            ["meleeDamage"] = 80,
+        },
+        ["PostureBreakTime"] = 4,
+        ["spear"] = true,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 5,
+            ["Wooden Rod"] = 8,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Darksteel Spear"] = {
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 447,
+        ["itemStats"] = {
+            ["meleeDamage"] = 70,
+        },
+        ["PostureBreakTime"] = 4,
+        ["spear"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 5,
+            ["Wooden Rod"] = 6,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Big Rug"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 225,
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Hide"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Steel Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "Lightweight and strong, you can't beat a good steel spear!",
+        ["id"] = 445,
+        ["itemStats"] = {
+            ["meleeDamage"] = 50,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 5,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Steel Bar"] = 5,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
     ["Iron Helmet"] = {
         ["itemTier"] = 3,
         ["description"] = "Iron helmets are incredibly heavy, but, also incredibly strong!",
@@ -2155,6 +2365,66 @@ return {
             ["Iron Bar"] = 2,
         },
         ["price"] = 18,
+    },
+    ["Iron Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "An incredibly heavy spear, but it makes up for it with power!",
+        ["id"] = 444,
+        ["itemStats"] = {
+            ["meleeDamage"] = 40,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 4,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Rope"] = 1,
+            ["Iron Bar"] = 5,
+        },
+        ["price"] = 999,
+    },
+    ["Fire Retardant"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 443,
+        ["itemStats"] = {
+            ["food"] = 10,
+        },
+        ["description"] = "Using this will prevent you from being set on fire! You can still take damage directly from fire. It just won't also light YOU on fire.",
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Fire Resistance",
+        },
+        ["recipe"] = {
+            ["Glow Mushroom"] = 5,
+            ["Bowl"] = 1,
+            ["Octopus"] = 1,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 5,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
     },
     ["Bow"] = {
         ["chargeTime"] = 0.9,
@@ -2176,6 +2446,8 @@ return {
         ["itemTier"] = 2,
         ["validAmmoTypes"] = {
             ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
         },
         ["chargedFOVModifier"] = -15,
         ["weight"] = 0.1,
@@ -2231,6 +2503,36 @@ return {
         },
         ["description"] = "",
     },
+    ["Poison Antidote"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 442,
+        ["itemStats"] = {
+            ["food"] = 10,
+        },
+        ["description"] = "A carefully prepared antidote to prevent you from being poisoned!",
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Poison Resistance",
+        },
+        ["recipe"] = {
+            ["Mushroom"] = 5,
+            ["Pepper"] = 5,
+            ["Bowl"] = 1,
+            ["Deathwish Mushroom"] = 5,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 5,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
     ["Leather Pants"] = {
         ["itemTier"] = 1,
         ["itemType"] = {
@@ -2256,6 +2558,56 @@ return {
         ["id"] = 313,
         ["recipe"] = {
             ["Hide"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Poison Dagger"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 441,
+        ["itemStats"] = {
+            ["meleeDamage"] = 40,
+        },
+        ["dagger"] = true,
+        ["PostureBreakTime"] = 4,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["description"] = "By itself the dagger is too short to be effective, but once it stabs someone, they cannot heal for quite awhile, making it a dangerous combo with other weapons!",
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://121565995036184",
+            ["action"] = {
+                ["1"] = "rbxassetid://121356898049119",
+                ["2"] = "rbxassetid://100976926090296",
+            },
+        },
+        ["hitEffects"] = {
+            ["1"] = {
+                ["Chance"] = 1,
+                ["Poisoned"] = 3,
+                ["Healing Disabled"] = 3,
+            },
+        },
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Poison Fang"] = 2,
+            ["Adamantite Bar"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Kingdom Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 440,
+        ["recipe"] = {
+            ["Kingdom Skull"] = 1,
         },
         ["description"] = "",
     },
@@ -2302,6 +2654,23 @@ return {
         ["recipe"] = {
             ["Stone"] = 4,
             ["Log"] = 4,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Copper Smithy"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 4,
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 78,
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Copper Smithy",
         },
         ["itemTier"] = 1,
         ["description"] = "",
@@ -2369,6 +2738,37 @@ return {
         },
         ["price"] = 1500,
     },
+    ["Bronze Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "A tried and true weapon, bronze spears have been used since ancient times",
+        ["id"] = 435,
+        ["itemStats"] = {
+            ["meleeDamage"] = 30,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 3,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Copper Bar"] = 5,
+            ["Wooden Rod"] = 2,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
     ["Shovel"] = {
         ["itemTier"] = 1,
         ["itemType"] = {
@@ -2395,6 +2795,17 @@ return {
         ["id"] = 96,
         ["price"] = 2,
         ["description"] = "They're like normal stones, but SLIGHTLY less likely to kill you!",
+    },
+    ["Bear Trap"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 432,
+        ["recipe"] = {
+            ["Steel Bar"] = 5,
+        },
+        ["description"] = "",
     },
     ["Stone Miner"] = {
         ["durability"] = 500,
@@ -2439,6 +2850,35 @@ return {
         },
         ["description"] = "",
     },
+    ["Bronze Swordsman"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 15,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Melee",
+            ["NPC_Name"] = "Bronze Swordsman",
+        },
+        ["id"] = 349,
+        ["recipe"] = {
+            ["Bronze Helmet"] = 1,
+            ["Bronze Pants"] = 1,
+            ["Bronze Armor"] = 1,
+            ["Bronze Shield"] = 1,
+            ["Bronze Sword"] = 1,
+            ["Coins"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
     ["Glider"] = {
         ["itemType"] = {
             ["1"] = "Glider",
@@ -2452,14 +2892,15 @@ return {
         ["cantBeDropped"] = true,
         ["weight"] = 0.1,
         ["animations"] = {
-            ["Idle"] = "rbxassetid://0",
+            ["hold"] = "rbxassetid://86367732986089",
+            ["glide"] = "rbxassetid://83749034588820",
         },
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "",
         ["recipe"] = {
-            ["Darksteel Bar"] = 2,
-            ["Iron Bar"] = 5,
-            ["Rope"] = 5,
+            ["Log"] = 10,
+            ["Adamantite Nails"] = 5,
+            ["Rope"] = 15,
         },
     },
     ["Atlantean Ore"] = {
@@ -3285,7 +3726,7 @@ return {
         },
         ["itemTier"] = 1,
         ["rodColor"] = 0.639216, 0.635294, 0.647059,
-        ["catchTime"] = nil,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
         ["targetSize"] = 0.4,
         ["canCatchFish"] = {
@@ -3429,7 +3870,7 @@ return {
         },
         ["itemTier"] = 1,
         ["rodColor"] = 0.364706, 0.423529, 0.494118,
-        ["catchTime"] = nil,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
         ["targetSize"] = 0.3,
         ["canCatchFish"] = {
@@ -3831,7 +4272,7 @@ return {
         ["cantPutInStorage"] = true,
         ["id"] = 379,
         ["itemStats"] = {
-            ["rangedDamage"] = 50,
+            ["rangedDamage"] = 75,
         },
         ["destroyOnDeathAnyways"] = true,
         ["useLeftHand"] = false,
@@ -4203,7 +4644,7 @@ return {
         },
         ["itemTier"] = 1,
         ["rodColor"] = 0.0666667, 0.0666667, 0.0666667,
-        ["catchTime"] = nil,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
         ["targetSize"] = 0.2,
         ["canCatchFish"] = {
@@ -4514,17 +4955,36 @@ return {
         ["itemTier"] = 1,
         ["description"] = "",
     },
-    ["Big Rug"] = {
-        ["durability"] = 200,
+    ["Bluesteel Spear"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
         },
-        ["id"] = 225,
+        ["description"] = "A spear made out of the strongest metal in the known world",
+        ["id"] = 446,
+        ["itemStats"] = {
+            ["meleeDamage"] = 60,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 6,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
         ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Hide"] = 1,
+            ["Wooden Rod"] = 4,
+            ["Refined Bluesteel"] = 5,
+            ["Rope"] = 2,
         },
-        ["description"] = "",
+        ["price"] = 999,
     },
     ["Ladder"] = {
         ["durability"] = 250,
@@ -4565,33 +5025,17 @@ return {
             },
         },
     },
-    ["Bronze Swordsman"] = {
-        ["durability"] = 500,
+    ["Spike Trap"] = {
+        ["durability"] = 100,
         ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
+            ["1"] = "Structure",
         },
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 15,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Melee",
-            ["NPC_Name"] = "Bronze Swordsman",
-        },
-        ["id"] = 349,
+        ["id"] = 431,
         ["recipe"] = {
-            ["Bronze Helmet"] = 1,
-            ["Bronze Pants"] = 1,
-            ["Bronze Armor"] = 1,
-            ["Bronze Shield"] = 1,
-            ["Bronze Sword"] = 1,
-            ["Coins"] = 10,
+            ["Chiseled Stones"] = 3,
+            ["Log"] = 10,
+            ["Steel Bar"] = 5,
         },
-        ["itemTier"] = 1,
         ["description"] = "",
     },
     ["Street Lamp"] = {
@@ -5347,6 +5791,8 @@ return {
         },
         ["validAmmoTypes"] = {
             ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
         },
         ["recipe"] = {
             ["Wooden Rod"] = 6,
@@ -5444,6 +5890,8 @@ return {
         },
         ["validAmmoTypes"] = {
             ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
         },
         ["recipe"] = {
             ["Wooden Rod"] = 8,
@@ -5593,22 +6041,18 @@ return {
         ["itemTier"] = 3,
         ["description"] = "",
     },
-    ["Copper Smithy"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
+    ["Poison Fang"] = {
         ["recipe"] = {
-            ["Chiseled Stones"] = 4,
-            ["Wood Plank"] = 2,
         },
-        ["id"] = 78,
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Copper Smithy",
+        ["cantBeDropped"] = true,
+        ["itemType"] = {
+            ["1"] = "Resource",
         },
-        ["itemTier"] = 1,
-        ["description"] = "",
+        ["weight"] = 1,
+        ["id"] = 438,
+        ["forceGenerateDroppedModel"] = true,
+        ["cantPutInStorage"] = true,
+        ["description"] = "The poison gland of the deadly cave spider. Useful for coating an arrow in poison.",
     },
     ["Bluesteel Shield"] = {
         ["itemTier"] = 6,
@@ -5862,7 +6306,7 @@ return {
         },
         ["itemTier"] = 1,
         ["rodColor"] = 0.278431, 0.266667, 0.27451,
-        ["catchTime"] = nil,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
         ["targetSize"] = 0.3,
         ["canCatchFish"] = {
@@ -5903,7 +6347,7 @@ return {
         },
         ["itemTier"] = 1,
         ["rodColor"] = 0.529412, 0.333333, 0.192157,
-        ["catchTime"] = nil,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
         ["targetSize"] = 0.5,
         ["canCatchFish"] = {
@@ -6827,6 +7271,8 @@ return {
         },
         ["validAmmoTypes"] = {
             ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
         },
         ["recipe"] = {
             ["Wooden Rod"] = 12,
@@ -7014,6 +7460,8 @@ return {
         ["description"] = "More advanced than a hunting bow, a compact bow does more damage per shot",
         ["validAmmoTypes"] = {
             ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
         },
         ["itemTier"] = 3,
         ["recipe"] = {
@@ -7672,5 +8120,5 @@ return {
         },
         ["itemTier"] = 2,
         ["description"] = "",
-    }
+    },
 }
