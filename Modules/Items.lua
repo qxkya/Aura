@@ -1,4 +1,4 @@
-return return {
+return {
     ["Barricade Spikes"] = {
         ["durability"] = 500,
         ["itemType"] = {
