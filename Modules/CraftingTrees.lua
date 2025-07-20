@@ -1,9 +1,3 @@
--- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw
-
--- Decompiled with Medal's Decompiler. (Modified by SignalHub)
--- Decompiled at: 4/23/2025, 3:58:47 AM
--- Time elapsed: 227 milliseconds
-
 return {
     ["Decorations"] = {
         ["roots"] = {},
