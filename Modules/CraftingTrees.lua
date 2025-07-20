@@ -1,29 +1,64 @@
+-- Saved by UniversalSynSaveInstance (Join to Copy Games) https://discord.gg/wx4ThpAsmw
+
+-- Decompiled with Medal's Decompiler. (Modified by SignalHub)
+-- Decompiled at: 4/23/2025, 3:58:47 AM
+-- Time elapsed: 227 milliseconds
+
 return {
     ["Decorations"] = {
         ["roots"] = {},
-        ["Fireplace"] = {
+        ["Barricade Spikes"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Ornate Chair",
-            ["tr"] = "Chimney",
-            ["position"] = Vector2.new(1, -1)
+            ["unlockedBy"] = "Practice Target",
+            ["tr"] = "Training Dummy",
+            ["position"] = Vector2.new(-0, -2)
         },
-        ["Practice Target"] = {
+        ["Bathtub"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Chair",
-            ["tr"] = "Barricade Spikes",
-            ["position"] = Vector2.new(0, -1)
+            ["unlockedBy"] = "Toilet",
+            ["br"] = "Royal Bathtub",
+            ["position"] = Vector2.new(2, 1)
         },
-        ["Pole Torch"] = {
+        ["Royal Bathtub"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Chair",
-            ["tl"] = "Brazier",
-            ["tr"] = "Jail Cell",
-            ["position"] = Vector2.new(-1, -0)
+            ["unlockedBy"] = "Bathtub",
+            ["position"] = Vector2.new(3, 1)
         },
-        ["Royal Couch"] = {
+        ["Training Dummy"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Wooden Bench",
-            ["position"] = Vector2.new(2, 2)
+            ["unlockedBy"] = "Barricade Spikes",
+            ["tr"] = "Arrow Guard",
+            ["position"] = Vector2.new(-0, -3)
+        },
+        ["Round Table"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Map Table",
+            ["position"] = Vector2.new(-0, 4)
+        },
+        ["Map Table"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Ornate Table",
+            ["bl"] = "Round Table",
+            ["br"] = "Stone Table",
+            ["position"] = Vector2.new(-0, 3)
+        },
+        ["Skull Throne"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Royal Throne",
+            ["position"] = Vector2.new(3, 0)
+        },
+        ["Ornate Table"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Basic Table",
+            ["tl"] = "Serving Counter",
+            ["bl"] = "Map Table",
+            ["br"] = "Wooden Bench",
+            ["position"] = Vector2.new(0, 2)
+        },
+        ["Street Lamp"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Chandelier",
+            ["position"] = Vector2.new(-3, -2)
         },
         ["Basic Chair"] = {
             ["unlocks"] = {},
@@ -33,51 +68,44 @@ return {
             ["br"] = "Ornate Chair",
             ["position"] = Vector2.new(0, 0)
         },
+        ["Well"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Basic Table",
+            ["position"] = Vector2.new(-1, 1)
+        },
+        ["Chimney"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Fireplace",
+            ["position"] = Vector2.new(1, -2)
+        },
+        ["Chandelier"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Wall Torch",
+            ["tl"] = "Street Lamp",
+            ["tr"] = "Candelabra",
+            ["position"] = Vector2.new(-2, -2)
+        },
+        ["Fireplace"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Ornate Chair",
+            ["tr"] = "Chimney",
+            ["position"] = Vector2.new(1, -1)
+        },
         ["City Bell"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Brazier",
             ["position"] = Vector2.new(-2, 1)
-        },
-        ["Wooden Bench"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Ornate Table",
-            ["br"] = "Royal Couch",
-            ["position"] = Vector2.new(1, 2)
         },
         ["Stone Seat"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Stone Table",
             ["position"] = Vector2.new(2, 3)
         },
-        ["Training Dummy"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Barricade Spikes",
-            ["position"] = Vector2.new(-0, -3)
-        },
         ["Wall Torch"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Brazier",
             ["tr"] = "Chandelier",
             ["position"] = Vector2.new(-2, -1)
-        },
-        ["Map Table"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Ornate Table",
-            ["br"] = "Stone Table",
-            ["position"] = Vector2.new(-0, 3)
-        },
-        ["Royal Throne"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Ornate Chair",
-            ["tr"] = "Stone Throne",
-            ["br"] = "Skull Throne",
-            ["position"] = Vector2.new(2, -0)
-        },
-        ["Toilet"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Table",
-            ["br"] = "Bathtub",
-            ["position"] = Vector2.new(1, 1)
         },
         ["Tall Candelabra"] = {
             ["unlocks"] = {},
@@ -89,10 +117,11 @@ return {
             ["unlockedBy"] = "Serving Counter",
             ["position"] = Vector2.new(-1, 3)
         },
-        ["Skull Throne"] = {
+        ["Toilet"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Royal Throne",
-            ["position"] = Vector2.new(3, 0)
+            ["unlockedBy"] = "Basic Table",
+            ["br"] = "Bathtub",
+            ["position"] = Vector2.new(1, 1)
         },
         ["Brazier"] = {
             ["unlocks"] = {},
@@ -107,36 +136,33 @@ return {
             ["tr"] = "Tall Candelabra",
             ["position"] = Vector2.new(-2, -3)
         },
-        ["Ornate Table"] = {
+        ["Royal Throne"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Table",
-            ["tl"] = "Serving Counter",
-            ["bl"] = "Map Table",
-            ["br"] = "Wooden Bench",
-            ["position"] = Vector2.new(0, 2)
+            ["unlockedBy"] = "Ornate Chair",
+            ["tr"] = "Stone Throne",
+            ["br"] = "Skull Throne",
+            ["position"] = Vector2.new(2, -0)
         },
-        ["Basic Table"] = {
+        ["Room Divider"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Chair",
-            ["tl"] = "Well",
-            ["bl"] = "Ornate Table",
-            ["br"] = "Toilet",
-            ["position"] = Vector2.new(0, 1)
+            ["unlockedBy"] = "Serving Counter",
+            ["position"] = Vector2.new(-2, 2)
         },
         ["Stone Throne"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Royal Throne",
             ["position"] = Vector2.new(2, -1)
         },
-        ["Bathtub"] = {
+        ["Practice Target"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Toilet",
-            ["position"] = Vector2.new(2, 1)
+            ["unlockedBy"] = "Basic Chair",
+            ["tr"] = "Barricade Spikes",
+            ["position"] = Vector2.new(0, -1)
         },
-        ["Street Lamp"] = {
+        ["Arrow Guard"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Chandelier",
-            ["position"] = Vector2.new(-3, -2)
+            ["unlockedBy"] = "Training Dummy",
+            ["position"] = Vector2.new(-0, -4)
         },
         ["Ornate Chair"] = {
             ["unlocks"] = {},
@@ -148,13 +174,14 @@ return {
         ["Serving Counter"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Ornate Table",
+            ["tl"] = "Room Divider",
             ["bl"] = "Stool",
             ["position"] = Vector2.new(-1, 2)
         },
-        ["Well"] = {
+        ["Royal Couch"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Basic Table",
-            ["position"] = Vector2.new(-1, 1)
+            ["unlockedBy"] = "Wooden Bench",
+            ["position"] = Vector2.new(2, 2)
         },
         ["Stone Table"] = {
             ["unlocks"] = {},
@@ -162,23 +189,26 @@ return {
             ["br"] = "Stone Seat",
             ["position"] = Vector2.new(1, 3)
         },
-        ["Chimney"] = {
+        ["Wooden Bench"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Fireplace",
-            ["position"] = Vector2.new(1, -2)
+            ["unlockedBy"] = "Ornate Table",
+            ["br"] = "Royal Couch",
+            ["position"] = Vector2.new(1, 2)
         },
-        ["Barricade Spikes"] = {
+        ["Basic Table"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Practice Target",
-            ["tr"] = "Training Dummy",
-            ["position"] = Vector2.new(-0, -2)
+            ["unlockedBy"] = "Basic Chair",
+            ["tl"] = "Well",
+            ["bl"] = "Ornate Table",
+            ["br"] = "Toilet",
+            ["position"] = Vector2.new(0, 1)
         },
-        ["Chandelier"] = {
+        ["Pole Torch"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Wall Torch",
-            ["tl"] = "Street Lamp",
-            ["tr"] = "Candelabra",
-            ["position"] = Vector2.new(-2, -2)
+            ["unlockedBy"] = "Basic Chair",
+            ["tl"] = "Brazier",
+            ["tr"] = "Jail Cell",
+            ["position"] = Vector2.new(-1, -0)
         },
         ["Jail Cell"] = {
             ["unlocks"] = {},
@@ -188,15 +218,15 @@ return {
     },
     ["Production"] = {
         ["roots"] = {},
-        ["Iron Forge"] = {
+        ["Coin Press"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Copper Smithy",
-            ["bl"] = "Steel Smelter",
-            ["position"] = Vector2.new(-0.5, 1.5)
+            ["unlockedBy"] = "Steel Smelter",
+            ["position"] = Vector2.new(-1.5, 2.5)
         },
         ["Royal Bed"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Basic Bed",
+            ["tl"] = "Covered Bed",
             ["position"] = Vector2.new(-2.5, -0.5)
         },
         ["Basic Bed"] = {
@@ -205,11 +235,10 @@ return {
             ["tl"] = "Royal Bed",
             ["position"] = Vector2.new(-1.5, -0.5)
         },
-        ["Cooking Stove"] = {
+        ["Atlantean Workbench"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Campfire",
-            ["tr"] = "Baking Oven",
-            ["position"] = Vector2.new(-0.5, -2.5)
+            ["unlockedBy"] = "Steel Smelter",
+            ["position"] = Vector2.new(0.5, 2.5)
         },
         ["Copper Smithy"] = {
             ["unlocks"] = {},
@@ -223,23 +252,18 @@ return {
             ["unlockedBy"] = "Iron Forge",
             ["tl"] = "Coin Press",
             ["bl"] = "Bluesteel Furnace",
+            ["br"] = "Atlantean Workbench",
             ["position"] = Vector2.new(-0.5, 2.5)
         },
-        ["Darksteel Forge"] = {
+        ["Covered Bed"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Bluesteel Furnace",
-            ["position"] = Vector2.new(-0.5, 4.5)
+            ["unlockedBy"] = "Royal Bed",
+            ["position"] = Vector2.new(-3.5, -0.5)
         },
         ["Treasure Chest"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Reinforced Chest",
             ["position"] = Vector2.new(2.5, -0.5)
-        },
-        ["Bluesteel Furnace"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Steel Smelter",
-            ["bl"] = "Darksteel Forge",
-            ["position"] = Vector2.new(-0.5, 3.5)
         },
         ["Crafting Table"] = {
             ["unlocks"] = {},
@@ -248,6 +272,23 @@ return {
             ["bl"] = "Copper Smithy",
             ["br"] = "Chest",
             ["position"] = Vector2.new(-0.5, -0.5)
+        },
+        ["Campfire"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Crafting Table",
+            ["tr"] = "Cooking Stove",
+            ["position"] = Vector2.new(-0.5, -1.5)
+        },
+        ["Bluesteel Furnace"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Steel Smelter",
+            ["bl"] = "Darksteel Forge",
+            ["position"] = Vector2.new(-0.5, 3.5)
+        },
+        ["Asian Forge"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Darksteel Forge",
+            ["position"] = Vector2.new(-0.5, 5.5)
         },
         ["Reinforced Chest"] = {
             ["unlocks"] = {},
@@ -258,36 +299,61 @@ return {
         ["Chest"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Crafting Table",
+            ["tr"] = "Armor Stand",
             ["br"] = "Reinforced Chest",
             ["position"] = Vector2.new(0.5, -0.5)
         },
-        ["Coin Press"] = {
+        ["Cooking Stove"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Steel Smelter",
-            ["position"] = Vector2.new(-1.5, 2.5)
+            ["unlockedBy"] = "Campfire",
+            ["tr"] = "Baking Oven",
+            ["position"] = Vector2.new(-0.5, -2.5)
+        },
+        ["Iron Forge"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Copper Smithy",
+            ["bl"] = "Steel Smelter",
+            ["position"] = Vector2.new(-0.5, 1.5)
+        },
+        ["Armor Stand"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Chest",
+            ["br"] = "Weapon Rack",
+            ["position"] = Vector2.new(0.5, -1.5)
         },
         ["Baking Oven"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Cooking Stove",
             ["position"] = Vector2.new(-0.5, -3.5)
         },
+        ["Weapon Rack"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Armor Stand",
+            ["position"] = Vector2.new(1.5, -1.5)
+        },
         ["Fishmonger"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Copper Smithy",
             ["position"] = Vector2.new(0.5, 0.5)
         },
-        ["Campfire"] = {
+        ["Darksteel Forge"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Crafting Table",
-            ["tr"] = "Cooking Stove",
-            ["position"] = Vector2.new(-0.5, -1.5)
+            ["unlockedBy"] = "Bluesteel Furnace",
+            ["bl"] = "Asian Forge",
+            ["position"] = Vector2.new(-0.5, 4.5)
         }
     },
     ["Boats"] = {
         ["roots"] = {},
+        ["Heavy Galleon"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Imperial Ship",
+            ["position"] = Vector2.new(0, -3)
+        },
         ["Imperial Ship"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Boat",
+            ["tr"] = "Heavy Galleon",
             ["br"] = "Longship",
             ["position"] = Vector2.new(0, -2)
         },
@@ -631,18 +697,47 @@ return {
     },
     ["Copper Smithy"] = {
         ["roots"] = {},
-        ["Copper Bar"] = {
+        ["Repair"] = {
             ["unlocks"] = {},
-            ["tl"] = "Bronze Armor",
-            ["tr"] = "Copper Nails",
-            ["bl"] = "Bronze Pickaxe",
-            ["br"] = "Bronze Sword",
-            ["position"] = Vector2.new(0.5, 0.5)
+            ["position"] = Vector2.new(1.5, -1.5)
         },
         ["Bronze Helmet"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Bronze Pants",
             ["position"] = Vector2.new(-1.5, -0.5)
+        },
+        ["Bronze Shield"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bronze Sword",
+            ["position"] = Vector2.new(1.5, 1.5)
+        },
+        ["Stringed Lute"] = {
+            ["unlocks"] = {},
+            ["tl"] = "War Drum",
+            ["br"] = "War Horn",
+            ["position"] = Vector2.new(0.5, 3.5)
+        },
+        ["Bronze Pants"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bronze Armor",
+            ["tr"] = "Bronze Helmet",
+            ["position"] = Vector2.new(-1.5, 0.5)
+        },
+        ["Bronze Bag"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bronze Armor",
+            ["position"] = Vector2.new(-0.5, -0.5)
+        },
+        ["Copper Nails"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Copper Bar",
+            ["br"] = "Compact Bow",
+            ["position"] = Vector2.new(0.5, -0.5)
+        },
+        ["War Drum"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Stringed Lute",
+            ["position"] = Vector2.new(-0.5, 3.5)
         },
         ["Bronze Pickaxe"] = {
             ["unlocks"] = {},
@@ -657,51 +752,38 @@ return {
             ["tr"] = "Bronze Bag",
             ["position"] = Vector2.new(-0.5, 0.5)
         },
-        ["Bronze Shield"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Bronze Sword",
-            ["position"] = Vector2.new(1.5, 1.5)
-        },
         ["Compact Bow"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Copper Nails",
             ["position"] = Vector2.new(1.5, -0.5)
         },
-        ["Repair"] = {
-            ["unlocks"] = {},
-            ["position"] = Vector2.new(1.5, -1.5)
-        },
-        ["Bronze Sword"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Copper Bar",
-            ["bl"] = "Bronze Shield",
-            ["position"] = Vector2.new(1.5, 0.5)
-        },
         ["Bricks"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(0.5, -1.5)
+        },
+        ["Copper Bar"] = {
+            ["unlocks"] = {},
+            ["tl"] = "Bronze Armor",
+            ["tr"] = "Copper Nails",
+            ["bl"] = "Bronze Pickaxe",
+            ["br"] = "Bronze Sword",
+            ["position"] = Vector2.new(0.5, 0.5)
         },
         ["Bronze Axe"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Bronze Pickaxe",
             ["position"] = Vector2.new(-0.5, 1.5)
         },
-        ["Bronze Bag"] = {
+        ["War Horn"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Bronze Armor",
-            ["position"] = Vector2.new(-0.5, -0.5)
+            ["unlockedBy"] = "Stringed Lute",
+            ["position"] = Vector2.new(1.5, 3.5)
         },
-        ["Copper Nails"] = {
+        ["Bronze Sword"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Copper Bar",
-            ["br"] = "Compact Bow",
-            ["position"] = Vector2.new(0.5, -0.5)
-        },
-        ["Bronze Pants"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Bronze Armor",
-            ["tr"] = "Bronze Helmet",
-            ["position"] = Vector2.new(-1.5, 0.5)
+            ["bl"] = "Bronze Shield",
+            ["position"] = Vector2.new(1.5, 0.5)
         }
     },
     ["Iron Forge"] = {
@@ -871,6 +953,7 @@ return {
             ["unlockedBy"] = "Stone Floor",
             ["tr"] = "Ballista",
             ["bl"] = "Castle Gate",
+            ["br"] = "Catapult",
             ["position"] = Vector2.new(2, 2.3)
         },
         ["Wood Wall 3x3"] = {
@@ -914,6 +997,12 @@ return {
             ["unlocks"] = {},
             ["position"] = Vector2.new(-1, -1.7)
         },
+        ["Bear Trap"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Drawbridge",
+            ["tl"] = "Spike Trap",
+            ["position"] = Vector2.new(2, 5.3)
+        },
         ["Stone Door"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Stone Slanted Wall",
@@ -927,6 +1016,11 @@ return {
         ["Wood Wall 6x3"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(0, -1.7)
+        },
+        ["Spike Trap"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bear Trap",
+            ["position"] = Vector2.new(1, 5.3)
         },
         ["Stone Floor Small"] = {
             ["unlocks"] = {},
@@ -944,6 +1038,7 @@ return {
             ["unlocks"] = {},
             ["unlockedBy"] = "Stone Door",
             ["tl"] = "Stone Pillar Round",
+            ["bl"] = "Brick Railing 6x3",
             ["position"] = Vector2.new(-1, 4.3)
         },
         ["Wood Pole"] = {
@@ -955,23 +1050,57 @@ return {
             ["unlocks"] = {},
             ["position"] = Vector2.new(-0, -0.7)
         },
-        ["Thatch Roof Corner"] = {
+        ["Catapult"] = {
             ["unlocks"] = {},
-            ["position"] = Vector2.new(-2, -0.7)
+            ["unlockedBy"] = "Castle Wall",
+            ["bl"] = "Trebuchet",
+            ["position"] = Vector2.new(3, 2.3)
         },
         ["Stone Pillar Round"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Stone Pillar",
             ["position"] = Vector2.new(-2, 4.3)
         },
+        ["Wood Slanted Wall UpsideDown"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(-3, -1.7)
+        },
+        ["Thatch Roof Ridge"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(-2, -2.7)
+        },
+        ["Brick Railing 6x3"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Stone Pillar",
+            ["position"] = Vector2.new(-1, 5.3)
+        },
         ["Stone Pathway"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Stone Floor Small",
             ["position"] = Vector2.new(1, 4.3)
         },
+        ["Bubble Spawner"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Ice Floor",
+            ["position"] = Vector2.new(2, -4.7)
+        },
         ["Palisade Gate"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(2, -0.7)
+        },
+        ["Wood Stairs"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(-1, -3.7)
+        },
+        ["Trebuchet"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Catapult",
+            ["bl"] = "Cannon",
+            ["position"] = Vector2.new(3, 3.3)
+        },
+        ["Fence"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(2, -2.7)
         },
         ["Stone Slanted Wall"] = {
             ["unlocks"] = {},
@@ -980,38 +1109,14 @@ return {
             ["bl"] = "Stone Door",
             ["position"] = Vector2.new(-1, 2.3)
         },
-        ["Stone Stairs"] = {
+        ["Tile Roof Ridge"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Stone Wall 6x6",
-            ["position"] = Vector2.new(-1, 1.3)
+            ["unlockedBy"] = "Tile Roof",
+            ["position"] = Vector2.new(-2, 1.3)
         },
         ["Palisade Wall"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(2, -1.7)
-        },
-        ["Wood Stairs"] = {
-            ["unlocks"] = {},
-            ["position"] = Vector2.new(-1, -3.7)
-        },
-        ["Stone Floor"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Stone Window",
-            ["bl"] = "Stone Floor Small",
-            ["br"] = "Castle Wall",
-            ["position"] = Vector2.new(1, 2.3)
-        },
-        ["Fence"] = {
-            ["unlocks"] = {},
-            ["position"] = Vector2.new(2, -2.7)
-        },
-        ["Stone Window Fancy"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Stone Wall 3x3",
-            ["position"] = Vector2.new(0, 4.3)
-        },
-        ["Ice Floor"] = {
-            ["unlocks"] = {},
-            ["position"] = Vector2.new(2, -3.7)
         },
         ["Stone Wall 6x6"] = {
             ["unlocks"] = {},
@@ -1021,22 +1126,53 @@ return {
             ["br"] = "Stone Window",
             ["position"] = Vector2.new(-0, 1.3)
         },
+        ["Stone Floor"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Stone Window",
+            ["bl"] = "Stone Floor Small",
+            ["br"] = "Castle Wall",
+            ["position"] = Vector2.new(1, 2.3)
+        },
+        ["Cannon"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Trebuchet",
+            ["position"] = Vector2.new(3, 4.3)
+        },
         ["Thatch Roof"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(-2, -1.7)
+        },
+        ["Ice Floor"] = {
+            ["unlocks"] = {},
+            ["tr"] = "Bubble Spawner",
+            ["position"] = Vector2.new(2, -3.7)
+        },
+        ["Tile Roof"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Stone Slanted Wall",
+            ["tl"] = "Stone Slanted Wall UpsideDown",
+            ["tr"] = "Tile Roof Ridge",
+            ["bl"] = "Tile Roof Corner",
+            ["position"] = Vector2.new(-2, 2.3)
+        },
+        ["Thatch Roof Corner"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(-2, -0.7)
         },
         ["Wood Pole Half"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(1, 0.3)
         },
-        ["Thatch Roof Ridge"] = {
+        ["Stone Window Fancy"] = {
             ["unlocks"] = {},
-            ["position"] = Vector2.new(-2, -2.7)
+            ["unlockedBy"] = "Stone Wall 3x3",
+            ["bl"] = "Glass Wall 6x6",
+            ["position"] = Vector2.new(0, 4.3)
         },
-        ["Tile Roof Ridge"] = {
+        ["Stone Stairs"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Tile Roof",
-            ["position"] = Vector2.new(-2, 1.3)
+            ["unlockedBy"] = "Stone Wall 6x6",
+            ["position"] = Vector2.new(-1, 1.3)
         },
         ["Stone Window"] = {
             ["unlocks"] = {},
@@ -1044,20 +1180,24 @@ return {
             ["bl"] = "Stone Floor",
             ["position"] = Vector2.new(1, 1.3)
         },
-        ["Tile Roof"] = {
+        ["Glass Wall 6x6"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Stone Slanted Wall",
-            ["tr"] = "Tile Roof Ridge",
-            ["bl"] = "Tile Roof Corner",
-            ["position"] = Vector2.new(-2, 2.3)
+            ["unlockedBy"] = "Stone Window Fancy",
+            ["position"] = Vector2.new(-0, 5.3)
         },
         ["Wood Door"] = {
             ["unlocks"] = {},
             ["position"] = Vector2.new(-1, -0.7)
         },
+        ["Stone Slanted Wall UpsideDown"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Tile Roof",
+            ["position"] = Vector2.new(-3, 2.3)
+        },
         ["Drawbridge"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Castle Gate",
+            ["bl"] = "Bear Trap",
             ["position"] = Vector2.new(2, 4.3)
         },
         ["Stone Wall 3x3"] = {
@@ -1151,11 +1291,11 @@ return {
             ["unlockedBy"] = "Serving Barrel",
             ["position"] = Vector2.new(-2, 1)
         },
-        ["Decorative Chest"] = {
+        ["Turkey Decoration"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Coin Pile",
-            ["br"] = "Scale",
-            ["position"] = Vector2.new(-3, -1)
+            ["unlockedBy"] = "Plate And Utensils",
+            ["tl"] = "Meal Decoration",
+            ["position"] = Vector2.new(-2, -3)
         },
         ["Cup"] = {
             ["unlocks"] = {},
@@ -1179,6 +1319,12 @@ return {
             ["unlockedBy"] = "Round Rug",
             ["position"] = Vector2.new(-2, 2)
         },
+        ["Skull On A Stick"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Skull Decoration",
+            ["tr"] = "Skeleton",
+            ["position"] = Vector2.new(0, -2)
+        },
         ["Ship Construction"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Shelf",
@@ -1192,12 +1338,19 @@ return {
         ["Clock"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Shelf",
+            ["tr"] = "Lectern",
             ["position"] = Vector2.new(2, -2)
         },
         ["Book And Quill"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Books",
             ["position"] = Vector2.new(-2, -2)
+        },
+        ["Skeleton"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Skull On A Stick",
+            ["tr"] = "Sitting Skeleton",
+            ["position"] = Vector2.new(0, -3)
         },
         ["Awning"] = {
             ["unlocks"] = {},
@@ -1213,23 +1366,6 @@ return {
             ["br"] = "Carpet Style 2",
             ["position"] = Vector2.new(1, 2)
         },
-        ["Skull On A Stick"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Skull Decoration",
-            ["tr"] = "Skeleton",
-            ["position"] = Vector2.new(0, -2)
-        },
-        ["Cabbage Decoration"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Meal Decoration",
-            ["position"] = Vector2.new(-3, -2)
-        },
-        ["Skeleton"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Skull On A Stick",
-            ["tr"] = "Sitting Skeleton",
-            ["position"] = Vector2.new(0, -3)
-        },
         ["Arrow Sign"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Crate",
@@ -1238,17 +1374,31 @@ return {
             ["br"] = "Grave",
             ["position"] = Vector2.new(1, 0)
         },
-        ["Turkey Decoration"] = {
+        ["Cabbage Decoration"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Plate And Utensils",
-            ["tl"] = "Meal Decoration",
-            ["position"] = Vector2.new(-2, -3)
+            ["unlockedBy"] = "Meal Decoration",
+            ["position"] = Vector2.new(-3, -2)
+        },
+        ["Purple Jar"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Green Jar",
+            ["position"] = Vector2.new(-3, -4)
+        },
+        ["Lectern"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Clock",
+            ["position"] = Vector2.new(2, -3)
         },
         ["Blue Jar"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Plate And Utensils",
             ["tl"] = "Green Jar",
             ["position"] = Vector2.new(-1, -4)
+        },
+        ["Deer Trophy"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Grave",
+            ["position"] = Vector2.new(2, 1)
         },
         ["Fancy Grave"] = {
             ["unlocks"] = {},
@@ -1270,10 +1420,11 @@ return {
             ["bl"] = "Wood Pile",
             ["position"] = Vector2.new(-1, 0)
         },
-        ["Deer Trophy"] = {
+        ["Decorative Chest"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Grave",
-            ["position"] = Vector2.new(2, 1)
+            ["unlockedBy"] = "Coin Pile",
+            ["br"] = "Scale",
+            ["position"] = Vector2.new(-3, -1)
         },
         ["Plate And Utensils"] = {
             ["unlocks"] = {},
@@ -1285,13 +1436,14 @@ return {
         ["Meal Decoration"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Turkey Decoration",
+            ["tl"] = "Hanging Fish",
             ["bl"] = "Cabbage Decoration",
             ["position"] = Vector2.new(-3, -3)
         },
-        ["Purple Jar"] = {
+        ["Hanging Fish"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Green Jar",
-            ["position"] = Vector2.new(-3, -4)
+            ["unlockedBy"] = "Meal Decoration",
+            ["position"] = Vector2.new(-4, -3)
         },
         ["Curtains"] = {
             ["unlocks"] = {},
@@ -1323,6 +1475,7 @@ return {
             ["unlocks"] = {},
             ["unlockedBy"] = "Sword Sign",
             ["tr"] = "Trade Sign",
+            ["bl"] = "Custom Sign",
             ["position"] = Vector2.new(-2, -0)
         },
         ["Gargoyle Head"] = {
@@ -1335,12 +1488,17 @@ return {
         ["Pink Flowers"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Blue Flowers",
-            ["position"] = Vector2.new(3, 3)
+            ["position"] = Vector2.new(4, 3)
         },
-        ["Rock Node"] = {
+        ["Painting: Ascension"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Rock",
-            ["position"] = Vector2.new(2, -1)
+            ["unlockedBy"] = "Painting: Encounter",
+            ["position"] = Vector2.new(2, 2)
+        },
+        ["Water Trough"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Fountain",
+            ["position"] = Vector2.new(-1, -2)
         },
         ["Decorative Banner"] = {
             ["unlocks"] = {},
@@ -1359,14 +1517,26 @@ return {
         ["Fountain"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Pavilion",
+            ["tl"] = "Water Trough",
             ["br"] = "Statue Center",
             ["position"] = Vector2.new(-0, -2)
         },
-        ["Statue Left"] = {
+        ["Hanging Mirror"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Statue Center",
-            ["br"] = "Statue Right",
-            ["position"] = Vector2.new(2, -2)
+            ["unlockedBy"] = "Painting: Royalty",
+            ["position"] = Vector2.new(-2, 3)
+        },
+        ["Trade Sign"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Blacksmith Sign",
+            ["position"] = Vector2.new(-2, -1)
+        },
+        ["Palm Tree"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Pine Tree",
+            ["bl"] = "Dead Tree",
+            ["br"] = "Red Flowers",
+            ["position"] = Vector2.new(3, 1)
         },
         ["Statue Right"] = {
             ["unlocks"] = {},
@@ -1416,7 +1586,7 @@ return {
             ["unlocks"] = {},
             ["unlockedBy"] = "Red Flowers",
             ["bl"] = "Pink Flowers",
-            ["position"] = Vector2.new(3, 2)
+            ["position"] = Vector2.new(4, 2)
         },
         ["Bat Gargoyle"] = {
             ["unlocks"] = {},
@@ -1429,6 +1599,18 @@ return {
             ["br"] = "Pine Tree",
             ["position"] = Vector2.new(1, 1)
         },
+        ["Pine Tree"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Oak Tree",
+            ["br"] = "Palm Tree",
+            ["position"] = Vector2.new(2, 1)
+        },
+        ["Painting: Encounter"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Painting: Stronghold",
+            ["br"] = "Painting: Ascension",
+            ["position"] = Vector2.new(1, 2)
+        },
         ["Painting: Stronghold"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Decorative Flag",
@@ -1437,33 +1619,27 @@ return {
             ["br"] = "Painting: Encounter",
             ["position"] = Vector2.new(0, 2)
         },
-        ["Painting: Encounter"] = {
+        ["Red Flowers"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Painting: Stronghold",
-            ["br"] = "Painting: Ascension",
-            ["position"] = Vector2.new(1, 2)
+            ["unlockedBy"] = "Palm Tree",
+            ["bl"] = "Blue Flowers",
+            ["position"] = Vector2.new(4, 1)
         },
-        ["Pine Tree"] = {
+        ["Rock Node"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Oak Tree",
-            ["br"] = "Red Flowers",
-            ["position"] = Vector2.new(2, 1)
+            ["unlockedBy"] = "Rock",
+            ["position"] = Vector2.new(2, -1)
         },
         ["Painting: Royalty"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Painting: Rest",
+            ["bl"] = "Hanging Mirror",
             ["position"] = Vector2.new(-2, 2)
         },
-        ["Red Flowers"] = {
+        ["Dead Tree"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Pine Tree",
-            ["bl"] = "Blue Flowers",
-            ["position"] = Vector2.new(3, 1)
-        },
-        ["Painting: Ascension"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Painting: Encounter",
-            ["position"] = Vector2.new(2, 2)
+            ["unlockedBy"] = "Palm Tree",
+            ["position"] = Vector2.new(3, 2)
         },
         ["Potted Plant"] = {
             ["unlocks"] = {},
@@ -1471,6 +1647,11 @@ return {
             ["tr"] = "Ivy",
             ["br"] = "Hay Bale",
             ["position"] = Vector2.new(3, 0)
+        },
+        ["Custom Sign"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Blacksmith Sign",
+            ["position"] = Vector2.new(-2, 1)
         },
         ["Statue Center"] = {
             ["unlocks"] = {},
@@ -1491,10 +1672,11 @@ return {
             ["unlockedBy"] = "Gargoyle Head",
             ["position"] = Vector2.new(-1, 3)
         },
-        ["Trade Sign"] = {
+        ["Statue Left"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Blacksmith Sign",
-            ["position"] = Vector2.new(-2, -1)
+            ["unlockedBy"] = "Statue Center",
+            ["br"] = "Statue Right",
+            ["position"] = Vector2.new(2, -2)
         }
     },
     ["Bluesteel Furnace"] = {
@@ -1673,28 +1855,27 @@ return {
         ["Obsidian Nails"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Darksteel Bar",
+            ["br"] = "Black Powder",
             ["position"] = Vector2.new(0.5, -0.5)
+        },
+        ["Musket"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Darksteel Sword",
+            ["position"] = Vector2.new(2.5, 0.5)
         },
         ["Darksteel Helmet"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Darksteel Pants",
             ["position"] = Vector2.new(-1.5, -0.5)
         },
+        ["Foreign Compass"] = {
+            ["unlocks"] = {},
+            ["position"] = Vector2.new(0.5, -1.5)
+        },
         ["Darksteel Axe"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Darksteel Pickaxe",
             ["position"] = Vector2.new(-0.5, 1.5)
-        },
-        ["Darksteel Pants"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Darksteel Armor",
-            ["tr"] = "Darksteel Helmet",
-            ["position"] = Vector2.new(-1.5, 0.5)
-        },
-        ["Darksteel Shield"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Darksteel Sword",
-            ["position"] = Vector2.new(1.5, 1.5)
         },
         ["Darksteel Bar"] = {
             ["unlocks"] = {},
@@ -1703,6 +1884,34 @@ return {
             ["bl"] = "Darksteel Pickaxe",
             ["br"] = "Darksteel Sword",
             ["position"] = Vector2.new(0.5, 0.5)
+        },
+        ["Darksteel Pants"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Darksteel Armor",
+            ["tr"] = "Darksteel Helmet",
+            ["position"] = Vector2.new(-1.5, 0.5)
+        },
+        ["Black Powder"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Obsidian Nails",
+            ["tr"] = "Cannon Ammo",
+            ["br"] = "Musket Ammo",
+            ["position"] = Vector2.new(1.5, -0.5)
+        },
+        ["Darksteel Shield"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Darksteel Sword",
+            ["position"] = Vector2.new(1.5, 1.5)
+        },
+        ["Cannon Ammo"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Black Powder",
+            ["position"] = Vector2.new(1.5, -1.5)
+        },
+        ["Musket Ammo"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Black Powder",
+            ["position"] = Vector2.new(2.5, -0.5)
         },
         ["Darksteel Pickaxe"] = {
             ["unlocks"] = {},
@@ -1726,6 +1935,7 @@ return {
             ["unlocks"] = {},
             ["unlockedBy"] = "Darksteel Bar",
             ["bl"] = "Darksteel Shield",
+            ["br"] = "Musket",
             ["position"] = Vector2.new(1.5, 0.5)
         }
     },
@@ -1782,20 +1992,28 @@ return {
     },
     ["NPCs"] = {
         ["roots"] = {},
-        ["Food Box"] = {
-            ["unlocks"] = {},
-            ["tl"] = "Bronze Archer",
-            ["tr"] = "Wheat Farmer",
-            ["bl"] = "Stone Miner",
-            ["br"] = "Bronze Swordsman",
-            ["position"] = Vector2.new(-0, -0)
-        },
-        ["Wheat Farmer"] = {
+        ["Stone Miner"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Food Box",
-            ["tr"] = "Carrot Farmer",
-            ["br"] = "Meat Hunter",
-            ["position"] = Vector2.new(-0, -1)
+            ["bl"] = "Copper Miner",
+            ["br"] = "Wood Cutter",
+            ["position"] = Vector2.new(-0, 1)
+        },
+        ["Darksteel Archer"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bluesteel Archer",
+            ["position"] = Vector2.new(-5, 0)
+        },
+        ["Wood Cutter"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Stone Miner",
+            ["position"] = Vector2.new(1, 1)
+        },
+        ["Iron Archer"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bronze Archer",
+            ["tl"] = "Steel Archer",
+            ["position"] = Vector2.new(-2, -0)
         },
         ["Carrot Farmer"] = {
             ["unlocks"] = {},
@@ -1806,19 +2024,12 @@ return {
         ["Cabbage Farmer"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Carrot Farmer",
-            ["position"] = Vector2.new(-0, -3)
+            ["position"] = Vector2.new(-0, -2.9)
         },
-        ["Meat Hunter"] = {
+        ["Iron Miner"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Wheat Farmer",
-            ["position"] = Vector2.new(1, -1)
-        },
-        ["Stone Miner"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Food Box",
-            ["bl"] = "Copper Miner",
-            ["tl"] = "Wood Cutter",
-            ["position"] = Vector2.new(0, 1)
+            ["unlockedBy"] = "Copper Miner",
+            ["position"] = Vector2.new(0, 3)
         },
         ["Copper Miner"] = {
             ["unlocks"] = {},
@@ -1826,34 +2037,38 @@ return {
             ["bl"] = "Iron Miner",
             ["position"] = Vector2.new(0, 2)
         },
-        ["Iron Miner"] = {
+        ["Food Box"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Copper Miner",
-            ["position"] = Vector2.new(0, 3)
+            ["tl"] = "Bronze Archer",
+            ["tr"] = "Wheat Farmer",
+            ["bl"] = "Stone Miner",
+            ["br"] = "Bronze Swordsman",
+            ["position"] = Vector2.new(-0, -0)
         },
-        ["Wood Cutter"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Stone Miner",
-            ["position"] = Vector2.new(-1, 1)
-        },
-        ["Bronze Archer"] = {
+        ["Bronze Swordsman"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Food Box",
-            ["tl"] = "Iron Archer",
-            ["bl"] = "Jester",
-            ["position"] = Vector2.new(-1, 0)
+            ["br"] = "Iron Swordsman",
+            ["position"] = Vector2.new(1, -0)
         },
-        ["Iron Archer"] = {
+        ["Iron Swordsman"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Bronze Archer",
-            ["tl"] = "Steel Archer",
-            ["position"] = Vector2.new(-2, 0)
+            ["unlockedBy"] = "Bronze Swordsman",
+            ["br"] = "Steel Swordsman",
+            ["position"] = Vector2.new(2, -0)
         },
-        ["Steel Archer"] = {
+        ["Wheat Farmer"] = {
             ["unlocks"] = {},
-            ["unlockedBy"] = "Iron Archer",
-            ["tl"] = "Bluesteel Archer",
-            ["position"] = Vector2.new(-3, 0)
+            ["unlockedBy"] = "Food Box",
+            ["tl"] = "Meat Hunter",
+            ["tr"] = "Carrot Farmer",
+            ["position"] = Vector2.new(-0, -1)
+        },
+        ["Steel Swordsman"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Iron Swordsman",
+            ["br"] = "Bluesteel Swordsman",
+            ["position"] = Vector2.new(3, -0)
         },
         ["Bluesteel Archer"] = {
             ["unlocks"] = {},
@@ -1861,44 +2076,239 @@ return {
             ["tl"] = "Darksteel Archer",
             ["position"] = Vector2.new(-4, 0)
         },
-        ["Darksteel Archer"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Bluesteel Archer",
-            ["position"] = Vector2.new(-5, 0)
-        },
         ["Jester"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Bronze Archer",
-            ["position"] = Vector2.new(-2, 1)
+            ["position"] = Vector2.new(-1, 1)
         },
-        ["Bronze Swordsman"] = {
+        ["Meat Hunter"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Wheat Farmer",
+            ["position"] = Vector2.new(-1, -1)
+        },
+        ["Bronze Archer"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Food Box",
-            ["br"] = "Iron Swordsman",
-            ["position"] = Vector2.new(1, 0)
-        },
-        ["Iron Swordsman"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Bronze Swordsman",
-            ["br"] = "Steel Swordsman",
-            ["position"] = Vector2.new(2, 0)
-        },
-        ["Steel Swordsman"] = {
-            ["unlocks"] = {},
-            ["unlockedBy"] = "Iron Swordsman",
-            ["br"] = "Bluesteel Swordsman",
-            ["position"] = Vector2.new(3, 0)
+            ["tl"] = "Iron Archer",
+            ["bl"] = "Jester",
+            ["position"] = Vector2.new(-1, -0)
         },
         ["Bluesteel Swordsman"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Steel Swordsman",
             ["br"] = "Darksteel Swordsman",
-            ["position"] = Vector2.new(4, 0)
+            ["position"] = Vector2.new(4, -0)
+        },
+        ["Steel Archer"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Iron Archer",
+            ["tl"] = "Bluesteel Archer",
+            ["position"] = Vector2.new(-3, 0)
         },
         ["Darksteel Swordsman"] = {
             ["unlocks"] = {},
             ["unlockedBy"] = "Bluesteel Swordsman",
-            ["position"] = Vector2.new(5, 0)
+            ["position"] = Vector2.new(5, -0)
+        }
+    },
+    ["Atlantean Workbench"] = {
+        ["roots"] = {},
+        ["Atlantean Shield"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Atlantean Trident",
+            ["position"] = Vector2.new(1.5, 1.5)
+        },
+        ["Atlantean Helmet"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Atlantean Pants",
+            ["position"] = Vector2.new(-1.5, -0.5)
+        },
+        ["Atlantean Armor"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Atlantean Steel",
+            ["tl"] = "Atlantean Pants",
+            ["position"] = Vector2.new(-0.5, 0.5)
+        },
+        ["Scuba Pants"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Scuba Helmet",
+            ["position"] = Vector2.new(1.5, -1.5)
+        },
+        ["Atlantean Steel"] = {
+            ["unlocks"] = {},
+            ["tl"] = "Atlantean Armor",
+            ["br"] = "Atlantean Trident",
+            ["position"] = Vector2.new(0.5, 0.5)
+        },
+        ["Atlantean Trident"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Atlantean Steel",
+            ["bl"] = "Atlantean Shield",
+            ["position"] = Vector2.new(1.5, 0.5)
+        },
+        ["Scuba Armor"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Scuba Helmet",
+            ["position"] = Vector2.new(-0.5, -1.5)
+        },
+        ["Scuba Helmet"] = {
+            ["unlocks"] = {},
+            ["tl"] = "Scuba Armor",
+            ["br"] = "Scuba Pants",
+            ["position"] = Vector2.new(0.5, -1.5)
+        },
+        ["Atlantean Pants"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Atlantean Armor",
+            ["tr"] = "Atlantean Helmet",
+            ["position"] = Vector2.new(-1.5, 0.5)
+        }
+    },
+    ["Asian Forge"] = {
+        ["roots"] = {},
+        ["Adamantite Axe"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Pickaxe",
+            ["position"] = Vector2.new(-0.5, 1.5)
+        },
+        ["Glider"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Nails",
+            ["position"] = Vector2.new(1.5, -0.5)
+        },
+        ["Samurai Armor"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Bar",
+            ["tl"] = "Samurai Pants",
+            ["tr"] = "Samurai Bag",
+            ["position"] = Vector2.new(-0.5, 0.5)
+        },
+        ["Katana"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Bar",
+            ["position"] = Vector2.new(1.5, 0.5)
+        },
+        ["Adamantite Bar"] = {
+            ["unlocks"] = {},
+            ["tl"] = "Samurai Armor",
+            ["tr"] = "Adamantite Nails",
+            ["bl"] = "Adamantite Pickaxe",
+            ["br"] = "Katana",
+            ["position"] = Vector2.new(0.5, 0.5)
+        },
+        ["Adamantite Nails"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Bar",
+            ["br"] = "Glider",
+            ["position"] = Vector2.new(0.5, -0.5)
+        },
+        ["Samurai Bag"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Samurai Armor",
+            ["position"] = Vector2.new(-0.5, -0.5)
+        },
+        ["Samurai Pants"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Samurai Armor",
+            ["tr"] = "Samurai Helmet",
+            ["position"] = Vector2.new(-1.5, 0.5)
+        },
+        ["Samurai Helmet"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Samurai Pants",
+            ["position"] = Vector2.new(-1.5, -0.5)
+        },
+        ["Adamantite Pickaxe"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Adamantite Bar",
+            ["tl"] = "Adamantite Axe",
+            ["position"] = Vector2.new(0.5, 1.5)
+        }
+    },
+    ["Asian Structures"] = {
+        ["roots"] = {},
+        ["Asian Door"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Wall",
+            ["tl"] = "Asian Gate",
+            ["position"] = Vector2.new(-0, -1)
+        },
+        ["Asian Roof Top"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Roof",
+            ["position"] = Vector2.new(-1, 1)
+        },
+        ["Asian Roof"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Wall",
+            ["tl"] = "Asian Roof Top",
+            ["br"] = "Asian Roof Corner",
+            ["position"] = Vector2.new(-0, 1)
+        },
+        ["Asian Wall"] = {
+            ["unlocks"] = {},
+            ["tr"] = "Asian Door",
+            ["bl"] = "Asian Roof",
+            ["position"] = Vector2.new(-0, -0)
+        },
+        ["Asian Gate"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Door",
+            ["position"] = Vector2.new(-1, -1)
+        },
+        ["Asian Roof Corner"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Roof",
+            ["position"] = Vector2.new(1, 1)
+        }
+    },
+    ["Asian Decorations"] = {
+        ["roots"] = {},
+        ["Bamboo"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Gong",
+            ["br"] = "Asian Tree",
+            ["position"] = Vector2.new(-0, 1)
+        },
+        ["Lantern Round"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Lamp",
+            ["position"] = Vector2.new(1, -1)
+        },
+        ["Lantern"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Asian Lamp",
+            ["position"] = Vector2.new(-1, -1)
+        },
+        ["Zen Garden"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Gong",
+            ["position"] = Vector2.new(1, -0)
+        },
+        ["Asian Tree"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Bamboo",
+            ["position"] = Vector2.new(1, 1)
+        },
+        ["Asian Lamp"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Gong",
+            ["tl"] = "Lantern",
+            ["br"] = "Lantern Round",
+            ["position"] = Vector2.new(-0, -1)
+        },
+        ["Gong"] = {
+            ["unlocks"] = {},
+            ["tl"] = "Asian Brazier",
+            ["tr"] = "Asian Lamp",
+            ["bl"] = "Bamboo",
+            ["br"] = "Zen Garden",
+            ["position"] = Vector2.new(-0, -0)
+        },
+        ["Asian Brazier"] = {
+            ["unlocks"] = {},
+            ["unlockedBy"] = "Gong",
+            ["position"] = Vector2.new(-1, -0)
         }
     }
 };
