@@ -1,1 +1,1 @@
-return {"The Samurai", "The Titan"}
+return {"The Samurai", "The Titan", "The Juggernaut"}
