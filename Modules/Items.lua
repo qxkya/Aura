@@ -1,59 +1,35 @@
 return {
-    ["Barricade Spikes"] = {
-        ["durability"] = 500,
+    ["Castle Wall"] = {
+        ["durability"] = 8000,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 81,
+        ["id"] = 126,
         ["recipe"] = {
-            ["Log"] = 2,
+            ["Bricks"] = 3,
         },
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Ballista"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Turret",
-            ["2"] = "Structure",
-        },
-        ["projectileVelocity"] = 1500,
-        ["id"] = 155,
-        ["itemStats"] = {
-            ["rangedDamage"] = 60,
-        },
-        ["itemTier"] = 3,
-        ["useAmmoModel"] = "Ballista Bolt",
-        ["validAmmoTypes"] = {
-            ["1"] = "Ballista Bolt",
-        },
-        ["reloadTime"] = 2,
-        ["animations"] = {
-            ["idle_loaded"] = "rbxassetid://12049148592",
-            ["action"] = "rbxassetid://12049213113",
-            ["idle"] = "rbxassetid://12049216809",
-            ["reload"] = "rbxassetid://12049241835",
-        },
+    ["Sharp Rock"] = {
         ["recipe"] = {
-            ["Wooden Rod"] = 6,
-            ["Wood Plank"] = 10,
-            ["Rope"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Shingles"] = {
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-            ["Wood Plank"] = 1,
+            ["Stone"] = 3,
         },
         ["itemType"] = {
-            ["1"] = "Resource",
+            ["1"] = "Rock",
+            ["2"] = "Pickaxe",
+            ["3"] = "Axe",
+            ["4"] = "Melee Weapon",
+            ["5"] = "Tool",
         },
         ["weight"] = 0.1,
-        ["id"] = 101,
-        ["itemTier"] = 2,
-        ["price"] = 5,
-        ["description"] = "Shingles are used to craft tile roofs, which are objectively cooler than thatch roofs, we can all agree.",
+        ["id"] = 110,
+        ["itemStats"] = {
+            ["meleeDamage"] = 10,
+            ["axeStrength"] = 1,
+            ["pickaxeStrength"] = 1,
+        },
+        ["description"] = "The most basic kind of tool, it can be used to gather any resource. Though it isn't very good at it.",
     },
     ["Basic Bed"] = {
         ["durability"] = 100,
@@ -68,32 +44,6 @@ return {
         },
         ["itemTier"] = 1,
         ["description"] = "",
-    },
-    ["Steel Axe"] = {
-        ["itemType"] = {
-            ["1"] = "Axe",
-            ["2"] = "Melee Weapon",
-            ["3"] = "Tool",
-        },
-        ["id"] = 51,
-        ["itemStats"] = {
-            ["axeStrength"] = 5,
-            ["meleeDamage"] = 20,
-        },
-        ["itemTier"] = 4,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11428946958",
-            },
-        },
-        ["recipe"] = {
-            ["Steel Bar"] = 2,
-            ["Steel Nails"] = 1,
-            ["Tool Handle"] = 1,
-        },
-        ["description"] = "A lightweight and strong axe",
-        ["price"] = 240,
     },
     ["Horse Armor"] = {
         ["itemTier"] = 4,
@@ -156,28 +106,16 @@ return {
         },
         ["description"] = "",
     },
-    ["Sea Snapper"] = {
-        ["itemTier"] = 1,
+    ["Bear Trap"] = {
+        ["durability"] = 100,
         ["itemType"] = {
-            ["1"] = "Resource",
+            ["1"] = "Structure",
         },
-        ["weight"] = 0.1,
-        ["id"] = 281,
-        ["description"] = "",
-    },
-    ["Steel Bar"] = {
-        ["itemTier"] = 3,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 10,
-        ["description"] = "Steel is a mix of other metals, that creates a much lighter, much stronger metal",
+        ["id"] = 432,
         ["recipe"] = {
-            ["Coal"] = 5,
-            ["Iron"] = 10,
+            ["Steel Bar"] = 5,
         },
-        ["price"] = 80,
+        ["description"] = "",
     },
     ["Outhouse"] = {
         ["id"] = 147,
@@ -188,19 +126,6 @@ return {
             ["1"] = "Prefab",
             ["2"] = "Structure",
         },
-        ["description"] = "",
-    },
-    ["Skull Throne"] = {
-        ["durability"] = 1500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 163,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-            ["Skull"] = 10,
-        },
-        ["itemTier"] = 3,
         ["description"] = "",
     },
     ["Admin Pants"] = {
@@ -214,23 +139,38 @@ return {
         ["itemStats"] = {
             ["defense"] = 100,
         },
-        ["itemTier"] = 9,
+        ["itemTier"] = 10,
         ["cantBeDropped"] = true,
         ["weight"] = 0.1,
         ["description"] = "",
         ["recipe"] = {
         },
     },
-    ["Wood Wall 6x3"] = {
-        ["durability"] = 300,
+    ["Gladiator Stone Knife"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
         },
-        ["id"] = 65,
+        ["cantPutInStorage"] = true,
+        ["id"] = 454,
+        ["itemStats"] = {
+            ["meleeDamage"] = 20,
+        },
+        ["isArenaItem"] = true,
         ["recipe"] = {
-            ["Log"] = 1,
         },
-        ["description"] = "",
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["itemTier"] = 2,
+        ["forceGenerateDroppedModel"] = true,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["description"] = "It's a sharpened stone on a stick. It's not good at killing things, but if you stab hard enough and long enough, it'll work!",
     },
     ["Bluesteel Sword"] = {
         ["itemType"] = {
@@ -273,41 +213,24 @@ return {
         ["PostureBreakTime"] = 5,
         ["description"] = "A steel shield! Light weight, but strong, a must have for the battlefield!",
     },
-    ["Glow Mushroom"] = {
+    ["Adamantite Nails"] = {
         ["itemType"] = {
-            ["1"] = "Consumable",
+            ["1"] = "Resource",
         },
-        ["id"] = 437,
-        ["itemStats"] = {
-            ["food"] = 20,
-        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 426,
+        ["dropOnDeathAnyways"] = true,
         ["recipe"] = {
+            ["Adamantite"] = 1,
+            ["Gold Nugget"] = 1,
+            ["Coal"] = 10,
         },
-        ["effectsOnEat"] = {
-            ["1"] = "Speedy",
-        },
-        ["instantHealth"] = -25,
+        ["cantBeDropped"] = true,
         ["weight"] = 0.1,
-        ["itemTier"] = 1,
-        ["price"] = 1,
-        ["description"] = "This mushroom will hurt you, but only a little bit! In return, you'll get a short burst of speed!",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Tile Roof"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 142,
-        ["recipe"] = {
-            ["Shingles"] = 2,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
+        ["itemTier"] = 8,
+        ["forceGenerateDroppedModel"] = true,
+        ["price"] = 999,
+        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
     },
     ["Wood Pole"] = {
         ["durability"] = 200,
@@ -351,66 +274,44 @@ return {
         },
         ["price"] = 999,
     },
-    ["Asian Roof"] = {
-        ["durability"] = 800,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 411,
-        ["recipe"] = {
-            ["Wood Plank"] = 1,
-            ["Shingles"] = 4,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Fire Arrow"] = {
-        ["itemType"] = {
-            ["1"] = "Ammo",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 433,
-        ["itemStats"] = {
-            ["damage"] = 1.3,
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 4,
-            ["Black Powder"] = 20,
-            ["Darksteel Bar"] = 1,
-            ["amount"] = 10,
-        },
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["reloadTime"] = 2,
-        ["price"] = 1,
-        ["itemTier"] = 7,
-        ["description"] = "Fire arrows set people and animals on fire for a short time when they hit them, making them run around wildly! Does not work underwater. Duh.",
-    },
-    ["Gladiator Bluesteel Sword"] = {
+    ["Poison Dagger"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["dropOnDeathAnyways"] = true,
         ["itemType"] = {
             ["1"] = "Melee Weapon",
             ["2"] = "Tool",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 458,
+        ["id"] = 441,
         ["itemStats"] = {
-            ["meleeDamage"] = 52,
+            ["meleeDamage"] = 40,
         },
-        ["isArenaItem"] = true,
-        ["itemTier"] = 6,
+        ["dagger"] = true,
+        ["PostureBreakTime"] = 4,
+        ["itemTier"] = 8,
         ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
+        ["description"] = "By itself the dagger is too short to be effective, but once it stabs someone, they cannot heal for quite awhile, making it a dangerous combo with other weapons!",
         ["weight"] = 0.1,
         ["animations"] = {
+            ["idle"] = "rbxassetid://121565995036184",
             ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
+                ["1"] = "rbxassetid://121356898049119",
+                ["2"] = "rbxassetid://100976926090296",
             },
         },
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "A sword made out of the strongest metal in the known world",
-        ["recipe"] = {
+        ["hitEffects"] = {
+            ["1"] = {
+                ["Chance"] = 1,
+                ["Poisoned"] = 3,
+                ["Healing Disabled"] = 3,
+            },
         },
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Poison Fang"] = 2,
+            ["Adamantite Bar"] = 2,
+        },
+        ["price"] = 999,
     },
     ["_deprecated_black_powder"] = {
         ["restricted"] = true,
@@ -459,75 +360,21 @@ return {
         ["itemTier"] = 1,
         ["description"] = "",
     },
-    ["Decorative Flag"] = {
-        ["durability"] = 100,
+    ["Iron Shield"] = {
+        ["itemTier"] = 4,
         ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 235,
-        ["recipe"] = {
-            ["Log"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Arrow"] = {
-        ["recipe"] = {
-            ["Wooden Rod"] = 4,
-            ["Stone"] = 4,
-            ["amount"] = 10,
-        },
-        ["price"] = 1,
-        ["itemType"] = {
-            ["1"] = "Ammo",
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
         },
         ["weight"] = 0.1,
-        ["id"] = 73,
-        ["itemStats"] = {
-            ["damage"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "It's an arrow. You shoot people with it. This is generally considered fatal.",
-    },
-    ["Gong"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 418,
+        ["id"] = 295,
         ["recipe"] = {
-            ["Iron Bar"] = 2,
-            ["Log"] = 10,
+            ["Iron Bar"] = 4,
+            ["Rope"] = 2,
+            ["Tool Handle"] = 1,
         },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Spicy Chicken Meal"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 216,
-        ["itemStats"] = {
-            ["food"] = 600,
-        },
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Good_Meal",
-            ["2"] = "Ate_Spicy_Food",
-        },
-        ["description"] = "Some spicy seasoned chicken on a bed of greens. Will give you a bit of spring in your step.",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 40,
-        ["recipe"] = {
-            ["Cooked Chicken"] = 1,
-            ["Pepper"] = 6,
-            ["Cabbage"] = 6,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
+        ["PostureBreakTime"] = 6,
+        ["description"] = "An iron shield, sturdy, and effective!",
     },
     ["_deprecated_sulfur"] = {
         ["restricted"] = true,
@@ -539,183 +386,24 @@ return {
         ["description"] = "",
         ["deprecated"] = true,
     },
-    ["Iron Axe"] = {
-        ["itemType"] = {
-            ["1"] = "Axe",
-            ["2"] = "Melee Weapon",
-            ["3"] = "Tool",
-        },
-        ["id"] = 50,
-        ["itemStats"] = {
-            ["axeStrength"] = 4,
-            ["meleeDamage"] = 15,
-        },
-        ["itemTier"] = 3,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11428946958",
-            },
-        },
-        ["recipe"] = {
-            ["Tool Handle"] = 1,
-            ["Iron Nails"] = 1,
-            ["Iron Bar"] = 2,
-        },
-        ["price"] = 25,
-        ["description"] = "A heavy and powerful axe",
-    },
-    ["Gladiator Steel Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 500,
-        ["itemStats"] = {
-            ["defense"] = 12,
-        },
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for a helmet!",
-        ["recipe"] = {
-        },
-    },
-    ["Gladiator Iron Spear"] = {
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 463,
-        ["itemStats"] = {
-            ["meleeDamage"] = 30,
-        },
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["spear"] = true,
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["PostureBreakTime"] = 4,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "An incredibly heavy spear, but it makes up for it with power!",
-        ["recipe"] = {
-        },
-    },
-    ["_Obsidian"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 258,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["deprecated"] = true,
-        ["description"] = "",
-        ["price"] = 2,
-    },
-    ["Oak Tree"] = {
-        ["durability"] = 100,
+    ["Bluesteel Furnace"] = {
+        ["durability"] = 750,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 241,
-        ["recipe"] = {
-            ["Leaf"] = 5,
-            ["Log"] = 5,
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Bluesteel Furnace",
         },
+        ["id"] = 199,
+        ["recipe"] = {
+            ["Steel Nails"] = 2,
+            ["Shingles"] = 10,
+            ["Bricks"] = 20,
+            ["Wood Plank"] = 10,
+        },
+        ["itemTier"] = 4,
         ["description"] = "",
-    },
-    ["Steel Nails"] = {
-        ["recipe"] = {
-            ["Coal"] = 5,
-            ["Iron"] = 10,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 112,
-        ["itemTier"] = 3,
-        ["price"] = 80,
-        ["description"] = "Nails are an important part of building any complex object",
-    },
-    ["Cod"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 282,
-        ["description"] = "",
-    },
-    ["Gladiator Bluesteel Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 501,
-        ["itemStats"] = {
-            ["defense"] = 14,
-        },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "A Helmet made out of the strongest metal in the known world!",
-        ["recipe"] = {
-        },
-    },
-    ["Refined Bluesteel"] = {
-        ["itemTier"] = 6,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 192,
-        ["description"] = "Incredibly powerful, Refined Bluesteel is stronger than any other metal in the known world.",
-        ["recipe"] = {
-            ["Raw Bluesteel"] = 1,
-            ["Steel Bar"] = 1,
-        },
-        ["price"] = 500,
-    },
-    ["Gladiator Atlantean Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 502,
-        ["itemStats"] = {
-            ["defense"] = 16,
-        },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "The iconic helmet worn by the soldiers of Atlantis, before it fell so many centuries ago.",
-        ["recipe"] = {
-        },
     },
     ["Reinforced Chest"] = {
         ["durability"] = 500,
@@ -749,155 +437,17 @@ return {
         },
         ["description"] = "",
     },
-    ["Admin Armor"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 152,
-        ["itemStats"] = {
-            ["defense"] = 100,
-        },
-        ["itemTier"] = 9,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
-        ["recipe"] = {
-        },
-    },
-    ["Gladiator Iron Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 499,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Iron helmets are incredibly heavy, but, also incredibly strong!",
-        ["recipe"] = {
-        },
-    },
-    ["Bricks"] = {
-        ["recipe"] = {
-            ["Chiseled Stones"] = 2,
-            ["Log"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 119,
-        ["price"] = 4,
-        ["itemTier"] = 1,
-        ["description"] = "What are bricks, if not domesticated rocks?",
-    },
-    ["Steel Pants"] = {
-        ["itemTier"] = 4,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for pants!",
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 37,
-        ["itemStats"] = {
-            ["defense"] = 12,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Steel Bar"] = 3,
-            ["Hide"] = 1,
-        },
-        ["price"] = 240,
-    },
-    ["Bluesteel Swordsman"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 15,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Melee",
-            ["NPC_Name"] = "Bluesteel Swordsman",
-        },
-        ["id"] = 352,
-        ["recipe"] = {
-            ["Bluesteel Pants"] = 1,
-            ["Bluesteel Helmet"] = 1,
-            ["Bluesteel Shield"] = 1,
-            ["Bluesteel Armor"] = 1,
-            ["Bluesteel Sword"] = 1,
-            ["Coins"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Gladiator Darksteel Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 487,
-        ["itemStats"] = {
-            ["defense"] = 18,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Darksteel pants are as strong as they come, forged from the heart of the volcanic metals.",
-        ["recipe"] = {
-        },
-    },
-    ["Gladiator Bronze Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 498,
-        ["itemStats"] = {
-            ["defense"] = 8,
-        },
-        ["itemTier"] = 2,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Bronze helmets have protected soldiers since ancient times. A reliable choice!",
-        ["recipe"] = {
-        },
-    },
-    ["Fence"] = {
-        ["durability"] = 100,
+    ["Asian Roof Corner"] = {
+        ["durability"] = 800,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 183,
+        ["id"] = 412,
         ["recipe"] = {
-            ["Log"] = 1,
+            ["Wood Plank"] = 1,
+            ["Shingles"] = 4,
         },
+        ["craftingStyle"] = 1,
         ["description"] = "",
     },
     ["Meat Hunk"] = {
@@ -944,78 +494,29 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Stone Window Fancy"] = {
-        ["durability"] = 1200,
+    ["Berry"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Seed",
+            ["2"] = "Resource",
+            ["3"] = "Consumable",
         },
-        ["id"] = 333,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Wood Window"] = {
-        ["durability"] = 1200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 131,
-        ["description"] = "",
-        ["recipe"] = {
-            ["Log"] = 1,
-        },
-    },
-    ["Gladiator Atlantean Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 486,
+        ["id"] = 113,
         ["itemStats"] = {
-            ["defense"] = 16,
+            ["food"] = 20,
         },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "The pants of mighty Atlantean warriors!",
         ["recipe"] = {
         },
-    },
-    ["Decorative Chest"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 316,
-        ["recipe"] = {
-            ["Coins"] = 25,
-            ["Wood Plank"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Leather Bag"] = {
+        ["instantHealth"] = 2,
         ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
         ["weight"] = 0.1,
-        ["id"] = 40,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 50,
-            ["defense"] = 5,
+        ["price"] = 1,
+        ["description"] = "Berries are the most common type of food. They won't feed you very well, but there's a lot of them!",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
         },
-        ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Hide"] = 1,
-        },
-        ["description"] = "The most basic kind of bag, not very good, but better than nothing!",
+        ["plantName"] = "Berries",
     },
     ["Iron Archer"] = {
         ["durability"] = 500,
@@ -1057,50 +558,17 @@ return {
         },
         ["description"] = "",
     },
-    ["Gladiator Darksteel Armor"] = {
+    ["Tile Roof Corner"] = {
+        ["durability"] = 1000,
         ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
+            ["1"] = "Structure",
         },
-        ["cantPutInStorage"] = true,
-        ["id"] = 495,
-        ["itemStats"] = {
-            ["defense"] = 18,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Darksteel armor is as strong as it comes, forged from the heart of the volcanic metals.",
+        ["id"] = 136,
         ["recipe"] = {
+            ["Shingles"] = 2,
         },
-    },
-    ["Stone Axe"] = {
-        ["itemTier"] = 1,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 2,
-            ["Rope"] = 1,
-            ["Tool Handle"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Axe",
-            ["2"] = "Melee Weapon",
-            ["3"] = "Tool",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 1,
-        ["itemStats"] = {
-            ["axeStrength"] = 2,
-            ["meleeDamage"] = 5,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11428946958",
-            },
-        },
-        ["description"] = "It's not very good at chopping stuff up, but it will eventually get the job done!",
+        ["itemTier"] = 2,
+        ["description"] = "",
     },
     ["Deathwish Mushroom"] = {
         ["itemType"] = {
@@ -1136,26 +604,6 @@ return {
             ["Log"] = 1,
         },
         ["description"] = "",
-    },
-    ["Gladiator Atlantean Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 494,
-        ["itemStats"] = {
-            ["defense"] = 16,
-        },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Armor made for the warriors of Atlantis itself!",
-        ["recipe"] = {
-        },
     },
     ["Covered Bed"] = {
         ["durability"] = 500,
@@ -1213,124 +661,6 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Curtains"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 161,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 6,
-            ["Rope"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Kingdom Skull"] = {
-        ["recipe"] = {
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0,
-        ["id"] = 429,
-        ["description"] = "Kingdom Skulls are collected by slaying a kingdom leader. The more you have, the more you should be feared!",
-    },
-    ["Adamantite Bar"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 410,
-        ["dropOnDeathAnyways"] = true,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite"] = 1,
-            ["Gold Nugget"] = 1,
-            ["Coal"] = 10,
-        },
-        ["price"] = 4000,
-    },
-    ["Gladiator Steel Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 492,
-        ["itemStats"] = {
-            ["defense"] = 12,
-        },
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
-        ["recipe"] = {
-        },
-    },
-    ["Bear Trap"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 432,
-        ["recipe"] = {
-            ["Steel Bar"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Bronze Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 490,
-        ["itemStats"] = {
-            ["defense"] = 8,
-        },
-        ["itemTier"] = 2,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["description"] = "Bronze armor has protected soldiers since ancient times. A reliable choice!",
-    },
-    ["Poison Arrow"] = {
-        ["itemType"] = {
-            ["1"] = "Ammo",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 434,
-        ["itemStats"] = {
-            ["damage"] = 1.25,
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 4,
-            ["Poison Fang"] = 1,
-            ["Darksteel Bar"] = 1,
-            ["amount"] = 10,
-        },
-        ["cantBeDropped"] = true,
-        ["disableHealTime"] = 10,
-        ["weight"] = 0.1,
-        ["reloadTime"] = 2,
-        ["price"] = 1,
-        ["itemTier"] = 7,
-        ["description"] = "Poison arrows aren't very dangerous themselves, but anyone who is hit with one, cannot heal for several seconds, which can be deadly in battle.",
-    },
     ["Basic Chair"] = {
         ["durability"] = 100,
         ["itemType"] = {
@@ -1341,23 +671,6 @@ return {
             ["Log"] = 2,
         },
         ["description"] = "",
-    },
-    ["Saddle"] = {
-        ["itemTier"] = 2,
-        ["itemType"] = {
-            ["1"] = "MountEquipment",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 255,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["description"] = "Can be placed on a tamed animal to ride them!",
-        ["recipe"] = {
-            ["Rope"] = 4,
-            ["Straw Bundle"] = 1,
-            ["Hide"] = 2,
-        },
     },
     ["Torch"] = {
         ["recipe"] = {
@@ -1408,26 +721,6 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Gladiator Samurai Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 488,
-        ["itemStats"] = {
-            ["defense"] = 20,
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Samurai pants allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
-        ["recipe"] = {
-        },
-    },
     ["Mod Pants"] = {
         ["restricted"] = true,
         ["itemType"] = {
@@ -1439,49 +732,11 @@ return {
         ["itemStats"] = {
             ["defense"] = 100,
         },
-        ["itemTier"] = 9,
+        ["itemTier"] = 10,
         ["cantBeDropped"] = true,
         ["weight"] = 0.1,
         ["description"] = "",
         ["recipe"] = {
-        },
-    },
-    ["Gladiator Leather Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 497,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["description"] = "The most basic kind of helmet, not very good, but better than nothing!",
-    },
-    ["Repair"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Repair",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 268,
-        ["itemStats"] = {
-            ["repairAmount"] = 5,
-        },
-        ["description"] = "Use this to repair structures.",
-        ["recipe"] = {
-            ["Copper Bar"] = 3,
-            ["Rope"] = 2,
-            ["Tool Handle"] = 1,
         },
     },
     ["Bronze Helmet"] = {
@@ -1575,25 +830,4020 @@ return {
         },
         ["description"] = "",
     },
-    ["Gladiator Bluesteel Pants"] = {
+    ["Adamantite Bar"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 410,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite"] = 1,
+            ["Gold Nugget"] = 1,
+            ["Coal"] = 10,
+        },
+        ["price"] = 4000,
+    },
+    ["Clock"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 237,
+        ["recipe"] = {
+            ["Log"] = 5,
+            ["Copper Nails"] = 6,
+            ["Wood Plank"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Bread"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 33,
+        ["itemStats"] = {
+            ["food"] = 100,
+        },
+        ["description"] = "Delicious carbs, the building blocks to a sandwich, and a tasty treat",
+        ["itemTier"] = 1,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+        },
+        ["recipe"] = {
+            ["Egg"] = 1,
+            ["Wheat"] = 6,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 5,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Custom Sign"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Change Text",
+            ["opensTextEditor"] = true,
+        },
+        ["id"] = 398,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["War Drum"] = {
+        ["itemTier"] = 2,
+        ["musicChoices"] = {
+            ["1"] = {
+                ["SoundId"] = "rbxassetid://126336735999181",
+                ["Name"] = "War Drums",
+                ["Volume"] = 0.3,
+            },
+            ["2"] = {
+                ["SoundId"] = "rbxassetid://140045315599400",
+                ["Name"] = "Anticipation",
+                ["Volume"] = 0.3,
+            },
+            ["3"] = {
+                ["SoundId"] = "rbxassetid://120305084175228",
+                ["Name"] = "Drum Roll",
+                ["Volume"] = 0.3,
+            },
+        },
+        ["itemType"] = {
+            ["1"] = "Instrument",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 1,
+        ["id"] = 383,
+        ["recipe"] = {
+            ["Hide"] = 6,
+            ["Skull"] = 2,
+            ["Rope"] = 4,
+        },
+        ["equipAnimation"] = "rbxassetid://120232054447254",
+        ["description"] = "War drums are fantastic for preparing soldiers for battle and keeping the rhythm of a march!",
+    },
+    ["Ice Floor"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 251,
+        ["placementParameters"] = {
+            ["rotateAtMiddle"] = true,
+        },
+        ["recipe"] = {
+            ["Ice Chunks"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Basic Table"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 98,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Steel Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["id"] = 45,
+        ["itemStats"] = {
+            ["meleeDamage"] = 50,
+        },
+        ["itemTier"] = 5,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["description"] = "Lightweight and strong, you can't beat a good steel sword!",
+        ["recipe"] = {
+            ["Hide"] = 1,
+            ["Steel Bar"] = 3,
+            ["Rope"] = 2,
+        },
+        ["price"] = 240,
+    },
+    ["Juggernaut Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 541,
+        ["itemStats"] = {
+            ["sluggish"] = 5,
+            ["defense"] = 20,
+        },
+        ["description"] = "A powerful Helmet forged from Vicanite that offers strong defense in exchange for slower movespeed",
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["weight"] = 0.1,
+        ["slowdownAmount"] = 5,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Rope"] = 5,
+            ["Vicanite Bar"] = 2,
+            ["Hide"] = 5,
+        },
+        ["price"] = 18,
+    },
+    ["Rib Meal"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 24,
+        ["itemStats"] = {
+            ["food"] = 750,
+        },
+        ["description"] = "Why did I make this a rib meal? Because ribs were easier to model than any other kind of meat. I am lazy.",
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Amazing_Meal",
+        },
+        ["recipe"] = {
+            ["Meat Hunk"] = 3,
+            ["Bowl"] = 2,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 50,
+        ["price"] = 10,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Jail Cell"] = {
+        ["durability"] = 2000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["animations"] = {
+            ["interaction_idle"] = "rbxassetid://11783464257",
+            ["interaction_end"] = "rbxassetid://11783461612",
+            ["interaction_begin"] = "rbxassetid://11783458600",
+        },
+        ["id"] = 82,
+        ["recipe"] = {
+            ["Iron Bar"] = 4,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Large Power Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 509,
+        ["itemStats"] = {
+            ["damage"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Long)",
+            ["2"] = "Powered Up (Long)",
+        },
+        ["description"] = "A potion to make you more powerful for 120 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Royal Bathtub"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 391,
+        ["recipe"] = {
+            ["Iron Bar"] = 4,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Crate"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 182,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Wood Pillar"] = {
+        ["durability"] = 750,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 220,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Poison Antidote"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 442,
+        ["itemStats"] = {
+            ["food"] = 10,
+        },
+        ["description"] = "A carefully prepared antidote to prevent you from being poisoned!",
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Poison Resistance",
+        },
+        ["recipe"] = {
+            ["Mushroom"] = 5,
+            ["Pepper"] = 5,
+            ["Bowl"] = 1,
+            ["Deathwish Mushroom"] = 5,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 5,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Rock Node"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 244,
+        ["recipe"] = {
+            ["Stone"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Shelf"] = {
+        ["durability"] = 350,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 234,
+        ["recipe"] = {
+            ["Log"] = 4,
+        },
+        ["description"] = "",
+    },
+    ["Stone Floor Small"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["id"] = 138,
+        ["placementParameters"] = {
+            ["rotateAtMiddle"] = true,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Chest"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 56,
+        ["itemStats"] = {
+            ["storageCapacity"] = 100,
+        },
+        ["itemTier"] = 1,
+        ["interactionData"] = {
+            ["interactionName"] = "Open",
+            ["opensStorage"] = true,
+        },
+        ["recipe"] = {
+            ["Log"] = 4,
+        },
+        ["animations"] = {
+            ["interaction_idle"] = {
+                ["1"] = "rbxassetid://11505226843",
+            },
+            ["interaction_end"] = {
+                ["1"] = "rbxassetid://11505243111",
+            },
+            ["interaction_begin"] = {
+                ["1"] = "rbxassetid://11505222561",
+            },
+        },
+        ["description"] = "",
+    },
+    ["Stone Pillar"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 221,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Glass Wall 6x6"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 387,
+        ["recipe"] = {
+            ["Ice Chunks"] = 5,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Fishmonger"] = {
+        ["itemTier"] = 1,
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Fishmonger",
+        },
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 278,
+        ["recipe"] = {
+            ["Stone"] = 3,
+            ["Log"] = 5,
+            ["Rope"] = 4,
+        },
+        ["durability"] = 200,
+        ["description"] = "",
+    },
+    ["Adamantite Pickaxe"] = {
+        ["itemType"] = {
+            ["1"] = "Pickaxe",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 425,
+        ["itemStats"] = {
+            ["pickaxeStrength"] = 750,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 2,
+            ["Adamantite Nails"] = 1,
+            ["Steel Handle"] = 1,
+        },
+        ["description"] = "Sturdy Adamantite metal, fantastic for breaking metal and stone!",
+    },
+    ["Fireplace"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 170,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 2,
+            ["Coal"] = 3,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Leather Armor"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 28,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["description"] = "The most basic kind of armor, not very good, but better than nothing!",
+    },
+    ["Kingdom Sitting Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 439,
+        ["recipe"] = {
+            ["Kingdom Skull"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Rebirth Token"] = {
+        ["onlySupervisorCanSpawn"] = true,
+        ["cantBeDropped"] = true,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0,
+        ["id"] = 144,
+        ["cantPutInStorage"] = true,
+        ["noStackLimit"] = true,
+        ["description"] = "Used to purchase things in the rebirth shop. Obtained from rebirthing.",
+    },
+    ["Pepper"] = {
+        ["itemType"] = {
+            ["1"] = "Seed",
+            ["2"] = "Resource",
+            ["3"] = "Consumable",
+        },
+        ["id"] = 211,
+        ["itemStats"] = {
+            ["food"] = 20,
+        },
+        ["itemTier"] = 1,
+        ["instantHealth"] = -1,
+        ["price"] = 2,
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["description"] = "A spicy pepper, goes fantastic on a good meal, but not very pleasant to eat alone",
+        ["plantName"] = "Peppers",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Ship Construction"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 312,
+        ["recipe"] = {
+            ["Log"] = 40,
+        },
+        ["description"] = "",
+    },
+    ["Bronze Bag"] = {
+        ["itemTier"] = 2,
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 41,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 100,
+            ["defense"] = 8,
+        },
+        ["description"] = "A larger bag made of copper that can hold even more items. A reliable choice!",
+        ["recipe"] = {
+            ["Copper Bar"] = 6,
+            ["Wooden Rod"] = 2,
+            ["Hide"] = 2,
+        },
+    },
+    ["Awning"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 162,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Chicken"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 14,
+        ["itemStats"] = {
+            ["food"] = 100,
+        },
+        ["itemTier"] = 1,
+        ["instantHealth"] = -10,
+        ["weight"] = 0.1,
+        ["description"] = "You had to kill a chicken to get this. You're a monster. Think about your life choices.",
+        ["effectsOnEat"] = {
+            ["1"] = "Food_Poisoning",
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Salmon"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 280,
+        ["description"] = "",
+    },
+    ["Katana"] = {
+        ["description"] = "The Katana is an extremely effective sword, one of the best there is, and it's two handed nature allows those who are well trained to block a handful of arrows! But does not allow for the use of a shield.",
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 406,
+        ["itemStats"] = {
+            ["meleeDamage"] = 80,
+        },
+        ["cantBeDropped"] = true,
+        ["canShieldBlock"] = true,
+        ["itemTier"] = 8,
+        ["cantUseShield"] = true,
+        ["PostureBreakTime"] = 4,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://87592945190823",
+            ["action"] = {
+                ["1"] = "rbxassetid://103024823656540",
+                ["2"] = "rbxassetid://80862714512559",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 3,
+            ["Hide"] = 2,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Painting: Royalty"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 245,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Wood Wall 3x3"] = {
+        ["durability"] = 150,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 64,
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Scuba Pants"] = {
         ["itemType"] = {
             ["1"] = "Pants",
             ["2"] = "Clothing",
         },
+        ["id"] = 366,
+        ["itemStats"] = {
+            ["defense"] = 8,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "A set of pants made for the pressure of the depths of the sea!",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Copper Bar"] = 5,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["price"] = 999,
+    },
+    ["Small Defense Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
         ["cantPutInStorage"] = true,
-        ["id"] = 485,
+        ["id"] = 510,
+        ["itemStats"] = {
+            ["defense"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Defense Up (Short)",
+        },
+        ["description"] = "A potion to increase your defenses for 30 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Pink Flowers"] = {
+        ["durability"] = 50,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 327,
+        ["recipe"] = {
+            ["Leaf"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Gladiator Steel Spear"] = {
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 464,
+        ["itemStats"] = {
+            ["meleeDamage"] = 35,
+        },
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["spear"] = true,
+        ["itemTier"] = 5,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["PostureBreakTime"] = 4,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Lightweight and strong, you can't beat a good steel spear!",
+        ["recipe"] = {
+        },
+    },
+    ["Asian Wall"] = {
+        ["recipe"] = {
+            ["Leaf"] = 2,
+            ["Log"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 408,
+        ["durability"] = 800,
+        ["description"] = "",
+    },
+    ["Coin Pile"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 314,
+        ["recipe"] = {
+            ["Coins"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Lectern"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 396,
+        ["recipe"] = {
+            ["Wood Plank"] = 5,
+            ["Log"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Leather Pants"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 27,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["description"] = "The most basic kind of pants, not very good, but better than nothing!",
+    },
+    ["Cauldron"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 186,
+        ["recipe"] = {
+            ["Iron Bar"] = 3,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Well"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 88,
+        ["recipe"] = {
+            ["Stone"] = 4,
+            ["Log"] = 4,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Trade Sign"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 177,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Log"] = 2,
+            ["Iron Bar"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Darksteel Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 267,
+        ["itemStats"] = {
+            ["meleeDamage"] = 70,
+        },
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Hide"] = 1,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Bluesteel Armor"] = {
+        ["itemTier"] = 6,
+        ["description"] = "Armor made out of the strongest metal in the known world!",
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 200,
+        ["itemStats"] = {
+            ["defense"] = 14,
+        },
+        ["recipe"] = {
+            ["Refined Bluesteel"] = 3,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["price"] = 1500,
+    },
+    ["Gladiator Iron Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 491,
+        ["itemStats"] = {
+            ["defense"] = 10,
+        },
+        ["isArenaItem"] = true,
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["description"] = "Iron armor is incredibly heavy, but, also incredibly strong!",
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["price"] = 25,
+    },
+    ["Stone Miner"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 339,
+        ["itemStats"] = {
+            ["storageCapacity"] = 20,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = true,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Stone",
+                },
+                ["Rate"] = 10,
+                ["Amount"] = 1,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 19,
+                ["FoodBoxRangeNeeded"] = 60,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Miner",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
+            },
+        },
+        ["recipe"] = {
+            ["Stone"] = 30,
+            ["Log"] = 10,
+            ["Steel Pickaxe"] = 1,
+            ["Coins"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Sitting Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 311,
+        ["recipe"] = {
+            ["Skull"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Bronze Swordsman"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 15,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Melee",
+            ["NPC_Name"] = "Bronze Swordsman",
+        },
+        ["id"] = 349,
+        ["recipe"] = {
+            ["Bronze Helmet"] = 1,
+            ["Bronze Pants"] = 1,
+            ["Bronze Armor"] = 1,
+            ["Bronze Shield"] = 1,
+            ["Bronze Sword"] = 1,
+            ["Coins"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Palisade Gate"] = {
+        ["durability"] = 3000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["ownedByKingdom"] = true,
+            ["ownedByPlayer"] = true,
+        },
+        ["id"] = 129,
+        ["animations"] = {
+            ["interaction_idle"] = "rbxassetid://11753588016",
+            ["interaction_end"] = "rbxassetid://11753592507",
+            ["interaction_begin"] = "rbxassetid://11753584692",
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Hay Bale"] = {
+        ["durability"] = 50,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 323,
+        ["recipe"] = {
+            ["Straw Bundle"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Stone Slanted Wall"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 140,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Half Wood"] = {
+        ["recipe"] = {
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 100,
+        ["description"] = "Wood is used to craft and build almost everything in the world",
+    },
+    ["Stone Floor"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["id"] = 139,
+        ["placementParameters"] = {
+            ["rotateAtMiddle"] = true,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Mod Armor"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 451,
+        ["itemStats"] = {
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
+        ["recipe"] = {
+        },
+    },
+    ["Admin Bag"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 154,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 9999999,
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "",
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Steel Bar"] = 6,
+            ["Hide"] = 2,
+        },
+    },
+    ["Pine Tree"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 242,
+        ["recipe"] = {
+            ["Leaf"] = 5,
+            ["Log"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Pole Torch"] = {
+        ["durability"] = 75,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 86,
+        ["recipe"] = {
+            ["Coal"] = 1,
+            ["Log"] = 1,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Armor Stand"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Open",
+            ["opensArmorStand"] = true,
+        },
+        ["id"] = 394,
+        ["recipe"] = {
+            ["Wood Plank"] = 6,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Books"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 165,
+        ["recipe"] = {
+            ["Leaf"] = 2,
+            ["Rope"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Campfire"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 74,
+        ["recipe"] = {
+            ["Stone"] = 3,
+            ["Log"] = 2,
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Cook",
+            ["opensCraftingTree"] = "Campfire",
+        },
+        ["description"] = "",
+    },
+    ["Admin Helmet"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 153,
+        ["itemStats"] = {
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "",
+        ["recipe"] = {
+        },
+    },
+    ["Gladiator Atlantean Trident"] = {
+        ["isArenaItem"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 468,
+        ["itemStats"] = {
+            ["meleeDamage"] = 75,
+        },
+        ["onlyAdminCanSpawn"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "The mighty weapon of the Atlantean warriors! It has the unique ability to allow the user to dash underwater, unlike any other weapon!",
+        ["recipe"] = {
+        },
+    },
+    ["Darksteel Pickaxe"] = {
+        ["itemType"] = {
+            ["1"] = "Pickaxe",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 266,
+        ["itemStats"] = {
+            ["pickaxeStrength"] = 500,
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Steel Handle"] = 1,
+            ["Obsidian Nails"] = 1,
+        },
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. Fantastic for mining.",
+    },
+    ["Gladiator Bluesteel Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 493,
         ["itemStats"] = {
             ["defense"] = 14,
         },
         ["itemTier"] = 6,
         ["cantBeDropped"] = true,
         ["isArenaItem"] = true,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Pants made out of the strongest metal in the known world!",
+        ["description"] = "Armor made out of the strongest metal in the known world!",
         ["recipe"] = {
         },
+    },
+    ["Gold Nugget"] = {
+        ["onlySupervisorCanSpawn"] = true,
+        ["cantBeDropped"] = true,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 207,
+        ["forceGenerateDroppedModel"] = true,
+        ["cantPutInStorage"] = true,
+        ["description"] = "Gold Nuggets aren't worth very much on their own, but they can be turned into Coins at a Coin Press!",
+    },
+    ["Plate And Utensils"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 303,
+        ["recipe"] = {
+            ["Iron Bar"] = 2,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Gladiator Darksteel Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 459,
+        ["itemStats"] = {
+            ["meleeDamage"] = 60,
+        },
+        ["isArenaItem"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
+        ["recipe"] = {
+        },
+    },
+    ["Large Defense Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 512,
+        ["itemStats"] = {
+            ["defense"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Long)",
+            ["2"] = "Defense Up (Long)",
+        },
+        ["description"] = "A potion to increase your defenses for 120 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Iron Fishing Rod"] = {
+        ["itemType"] = {
+            ["1"] = "Fishing Rod",
+            ["2"] = "Tool",
+        },
+        ["targetSpeed"] = 1,
+        ["id"] = 274,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["timeNeededInTarget"] = 5,
+        ["recipe"] = {
+            ["Wood Plank"] = 4,
+            ["Rope"] = 5,
+            ["Iron Bar"] = 3,
+        },
+        ["itemTier"] = 1,
+        ["rodColor"] = 0.639216, 0.635294, 0.647059,
+        ["catchTime"] = NumberRange.new(2, 3),
+        ["weight"] = 0.1,
+        ["targetSize"] = 0.4,
+        ["canCatchFish"] = {
+            ["1"] = "Carp",
+            ["2"] = "Salmon",
+            ["3"] = "Sea Snapper",
+            ["4"] = "Cod",
+            ["5"] = "Shrimp",
+            ["6"] = "Mussel",
+            ["7"] = "Hide",
+            ["8"] = "Giant Tuna",
+            ["9"] = "Iron",
+            ["10"] = "Octopus",
+            ["11"] = "Leaf",
+            ["12"] = "Rope",
+        },
+        ["description"] = "",
+        ["timeToFish"] = 19,
+    },
+    ["Straw Bundle"] = {
+        ["recipe"] = {
+            ["Leaf"] = 4,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 97,
+        ["description"] = "A very good source of padding, usually for beds!",
+    },
+    ["Chandelier"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Coal"] = 2,
+            ["Iron Bar"] = 5,
+        },
+        ["id"] = 188,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Cooked Chicken"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 15,
+        ["itemStats"] = {
+            ["food"] = 150,
+        },
+        ["description"] = "Did you know chicken and frog legs taste nearly exactly the same? Well I have to know it. So now you do too.",
+        ["recipe"] = {
+            ["Chicken"] = 1,
+            ["Leaf"] = 1,
+        },
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+        },
+        ["itemTier"] = 1,
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 15,
+        ["price"] = 2,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Carrot"] = {
+        ["itemType"] = {
+            ["1"] = "Seed",
+            ["2"] = "Resource",
+            ["3"] = "Consumable",
+        },
+        ["id"] = 95,
+        ["itemStats"] = {
+            ["food"] = 20,
+        },
+        ["itemTier"] = 1,
+        ["instantHealth"] = 2,
+        ["price"] = 1,
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["description"] = "A delicious, all around good food",
+        ["plantName"] = "Carrots",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Cooked Fish"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 17,
+        ["itemStats"] = {
+            ["food"] = 60,
+        },
+        ["recipe"] = {
+            ["Meat"] = 1,
+            ["Leaf"] = 1,
+        },
+        ["description"] = "Want to simply directly cook your fish instead of making a meal? Look no further than cooked fish! It's just like regular fish, but cooked!",
+        ["price"] = 10,
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 5,
+        ["itemTier"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Musket Ammo"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 378,
+        ["itemStats"] = {
+            ["damage"] = 0,
+        },
+        ["recipe"] = {
+            ["Black Powder"] = 10,
+            ["Steel Bar"] = 10,
+            ["amount"] = 10,
+        },
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["ProjectileGoStraight"] = true,
+        ["price"] = 250,
+        ["itemTier"] = 7,
+        ["description"] = "A round steel bullet, and a package of powder to ignite the shot. Dangerous in a musket.",
+    },
+    ["Wood Door"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 132,
+        ["description"] = "",
+        ["recipe"] = {
+            ["Log"] = 2,
+        },
+    },
+    ["Drawbridge"] = {
+        ["durability"] = 3000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["animations"] = {
+            ["interaction_opened"] = "rbxassetid://16258800496",
+            ["interaction_closed"] = "rbxassetid://16258798686",
+        },
+        ["id"] = 332,
+        ["recipe"] = {
+            ["Wood Plank"] = 10,
+            ["Bricks"] = 2,
+            ["Rope"] = 20,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Wooden Club"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 3,
+        ["itemStats"] = {
+            ["meleeDamage"] = 15,
+        },
+        ["recipe"] = {
+            ["Log"] = 4,
+            ["Leaf"] = 1,
+            ["Rope"] = 1,
+        },
+        ["description"] = "It will get the job done, if you swing hard enough!",
+    },
+    ["Lantern Round"] = {
+        ["durability"] = 150,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Coal"] = 2,
+            ["Log"] = 5,
+        },
+        ["id"] = 420,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -2,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Skull On A Stick"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 160,
+        ["recipe"] = {
+            ["Skull"] = 1,
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Training Dummy"] = {
+        ["durability"] = 1500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 302,
+        ["recipe"] = {
+            ["Straw Bundle"] = 3,
+            ["Log"] = 2,
+        },
+        ["itemTier"] = 3,
+        ["description"] = "",
+    },
+    ["Iron Armor"] = {
+        ["itemTier"] = 3,
+        ["description"] = "Iron armor is incredibly heavy, but, also incredibly strong!",
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 35,
+        ["itemStats"] = {
+            ["defense"] = 10,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Iron Bar"] = 3,
+            ["Hide"] = 1,
+        },
+        ["price"] = 25,
+    },
+    ["Ice Ramp"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 252,
+        ["recipe"] = {
+            ["Ice Chunks"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Bluesteel Archer"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 346,
+        ["itemStats"] = {
+            ["storageCapacity"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 17,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Ranged",
+            ["NPC_Name"] = "Bluesteel Archer",
+        },
+        ["interactionData"] = {
+            ["OnlyStoreSpecificNamedItems"] = true,
+            ["InvalidItemMessage"] = "Must be arrows!",
+            ["opensStorage"] = true,
+            ["AllowedToStore"] = {
+                ["1"] = "Arrow",
+            },
+            ["interactionName"] = "Deposit Arrows",
+        },
+        ["recipe"] = {
+            ["Bluesteel Pants"] = 1,
+            ["Bluesteel Helmet"] = 1,
+            ["Bluesteel Armor"] = 1,
+            ["Crossbow"] = 1,
+            ["Coins"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Ladder"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 79,
+        ["recipe"] = {
+            ["Wooden Rod"] = 1,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Paint Brush"] = {
+        ["itemTier"] = 5,
+        ["cantBeDropped"] = true,
+        ["itemType"] = {
+            ["1"] = "PaintBrush",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 0,
+        ["id"] = 254,
+        ["cantPutInStorage"] = true,
+        ["description"] = "Use this to paint your constructions",
+    },
+    ["Spike Trap"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 431,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+            ["Log"] = 10,
+            ["Steel Bar"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Fountain"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 328,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Darksteel Bag"] = {
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 263,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 500,
+            ["defense"] = 16,
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["description"] = "Darksteel bags are as strong as they come, forged from the heart of the volcanic metals.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 6,
+            ["Wooden Rod"] = 2,
+            ["Hide"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Stone Pillar Round"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 222,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Iron"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 55,
+        ["description"] = "Iron needs to be smelted into bars, to be used",
+        ["price"] = 8,
+    },
+    ["Coal"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 53,
+        ["description"] = "Coal burns really well. Very useful for torches and fires.",
+        ["price"] = 1,
+    },
+    ["Gladiator Arbalest"] = {
+        ["description"] = "The Arbalest is a bigger, more powerful version of a crossbow, that comes with a built in crank to increase firing power.",
+        ["projectileVelocity"] = 1400,
+        ["price"] = 1500,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0,
+        ["forceGenerateDroppedModel"] = true,
+        ["aimFOVModifier"] = -15,
+        ["validAmmoTypes"] = {
+            ["1"] = "Gladiator Arrow",
+        },
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 473,
+        ["itemStats"] = {
+            ["rangedDamage"] = 60,
+        },
+        ["aimTime"] = 0.4,
+        ["clipSize"] = 1,
+        ["animations"] = {
+            ["reload"] = "rbxassetid://11714138134",
+            ["idle_loaded"] = "rbxassetid://11714139803",
+            ["idle"] = "rbxassetid://11714136539",
+            ["idle_1p"] = "rbxassetid://11713857434",
+            ["idle_loaded_1p"] = "rbxassetid://11713862158",
+            ["action"] = "rbxassetid://11714141761",
+            ["action_1p"] = "rbxassetid://11713864410",
+            ["reload_1p"] = "rbxassetid://11713859958",
+        },
+        ["isArenaItem"] = true,
+        ["recipe"] = {
+        },
+        ["onlyAdminCanSpawn"] = true,
+        ["reloadTime"] = 1.8,
+        ["automatic"] = false,
+        ["cooldown"] = 0.1,
+        ["rangedWeaponType"] = "normal",
+    },
+    ["Carpet Style 1"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 223,
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Hide"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Mod Helmet"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 452,
+        ["itemStats"] = {
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "",
+        ["recipe"] = {
+        },
+    },
+    ["Medium Power Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 508,
+        ["itemStats"] = {
+            ["damage"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Medium)",
+            ["2"] = "Powered Up (Medium)",
+        },
+        ["description"] = "A potion to make you more powerful 60 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Bear Rug"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 516,
+        ["recipe"] = {
+            ["Leaf"] = 3,
+            ["Hide"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Longbow"] = {
+        ["chargeTime"] = 1.4,
+        ["price"] = 40,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["projectileVelocity"] = 1300,
+        ["id"] = 124,
+        ["itemStats"] = {
+            ["rangedDamage"] = 20,
+        },
+        ["validAmmoTypes"] = {
+            ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 6,
+            ["Iron Nails"] = 2,
+            ["Rope"] = 6,
+        },
+        ["itemTier"] = 4,
+        ["animations"] = {
+            ["action"] = "rbxassetid://11630580011",
+            ["action_1p"] = "rbxassetid://11630440383",
+            ["action_hold_1p"] = "rbxassetid://11630462550",
+            ["idle_1p"] = "rbxassetid://11630464542",
+            ["action_release"] = "rbxassetid://11631655121",
+            ["action_release_1p"] = "rbxassetid://11630595766",
+            ["idle"] = "rbxassetid://11630578059",
+            ["action_hold"] = "rbxassetid://11631660410",
+        },
+        ["chargedFOVModifier"] = -24,
+        ["weight"] = 0.1,
+        ["reloadTime"] = 0.5,
+        ["useLeftHand"] = true,
+        ["description"] = "Longbows are extremely powerful bows, but they take a lot of strength to draw back and fire!",
+        ["rangedWeaponType"] = "Charge",
+    },
+    ["Crossbow"] = {
+        ["description"] = "Crossbows revolutionized warfare. They're easy to load, and quick to fire accurately. Very deadly.",
+        ["projectileVelocity"] = 1400,
+        ["price"] = 200,
+        ["itemTier"] = 5,
+        ["weight"] = 0.1,
+        ["aimFOVModifier"] = -15,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["id"] = 125,
+        ["itemStats"] = {
+            ["rangedDamage"] = 22,
+        },
+        ["aimTime"] = 0.4,
+        ["animations"] = {
+            ["reload"] = "rbxassetid://11714138134",
+            ["idle_loaded"] = "rbxassetid://11714139803",
+            ["idle"] = "rbxassetid://11714136539",
+            ["idle_1p"] = "rbxassetid://11713857434",
+            ["idle_loaded_1p"] = "rbxassetid://11713862158",
+            ["action"] = "rbxassetid://11714141761",
+            ["action_1p"] = "rbxassetid://11713864410",
+            ["reload_1p"] = "rbxassetid://11713859958",
+        },
+        ["validAmmoTypes"] = {
+            ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 8,
+            ["Steel Nails"] = 2,
+            ["Rope"] = 8,
+        },
+        ["clipSize"] = 1,
+        ["reloadTime"] = 1.8,
+        ["automatic"] = false,
+        ["cooldown"] = 0.1,
+        ["rangedWeaponType"] = "normal",
+    },
+    ["Sushi Meal"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 291,
+        ["itemStats"] = {
+            ["food"] = 700,
+        },
+        ["description"] = "Delicious sushi, that provides extra health! Did you know that sushi simply means vinegar and rice? It actually has nothing to do with fish.",
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Ate_Good_Meal",
+        },
+        ["recipe"] = {
+            ["Carrot"] = 6,
+            ["Cooked Fish"] = 9,
+            ["Coral"] = 5,
+            ["Cabbage"] = 6,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 40,
+        ["price"] = 20,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Scale"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 318,
+        ["recipe"] = {
+            ["Coins"] = 5,
+            ["Iron Bar"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Iron Nails"] = {
+        ["recipe"] = {
+            ["Iron"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 114,
+        ["price"] = 8,
+        ["itemTier"] = 2,
+        ["description"] = "Nails are an important part of building any complex object",
+    },
+    ["Gladiator Compact Bow"] = {
+        ["description"] = "More advanced than a hunting bow, a compact bow does more damage per shot",
+        ["projectileVelocity"] = 650,
+        ["animations"] = {
+            ["action"] = "rbxassetid://11630580011",
+            ["action_1p"] = "rbxassetid://11630440383",
+            ["action_hold_1p"] = "rbxassetid://11630462550",
+            ["idle_1p"] = "rbxassetid://11630464542",
+            ["action_release"] = "rbxassetid://11631655121",
+            ["action_release_1p"] = "rbxassetid://11630595766",
+            ["idle"] = "rbxassetid://11630578059",
+            ["action_hold"] = "rbxassetid://11631660410",
+        },
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["chargedFOVModifier"] = -15,
+        ["weight"] = 0,
+        ["forceGenerateDroppedModel"] = true,
+        ["chargeTime"] = 0.9,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 470,
+        ["itemStats"] = {
+            ["rangedDamage"] = 30,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["useLeftHand"] = true,
+        ["reloadTime"] = 0.5,
+        ["recipe"] = {
+        },
+        ["validAmmoTypes"] = {
+            ["1"] = "Gladiator Arrow",
+        },
+        ["rangedWeaponType"] = "Charge",
+    },
+    ["Wood Floor"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 71,
+        ["placementParameters"] = {
+            ["rotateAtMiddle"] = true,
+        },
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Bronze Fishing Rod"] = {
+        ["itemType"] = {
+            ["1"] = "Fishing Rod",
+            ["2"] = "Tool",
+        },
+        ["targetSpeed"] = 1,
+        ["id"] = 273,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["timeNeededInTarget"] = 6,
+        ["recipe"] = {
+            ["Copper Bar"] = 3,
+            ["Wood Plank"] = 4,
+            ["Rope"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["rodColor"] = 0.529412, 0.333333, 0.192157,
+        ["catchTime"] = NumberRange.new(2, 3),
+        ["weight"] = 0.1,
+        ["targetSize"] = 0.5,
+        ["canCatchFish"] = {
+            ["1"] = "Carp",
+            ["2"] = "Salmon",
+            ["3"] = "Sea Snapper",
+            ["4"] = "Cod",
+            ["5"] = "Shrimp",
+            ["6"] = "Mussel",
+            ["7"] = "Hide",
+            ["8"] = "Giant Tuna",
+            ["9"] = "Leaf",
+            ["10"] = "Rope",
+        },
+        ["description"] = "",
+        ["timeToFish"] = 22,
+    },
+    ["Kingdom Flag"] = {
+        ["itemTier"] = 1,
+        ["neverDropOnDeath"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 292,
+        ["recipe"] = {
+            ["Steel Handle"] = 2,
+            ["Leaf"] = 10,
+            ["Rope"] = 2,
+        },
+        ["description"] = "The banner of your mighty kingdom. Show off your might to your foes!",
+        ["price"] = 250,
+    },
+    ["Road Sign"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 167,
+        ["recipe"] = {
+            ["Log"] = 4,
+        },
+        ["description"] = "",
+    },
+    ["Decorative Banner"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 184,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -2,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 2,
+            ["Rope"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Wood Plank"] = {
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Log"] = 4,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 111,
+        ["itemTier"] = 1,
+        ["price"] = 5,
+        ["description"] = "Wood planks are great for building more complicated wooden structures!",
+    },
+    ["Royal Throne"] = {
+        ["durability"] = 750,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 93,
+        ["recipe"] = {
+            ["Steel Nails"] = 2,
+            ["Wood Plank"] = 5,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Iron Pickaxe"] = {
+        ["itemType"] = {
+            ["1"] = "Pickaxe",
+            ["2"] = "Tool",
+        },
+        ["id"] = 47,
+        ["itemStats"] = {
+            ["pickaxeStrength"] = 75,
+        },
+        ["itemTier"] = 3,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["recipe"] = {
+            ["Tool Handle"] = 1,
+            ["Iron Nails"] = 1,
+            ["Iron Bar"] = 2,
+        },
+        ["price"] = 25,
+        ["description"] = "A heavy and powerful pickaxe",
+    },
+    ["Coin Press"] = {
+        ["durability"] = 750,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 6,
+            ["Bricks"] = 10,
+            ["Steel Bar"] = 3,
+        },
+        ["id"] = 209,
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Coin Press",
+        },
+        ["itemTier"] = 3,
+        ["description"] = "",
+    },
+    ["Atlantean Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 354,
+        ["itemStats"] = {
+            ["defense"] = 14,
+        },
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["description"] = "The iconic helmet worn by the soldiers of Atlantis, before it fell so many centuries ago.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Atlantean Steel"] = 2,
+            ["Coral"] = 3,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Cup"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 164,
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Sausages"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 25,
+        ["itemStats"] = {
+            ["food"] = 200,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "You're not supposed to have this item in the game yet...",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 10,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Copper Smithy"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 4,
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 78,
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Copper Smithy",
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Skull Decoration"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 159,
+        ["recipe"] = {
+            ["Skull"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Viking Chair"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 518,
+        ["recipe"] = {
+            ["Steel Nails"] = 2,
+            ["Wood Plank"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Meat"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 18,
+        ["itemStats"] = {
+            ["food"] = 50,
+        },
+        ["description"] = "Meat needs cooked in order to be eaten",
+        ["recipe"] = {
+            ["Carp"] = 1,
+            ["amount"] = 1,
+        },
+        ["instantHealth"] = -10,
+        ["effectsOnEat"] = {
+            ["1"] = "Food_Poisoning",
+        },
+        ["weight"] = 0.1,
+        ["itemTier"] = 1,
+        ["altRecipes"] = {
+            ["1"] = {
+                ["Salmon"] = 1,
+                ["amount"] = 2,
+            },
+            ["2"] = {
+                ["Sea Snapper"] = 1,
+                ["amount"] = 3,
+            },
+            ["3"] = {
+                ["Cod"] = 1,
+                ["amount"] = 4,
+            },
+            ["4"] = {
+                ["Giant Tuna"] = 1,
+                ["amount"] = 6,
+            },
+            ["5"] = {
+                ["Octopus"] = 1,
+                ["amount"] = 6,
+            },
+            ["6"] = {
+                ["Squid"] = 1,
+                ["amount"] = 6,
+            },
+            ["7"] = {
+                ["Shrimp"] = 1,
+                ["amount"] = 2,
+            },
+            ["8"] = {
+                ["Lobster"] = 1,
+                ["amount"] = 8,
+            },
+            ["9"] = {
+                ["Mussel"] = 1,
+                ["amount"] = 2,
+            },
+            ["10"] = {
+                ["Whale"] = 1,
+                ["amount"] = 20,
+            },
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Leather Helmet"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 29,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["description"] = "The most basic kind of helmet, not very good, but better than nothing!",
+    },
+    ["Map"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Map",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 271,
+        ["description"] = "A map that marks the locations of friends, kingdoms, and places you've explored!",
+        ["recipe"] = {
+            ["Rope"] = 1,
+            ["Leaf"] = 10,
+        },
+    },
+    ["Berry Pie"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 190,
+        ["itemStats"] = {
+            ["food"] = 500,
+        },
+        ["description"] = "Now this, this is a good pie! Far better than any Carrot Pie... who eats carrots in a pie anyways!? Monsters...",
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Good_Meal",
+        },
+        ["recipe"] = {
+            ["Egg"] = 2,
+            ["Bread"] = 4,
+            ["Berry"] = 15,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 40,
+        ["price"] = 30,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Ornate Chair"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 92,
+        ["recipe"] = {
+            ["Iron Nails"] = 2,
+            ["Wood Plank"] = 1,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Meat Hunter"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 338,
+        ["itemStats"] = {
+            ["storageCapacity"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Meat",
+                },
+                ["Rate"] = 10,
+                ["Amount"] = 2,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 23,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Butcher",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
+            },
+        },
+        ["recipe"] = {
+            ["Crossbow"] = 1,
+            ["Log"] = 10,
+            ["Meat"] = 30,
+            ["Coins"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Iron Swordsman"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 15,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Melee",
+            ["NPC_Name"] = "Iron Swordsman",
+        },
+        ["id"] = 350,
+        ["recipe"] = {
+            ["Iron Sword"] = 1,
+            ["Iron Armor"] = 1,
+            ["Iron Helmet"] = 1,
+            ["Iron Pants"] = 1,
+            ["Iron Shield"] = 1,
+            ["Coins"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Round Rug"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 226,
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Hide"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Viking Wall Decor Snake"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 522,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Gladiator Bow"] = {
+        ["description"] = "A primitive, but effective, hunting bow",
+        ["projectileVelocity"] = 900,
+        ["animations"] = {
+            ["action"] = "rbxassetid://11630580011",
+            ["action_1p"] = "rbxassetid://11630440383",
+            ["action_hold_1p"] = "rbxassetid://11630462550",
+            ["idle_1p"] = "rbxassetid://11630464542",
+            ["action_release"] = "rbxassetid://11631655121",
+            ["action_release_1p"] = "rbxassetid://11630595766",
+            ["idle"] = "rbxassetid://11630578059",
+            ["action_hold"] = "rbxassetid://11631660410",
+        },
+        ["itemTier"] = 2,
+        ["cantBeDropped"] = true,
+        ["chargedFOVModifier"] = -15,
+        ["weight"] = 0,
+        ["forceGenerateDroppedModel"] = true,
+        ["chargeTime"] = 0.9,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 469,
+        ["itemStats"] = {
+            ["rangedDamage"] = 20,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["useLeftHand"] = true,
+        ["reloadTime"] = 0.5,
+        ["validAmmoTypes"] = {
+            ["1"] = "Gladiator Arrow",
+        },
+        ["recipe"] = {
+        },
+        ["rangedWeaponType"] = "Charge",
+    },
+    ["Carrot Pie"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 13,
+        ["itemStats"] = {
+            ["food"] = 500,
+        },
+        ["description"] = "I like pie. Do I like carrot pie? No. No I do not. It's an abomination to life itself. But I made it in this game. Why? Because this world is mine to do with as I please, and I choose to make you all suffer.",
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Good_Meal",
+        },
+        ["recipe"] = {
+            ["Carrot"] = 15,
+            ["Bread"] = 4,
+            ["Egg"] = 2,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 40,
+        ["price"] = 30,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Iron Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["id"] = 7,
+        ["itemStats"] = {
+            ["meleeDamage"] = 40,
+        },
+        ["itemTier"] = 4,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["description"] = "An incredibly heavy sword, but it makes up for it with power!",
+        ["recipe"] = {
+            ["Rope"] = 1,
+            ["Iron Bar"] = 3,
+            ["Hide"] = 1,
+        },
+        ["price"] = 25,
+    },
+    ["Musket"] = {
+        ["description"] = "Invented in the early medieval ages, muskets are powerful, but extremely slow to fire and expensive to maintain.",
+        ["projectileVelocity"] = 900,
+        ["animations"] = {
+            ["action_hold_1p"] = "rbxassetid://114296015052629",
+            ["idle_1p"] = "rbxassetid://80683494687557",
+            ["action_hold"] = "rbxassetid://114296015052629",
+            ["reload"] = "rbxassetid://127707482228931",
+            ["idle"] = "rbxassetid://80683494687557",
+            ["action"] = "rbxassetid://83536341863663",
+            ["action_release"] = "rbxassetid://11631655121",
+            ["action_release_1p"] = "rbxassetid://11630595766",
+            ["action_1p"] = "rbxassetid://83536341863663",
+            ["reload_1p"] = "rbxassetid://127707482228931",
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["chargedFOVModifier"] = -15,
+        ["weight"] = 0.2,
+        ["chargeTime"] = 0.9,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 379,
+        ["itemStats"] = {
+            ["rangedDamage"] = 75,
+        },
+        ["destroyOnDeathAnyways"] = true,
+        ["useLeftHand"] = false,
+        ["reloadTime"] = 7,
+        ["validAmmoTypes"] = {
+            ["1"] = "Musket Ammo",
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 10,
+            ["Darksteel Bar"] = 5,
+            ["Rope"] = 10,
+        },
+        ["rangedWeaponType"] = "gun",
+    },
+    ["Gladiator Steel Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 477,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 5,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 5,
+        ["description"] = "A steel shield! Light weight, but strong, a must have for the battlefield!",
+    },
+    ["Wooden Shield"] = {
+        ["itemTier"] = 2,
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 293,
+        ["recipe"] = {
+            ["Wood Plank"] = 4,
+            ["Rope"] = 2,
+            ["Tool Handle"] = 1,
+        },
+        ["PostureBreakTime"] = 8,
+        ["description"] = "The most basic kind of shield. Will it stop an arrow? Maybe.",
+    },
+    ["Wood House"] = {
+        ["id"] = 145,
+        ["recipe"] = {
+            ["Leaf"] = 16,
+            ["Log"] = 40,
+        },
+        ["itemType"] = {
+            ["1"] = "Prefab",
+            ["2"] = "Structure",
+        },
+        ["description"] = "",
+    },
+    ["Black Powder"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 377,
+        ["recipe"] = {
+            ["Sulfur"] = 1,
+            ["Coal"] = 3,
+        },
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["itemTier"] = 7,
+        ["price"] = 200,
+        ["description"] = "An incredibly explosive substance, useful for setting things on fire, or blowing them up",
+    },
+    ["Zen Garden"] = {
+        ["durability"] = 150,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 416,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 4,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Thatch Roof Ridge"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 70,
+        ["recipe"] = {
+            ["Leaf"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Banana"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 367,
+        ["itemStats"] = {
+            ["food"] = 25,
+        },
+        ["itemTier"] = 1,
+        ["instantHealth"] = 3,
+        ["weight"] = 0.1,
+        ["price"] = 1,
+        ["recipe"] = {
+        },
+        ["description"] = "Banana's aren't very good for cooking, but Monkies absolutely love them!",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Gladiator Atlantean Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 494,
+        ["itemStats"] = {
+            ["defense"] = 16,
+        },
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Armor made for the warriors of Atlantis itself!",
+        ["recipe"] = {
+        },
+    },
+    ["Viking Slanted Wall"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 526,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Hut"] = {
+        ["id"] = 143,
+        ["recipe"] = {
+        },
+        ["itemType"] = {
+            ["1"] = "Prefab",
+            ["2"] = "Structure",
+        },
+        ["description"] = "",
+    },
+    ["Viking Stone Wall 6x3"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 534,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Blue Jar"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 304,
+        ["recipe"] = {
+            ["Iron Bar"] = 1,
+            ["Rope"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Wood Cutter"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 342,
+        ["itemStats"] = {
+            ["storageCapacity"] = 20,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Log",
+                },
+                ["Rate"] = 10,
+                ["Amount"] = 2,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 23,
+                ["FoodBoxRangeNeeded"] = 80,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Woodcutter",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
+            },
+        },
+        ["recipe"] = {
+            ["Coins"] = 10,
+            ["Log"] = 30,
+            ["Wood Plank"] = 5,
+            ["Steel Axe"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Cabbage"] = {
+        ["itemType"] = {
+            ["1"] = "Seed",
+            ["2"] = "Resource",
+            ["3"] = "Consumable",
+        },
+        ["id"] = 210,
+        ["itemStats"] = {
+            ["food"] = 30,
+        },
+        ["itemTier"] = 1,
+        ["instantHealth"] = 3,
+        ["price"] = 1,
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["description"] = "A hearty leafy food, a great staple to mix with other foods, but not very fun to eat raw",
+        ["plantName"] = "Cabbages",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Fish"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 16,
+        ["itemStats"] = {
+            ["food"] = 50,
+        },
+        ["description"] = "",
+        ["recipe"] = {
+            ["Carp"] = 1,
+            ["amount"] = 1,
+        },
+        ["instantHealth"] = -10,
+        ["price"] = 1,
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["effectsOnEat"] = {
+            ["1"] = "Food_Poisoning",
+        },
+        ["itemTier"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Bluesteel Pickaxe"] = {
+        ["itemType"] = {
+            ["1"] = "Pickaxe",
+            ["2"] = "Tool",
+        },
+        ["id"] = 195,
+        ["itemStats"] = {
+            ["pickaxeStrength"] = 300,
+        },
+        ["itemTier"] = 6,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["description"] = "A pickaxe made out of the strongest metal in the known world",
+        ["recipe"] = {
+            ["Steel Handle"] = 1,
+            ["Refined Bluesteel"] = 2,
+            ["Bluesteel Nails"] = 1,
+        },
+        ["price"] = 1500,
+    },
+    ["Kingdom Banner"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 122,
+        ["recipe"] = {
+        },
+        ["description"] = "",
+    },
+    ["Stool"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 179,
+        ["recipe"] = {
+            ["Log"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Treasure Chest"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 58,
+        ["itemStats"] = {
+            ["storageCapacity"] = 300,
+        },
+        ["itemTier"] = 3,
+        ["interactionData"] = {
+            ["interactionName"] = "Open",
+            ["opensStorage"] = true,
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+            ["Steel Nails"] = 1,
+            ["Steel Bar"] = 1,
+        },
+        ["animations"] = {
+            ["interaction_idle"] = {
+                ["1"] = "rbxassetid://11505226843",
+            },
+            ["interaction_end"] = {
+                ["1"] = "rbxassetid://11505243111",
+            },
+            ["interaction_begin"] = {
+                ["1"] = "rbxassetid://11505222561",
+            },
+        },
+        ["description"] = "",
+    },
+    ["Copper"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 54,
+        ["description"] = "Copper needs to be smelted into bars, to be used",
+        ["price"] = 2,
+    },
+    ["Stone Throne"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 227,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 15,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Serving Counter"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 178,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Obsidian Fishing Rod"] = {
+        ["itemType"] = {
+            ["1"] = "Fishing Rod",
+            ["2"] = "Tool",
+        },
+        ["targetSpeed"] = 1,
+        ["id"] = 277,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["timeNeededInTarget"] = 3,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Wood Plank"] = 4,
+            ["Rope"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["rodColor"] = 0.0666667, 0.0666667, 0.0666667,
+        ["catchTime"] = NumberRange.new(2, 3),
+        ["weight"] = 0.1,
+        ["targetSize"] = 0.2,
+        ["canCatchFish"] = {
+            ["1"] = "Carp",
+            ["2"] = "Salmon",
+            ["3"] = "Sea Snapper",
+            ["4"] = "Cod",
+            ["5"] = "Shrimp",
+            ["6"] = "Mussel",
+            ["7"] = "Hide",
+            ["8"] = "Giant Tuna",
+            ["9"] = "Iron",
+            ["10"] = "Octopus",
+            ["11"] = "Squid",
+            ["12"] = "Lobster",
+            ["13"] = "Whale",
+            ["14"] = "Gold Nugget",
+            ["15"] = "Leaf",
+            ["16"] = "Rope",
+        },
+        ["description"] = "",
+        ["timeToFish"] = 10,
+    },
+    ["Watch Tower"] = {
+        ["id"] = 149,
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Log"] = 28,
+            ["Leaf"] = 2,
+        },
+        ["itemType"] = {
+            ["1"] = "Prefab",
+            ["2"] = "Structure",
+        },
+        ["description"] = "",
+    },
+    ["Stone Stairs"] = {
+        ["durability"] = 2000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 133,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Purple Jar"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 306,
+        ["recipe"] = {
+            ["Iron Bar"] = 1,
+            ["Rope"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Stone Wall 3x3"] = {
+        ["durability"] = 600,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 137,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Barricade Spikes"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 81,
+        ["recipe"] = {
+            ["Log"] = 2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Ballista"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Turret",
+            ["2"] = "Structure",
+        },
+        ["projectileVelocity"] = 1500,
+        ["id"] = 155,
+        ["itemStats"] = {
+            ["rangedDamage"] = 60,
+        },
+        ["itemTier"] = 3,
+        ["useAmmoModel"] = "Ballista Bolt",
+        ["validAmmoTypes"] = {
+            ["1"] = "Ballista Bolt",
+        },
+        ["reloadTime"] = 2,
+        ["animations"] = {
+            ["idle_loaded"] = "rbxassetid://12049148592",
+            ["action"] = "rbxassetid://12049213113",
+            ["idle"] = "rbxassetid://12049216809",
+            ["reload"] = "rbxassetid://12049241835",
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 6,
+            ["Wood Plank"] = 10,
+            ["Rope"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Shingles"] = {
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+            ["Wood Plank"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 101,
+        ["itemTier"] = 2,
+        ["price"] = 5,
+        ["description"] = "Shingles are used to craft tile roofs, which are objectively cooler than thatch roofs, we can all agree.",
+    },
+    ["Painting: Rest"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 246,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Steel Axe"] = {
+        ["itemType"] = {
+            ["1"] = "Axe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
+        },
+        ["id"] = 51,
+        ["itemStats"] = {
+            ["axeStrength"] = 5,
+            ["meleeDamage"] = 20,
+        },
+        ["itemTier"] = 4,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
+            },
+        },
+        ["recipe"] = {
+            ["Steel Bar"] = 2,
+            ["Steel Nails"] = 1,
+            ["Tool Handle"] = 1,
+        },
+        ["description"] = "A lightweight and strong axe",
+        ["price"] = 240,
+    },
+    ["Asian Tree"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 422,
+        ["recipe"] = {
+            ["Leaf"] = 5,
+            ["Log"] = 5,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Sea Snapper"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 281,
+        ["description"] = "",
+    },
+    ["Steel Bar"] = {
+        ["itemTier"] = 3,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 10,
+        ["description"] = "Steel is a mix of other metals, that creates a much lighter, much stronger metal",
+        ["recipe"] = {
+            ["Coal"] = 5,
+            ["Iron"] = 10,
+        },
+        ["price"] = 80,
+    },
+    ["Skull Throne"] = {
+        ["durability"] = 1500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 163,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 10,
+            ["Skull"] = 10,
+        },
+        ["itemTier"] = 3,
+        ["description"] = "",
+    },
+    ["Saddle"] = {
+        ["itemTier"] = 2,
+        ["itemType"] = {
+            ["1"] = "MountEquipment",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 255,
+        ["itemStats"] = {
+            ["defense"] = 10,
+        },
+        ["description"] = "Can be placed on a tamed animal to ride them!",
+        ["recipe"] = {
+            ["Rope"] = 4,
+            ["Straw Bundle"] = 1,
+            ["Hide"] = 2,
+        },
+    },
+    ["Roof Ridge: Dragon"] = {
+        ["durability"] = 100,
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Steel Nails"] = 1,
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 523,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Wood Wall 6x3"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 65,
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Cypress Tree"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 240,
+        ["recipe"] = {
+            ["Leaf"] = 5,
+            ["Log"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Glow Mushroom"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 437,
+        ["itemStats"] = {
+            ["food"] = 20,
+        },
+        ["recipe"] = {
+        },
+        ["effectsOnEat"] = {
+            ["1"] = "Speedy",
+        },
+        ["instantHealth"] = -25,
+        ["weight"] = 0.1,
+        ["itemTier"] = 1,
+        ["price"] = 1,
+        ["description"] = "This mushroom will hurt you, but only a little bit! In return, you'll get a short burst of speed!",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Tile Roof"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 142,
+        ["recipe"] = {
+            ["Shingles"] = 2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Asian Roof"] = {
+        ["durability"] = 800,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 411,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Shingles"] = 4,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Fire Arrow"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 433,
+        ["itemStats"] = {
+            ["damage"] = 1.3,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Black Powder"] = 20,
+            ["Darksteel Bar"] = 1,
+            ["amount"] = 10,
+        },
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["reloadTime"] = 2,
+        ["price"] = 1,
+        ["itemTier"] = 7,
+        ["description"] = "Fire arrows set people and animals on fire for a short time when they hit them, making them run around wildly! Does not work underwater. Duh.",
+    },
+    ["Gladiator Bluesteel Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 458,
+        ["itemStats"] = {
+            ["meleeDamage"] = 52,
+        },
+        ["isArenaItem"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A sword made out of the strongest metal in the known world",
+        ["recipe"] = {
+        },
+    },
+    ["Longship"] = {
+        ["durability"] = 2500,
+        ["itemType"] = {
+            ["1"] = "Boat",
+        },
+        ["maxTorque"] = 1000000,
+        ["id"] = 205,
+        ["itemTier"] = 3,
+        ["cannotPlaceInCave"] = true,
+        ["maxForce"] = 100000,
+        ["thrust"] = 40,
+        ["turnPower"] = 0.5,
+        ["recipe"] = {
+            ["Wood Plank"] = 25,
+            ["Log"] = 40,
+            ["Iron Nails"] = 10,
+            ["Rope"] = 15,
+        },
+        ["description"] = "",
+    },
+    ["Decorative Flag"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 235,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Spicy Chicken Meal"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 216,
+        ["itemStats"] = {
+            ["food"] = 600,
+        },
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Good_Meal",
+            ["2"] = "Ate_Spicy_Food",
+        },
+        ["description"] = "Some spicy seasoned chicken on a bed of greens. Will give you a bit of spring in your step.",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 40,
+        ["recipe"] = {
+            ["Cooked Chicken"] = 1,
+            ["Pepper"] = 6,
+            ["Cabbage"] = 6,
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Iron Axe"] = {
+        ["itemType"] = {
+            ["1"] = "Axe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
+        },
+        ["id"] = 50,
+        ["itemStats"] = {
+            ["axeStrength"] = 4,
+            ["meleeDamage"] = 15,
+        },
+        ["itemTier"] = 3,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
+            },
+        },
+        ["recipe"] = {
+            ["Tool Handle"] = 1,
+            ["Iron Nails"] = 1,
+            ["Iron Bar"] = 2,
+        },
+        ["price"] = 25,
+        ["description"] = "A heavy and powerful axe",
+    },
+    ["Gladiator Iron Spear"] = {
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 463,
+        ["itemStats"] = {
+            ["meleeDamage"] = 30,
+        },
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["spear"] = true,
+        ["itemTier"] = 4,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["PostureBreakTime"] = 4,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "An incredibly heavy spear, but it makes up for it with power!",
+        ["recipe"] = {
+        },
+    },
+    ["_Obsidian"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 258,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["deprecated"] = true,
+        ["description"] = "",
+        ["price"] = 2,
+    },
+    ["Oak Tree"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 241,
+        ["recipe"] = {
+            ["Leaf"] = 5,
+            ["Log"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Steel Nails"] = {
+        ["recipe"] = {
+            ["Coal"] = 5,
+            ["Iron"] = 10,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 112,
+        ["itemTier"] = 3,
+        ["price"] = 80,
+        ["description"] = "Nails are an important part of building any complex object",
+    },
+    ["Cod"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 282,
+        ["description"] = "",
+    },
+    ["Refined Bluesteel"] = {
+        ["itemTier"] = 6,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 192,
+        ["description"] = "Incredibly powerful, Refined Bluesteel is stronger than any other metal in the known world.",
+        ["recipe"] = {
+            ["Raw Bluesteel"] = 1,
+            ["Steel Bar"] = 1,
+        },
+        ["price"] = 500,
+    },
+    ["Gladiator Atlantean Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 502,
+        ["itemStats"] = {
+            ["defense"] = 16,
+        },
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "The iconic helmet worn by the soldiers of Atlantis, before it fell so many centuries ago.",
+        ["recipe"] = {
+        },
+    },
+    ["Admin Armor"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 152,
+        ["itemStats"] = {
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
+        ["recipe"] = {
+        },
+    },
+    ["Bricks"] = {
+        ["recipe"] = {
+            ["Chiseled Stones"] = 2,
+            ["Log"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 119,
+        ["price"] = 4,
+        ["itemTier"] = 1,
+        ["description"] = "What are bricks, if not domesticated rocks?",
+    },
+    ["Steel Pants"] = {
+        ["itemTier"] = 4,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for pants!",
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 37,
+        ["itemStats"] = {
+            ["defense"] = 12,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Steel Bar"] = 3,
+            ["Hide"] = 1,
+        },
+        ["price"] = 240,
+    },
+    ["Bluesteel Swordsman"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = false,
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 15,
+                ["FoodBoxRangeNeeded"] = 40,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Melee",
+            ["NPC_Name"] = "Bluesteel Swordsman",
+        },
+        ["id"] = 352,
+        ["recipe"] = {
+            ["Bluesteel Pants"] = 1,
+            ["Bluesteel Helmet"] = 1,
+            ["Bluesteel Shield"] = 1,
+            ["Bluesteel Armor"] = 1,
+            ["Bluesteel Sword"] = 1,
+            ["Coins"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Gladiator Darksteel Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 487,
+        ["itemStats"] = {
+            ["defense"] = 18,
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Darksteel pants are as strong as they come, forged from the heart of the volcanic metals.",
+        ["recipe"] = {
+        },
+    },
+    ["Fence"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 183,
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Stone Window Fancy"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 333,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Wood Window"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 131,
+        ["description"] = "",
+        ["recipe"] = {
+            ["Log"] = 1,
+        },
+    },
+    ["Leather Bag"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 40,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 50,
+            ["defense"] = 5,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Hide"] = 1,
+        },
+        ["description"] = "The most basic kind of bag, not very good, but better than nothing!",
+    },
+    ["Stone Axe"] = {
+        ["itemTier"] = 1,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 2,
+            ["Rope"] = 1,
+            ["Tool Handle"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Axe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 1,
+        ["itemStats"] = {
+            ["axeStrength"] = 2,
+            ["meleeDamage"] = 5,
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
+            },
+        },
+        ["description"] = "It's not very good at chopping stuff up, but it will eventually get the job done!",
+    },
+    ["Gladiator Bronze Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 475,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 7,
+        ["description"] = "A bronze shield styled after that of the ancient phalanx!",
+    },
+    ["Curtains"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 161,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 6,
+            ["Rope"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Kingdom Skull"] = {
+        ["recipe"] = {
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0,
+        ["id"] = 429,
+        ["description"] = "Kingdom Skulls are collected by slaying a kingdom leader. The more you have, the more you should be feared!",
+    },
+    ["Juggernaut Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 543,
+        ["itemStats"] = {
+            ["sluggish"] = 5,
+            ["defense"] = 20,
+        },
+        ["description"] = "Powerful Leggings forged from Vicanite that offers strong defense in exchange for slower movespeed",
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["weight"] = 0.1,
+        ["slowdownAmount"] = 5,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Rope"] = 5,
+            ["Vicanite Bar"] = 2,
+            ["Hide"] = 5,
+        },
+        ["price"] = 25,
+    },
+    ["Poison Arrow"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 434,
+        ["itemStats"] = {
+            ["damage"] = 1.25,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Poison Fang"] = 1,
+            ["Darksteel Bar"] = 1,
+            ["amount"] = 10,
+        },
+        ["cantBeDropped"] = true,
+        ["disableHealTime"] = 10,
+        ["weight"] = 0.1,
+        ["reloadTime"] = 2,
+        ["price"] = 1,
+        ["itemTier"] = 7,
+        ["description"] = "Poison arrows aren't very dangerous themselves, but anyone who is hit with one, cannot heal for several seconds, which can be deadly in battle.",
+    },
+    ["Gladiator Leather Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 497,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["description"] = "The most basic kind of helmet, not very good, but better than nothing!",
+    },
+    ["Repair"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Repair",
+            ["2"] = "Tool",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 268,
+        ["itemStats"] = {
+            ["repairAmount"] = 5,
+        },
+        ["description"] = "Use this to repair structures.",
+        ["recipe"] = {
+            ["Copper Bar"] = 3,
+            ["Rope"] = 2,
+            ["Tool Handle"] = 1,
+        },
+    },
+    ["Raw Bluesteel"] = {
+        ["itemTier"] = 6,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 193,
+        ["description"] = "Bluesteel is an incredibly hard to create material. It can only be forged in the Imperial factories themselves, by master smiths. But once created, it can be refined in a furnace and turned into powerful items.",
+        ["price"] = 400,
     },
     ["Bush"] = {
         ["durability"] = 50,
@@ -1660,313 +4910,29 @@ return {
         },
         ["description"] = "",
     },
-    ["Gladiator Steel Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 484,
-        ["itemStats"] = {
-            ["defense"] = 12,
-        },
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for pants!",
-        ["recipe"] = {
-        },
-    },
-    ["Clock"] = {
-        ["durability"] = 500,
+    ["Gong"] = {
+        ["durability"] = 250,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 237,
+        ["id"] = 418,
         ["recipe"] = {
-            ["Log"] = 5,
-            ["Copper Nails"] = 6,
-            ["Wood Plank"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Bread"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 33,
-        ["itemStats"] = {
-            ["food"] = 100,
-        },
-        ["description"] = "Delicious carbs, the building blocks to a sandwich, and a tasty treat",
-        ["itemTier"] = 1,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-        },
-        ["recipe"] = {
-            ["Egg"] = 1,
-            ["Wheat"] = 6,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 10,
-        ["price"] = 5,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Gladiator Iron Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 483,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Iron pants are incredibly heavy, but, also incredibly strong!",
-        ["recipe"] = {
-        },
-    },
-    ["Custom Sign"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["interactionData"] = {
-            ["interactionName"] = "Change Text",
-            ["opensTextEditor"] = true,
-        },
-        ["id"] = 398,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Wood Plank"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Asian Tree"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 422,
-        ["recipe"] = {
-            ["Leaf"] = 5,
-            ["Log"] = 5,
+            ["Iron Bar"] = 2,
+            ["Log"] = 10,
         },
         ["craftingStyle"] = 1,
         ["description"] = "",
     },
-    ["War Drum"] = {
-        ["itemTier"] = 2,
-        ["musicChoices"] = {
-            ["1"] = {
-                ["SoundId"] = "rbxassetid://126336735999181",
-                ["Name"] = "War Drums",
-                ["Volume"] = 0.3,
-            },
-            ["2"] = {
-                ["SoundId"] = "rbxassetid://140045315599400",
-                ["Name"] = "Anticipation",
-                ["Volume"] = 0.3,
-            },
-            ["3"] = {
-                ["SoundId"] = "rbxassetid://120305084175228",
-                ["Name"] = "Drum Roll",
-                ["Volume"] = 0.3,
-            },
-        },
-        ["itemType"] = {
-            ["1"] = "Instrument",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 1,
-        ["id"] = 383,
-        ["recipe"] = {
-            ["Hide"] = 6,
-            ["Skull"] = 2,
-            ["Rope"] = 4,
-        },
-        ["equipAnimation"] = "rbxassetid://120232054447254",
-        ["description"] = "War drums are fantastic for preparing soldiers for battle and keeping the rhythm of a march!",
-    },
-    ["Purple Jar"] = {
-        ["durability"] = 100,
+    ["Barrel"] = {
+        ["durability"] = 200,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 306,
-        ["recipe"] = {
-            ["Iron Bar"] = 1,
-            ["Rope"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Atlantean Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 480,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 4,
-        ["description"] = "A shield made of for the mighty warriors of old Atlantis.",
-    },
-    ["Ice Floor"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 251,
-        ["placementParameters"] = {
-            ["rotateAtMiddle"] = true,
-        },
-        ["recipe"] = {
-            ["Ice Chunks"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Darksteel Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 479,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 3,
-        ["description"] = "A darksteel shield forged with spikes and sheer malice against all who live.",
-    },
-    ["Basic Table"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 98,
+        ["id"] = 181,
         ["recipe"] = {
             ["Log"] = 3,
         },
         ["description"] = "",
-    },
-    ["Stone Wall 6x6"] = {
-        ["durability"] = 2400,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 135,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Gladiator Steel Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 477,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 5,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 5,
-        ["description"] = "A steel shield! Light weight, but strong, a must have for the battlefield!",
-    },
-    ["Steel Sword"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["id"] = 45,
-        ["itemStats"] = {
-            ["meleeDamage"] = 50,
-        },
-        ["itemTier"] = 5,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["description"] = "Lightweight and strong, you can't beat a good steel sword!",
-        ["recipe"] = {
-            ["Hide"] = 1,
-            ["Steel Bar"] = 3,
-            ["Rope"] = 2,
-        },
-        ["price"] = 240,
-    },
-    ["Gladiator Iron Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 476,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 6,
-        ["description"] = "An iron shield, sturdy, and effective!",
-    },
-    ["Gladiator Bronze Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 475,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 7,
-        ["description"] = "A bronze shield styled after that of the ancient phalanx!",
     },
     ["Steel Armor"] = {
         ["itemTier"] = 4,
@@ -1998,50 +4964,6 @@ return {
             ["1"] = "Prefab",
             ["2"] = "Structure",
         },
-        ["description"] = "",
-    },
-    ["Rib Meal"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 24,
-        ["itemStats"] = {
-            ["food"] = 750,
-        },
-        ["description"] = "Why did I make this a rib meal? Because ribs were easier to model than any other kind of meat. I am lazy.",
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Amazing_Meal",
-        },
-        ["recipe"] = {
-            ["Meat Hunk"] = 3,
-            ["Bowl"] = 2,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 50,
-        ["price"] = 10,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Jail Cell"] = {
-        ["durability"] = 2000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["animations"] = {
-            ["interaction_idle"] = "rbxassetid://11783464257",
-            ["interaction_end"] = "rbxassetid://11783461612",
-            ["interaction_begin"] = "rbxassetid://11783458600",
-        },
-        ["id"] = 82,
-        ["recipe"] = {
-            ["Iron Bar"] = 4,
-        },
-        ["itemTier"] = 2,
         ["description"] = "",
     },
     ["Steel Pickaxe"] = {
@@ -2111,59 +5033,6 @@ return {
         ["price"] = 999,
         ["description"] = "Sturdy Adamantite metal, fantastic for splitting wood!",
     },
-    ["Gladiator Musket"] = {
-        ["description"] = "Invented in the early medieval ages, muskets are powerful, but extremely slow to fire and expensive to maintain.",
-        ["projectileVelocity"] = 900,
-        ["animations"] = {
-            ["action_hold_1p"] = "rbxassetid://114296015052629",
-            ["idle_1p"] = "rbxassetid://80683494687557",
-            ["action_hold"] = "rbxassetid://114296015052629",
-            ["reload"] = "rbxassetid://127707482228931",
-            ["idle"] = "rbxassetid://80683494687557",
-            ["action"] = "rbxassetid://83536341863663",
-            ["action_release"] = "rbxassetid://11631655121",
-            ["action_release_1p"] = "rbxassetid://11630595766",
-            ["action_1p"] = "rbxassetid://83536341863663",
-            ["reload_1p"] = "rbxassetid://127707482228931",
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["chargedFOVModifier"] = -15,
-        ["weight"] = 0.2,
-        ["forceGenerateDroppedModel"] = true,
-        ["chargeTime"] = 0.9,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 474,
-        ["itemStats"] = {
-            ["rangedDamage"] = 120,
-        },
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["useLeftHand"] = false,
-        ["reloadTime"] = 7,
-        ["validAmmoTypes"] = {
-            ["1"] = "Musket Ammo",
-        },
-        ["recipe"] = {
-        },
-        ["rangedWeaponType"] = "gun",
-    },
-    ["Fountain"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 328,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-        },
-        ["description"] = "",
-    },
     ["Obsidian"] = {
         ["itemType"] = {
             ["1"] = "Resource",
@@ -2178,26 +5047,6 @@ return {
         ["description"] = "Obsidian is one of the sharpest materials found in nature. But it's not very strong on it's own, until it's mixed with something stronger.",
         ["price"] = 2,
     },
-    ["Ice Chunks"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 250,
-        ["description"] = "Ice can be used to make slippery ice floors and some unique buildings!",
-        ["price"] = 1,
-    },
-    ["Crate"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 182,
-        ["recipe"] = {
-            ["Log"] = 3,
-        },
-        ["description"] = "",
-    },
     ["Stone House"] = {
         ["id"] = 148,
         ["recipe"] = {
@@ -2209,21 +5058,6 @@ return {
         ["itemType"] = {
             ["1"] = "Prefab",
             ["2"] = "Structure",
-        },
-        ["description"] = "",
-    },
-    ["Hanging Mirror"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 397,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Ice Chunks"] = 5,
-            ["Wood Plank"] = 5,
         },
         ["description"] = "",
     },
@@ -2274,48 +5108,6 @@ return {
         ["itemTier"] = 3,
         ["description"] = "",
     },
-    ["Gladiator Compact Bow"] = {
-        ["description"] = "More advanced than a hunting bow, a compact bow does more damage per shot",
-        ["projectileVelocity"] = 650,
-        ["animations"] = {
-            ["action"] = "rbxassetid://11630580011",
-            ["action_1p"] = "rbxassetid://11630440383",
-            ["action_hold_1p"] = "rbxassetid://11630462550",
-            ["idle_1p"] = "rbxassetid://11630464542",
-            ["action_release"] = "rbxassetid://11631655121",
-            ["action_release_1p"] = "rbxassetid://11630595766",
-            ["idle"] = "rbxassetid://11630578059",
-            ["action_hold"] = "rbxassetid://11631660410",
-        },
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["chargedFOVModifier"] = -15,
-        ["weight"] = 0.1,
-        ["forceGenerateDroppedModel"] = true,
-        ["chargeTime"] = 0.9,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 470,
-        ["itemStats"] = {
-            ["rangedDamage"] = 30,
-        },
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["useLeftHand"] = true,
-        ["reloadTime"] = 0.5,
-        ["recipe"] = {
-        },
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
-        ["rangedWeaponType"] = "Charge",
-    },
     ["Wood Slanted Wall"] = {
         ["durability"] = 300,
         ["itemType"] = {
@@ -2339,24 +5131,6 @@ return {
         },
         ["description"] = "",
     },
-    ["Bluesteel Helmet"] = {
-        ["itemTier"] = 6,
-        ["description"] = "A Helmet made out of the strongest metal in the known world!",
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 202,
-        ["itemStats"] = {
-            ["defense"] = 14,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Refined Bluesteel"] = 2,
-        },
-        ["price"] = 1000,
-    },
     ["Bluesteel Pants"] = {
         ["itemTier"] = 6,
         ["description"] = "Pants made out of the strongest metal in the known world!",
@@ -2376,57 +5150,49 @@ return {
         },
         ["price"] = 1500,
     },
-    ["Rock Node"] = {
-        ["durability"] = 250,
+    ["Iron Miner"] = {
+        ["durability"] = 500,
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Helper",
+            ["2"] = "Structure",
         },
-        ["id"] = 244,
-        ["recipe"] = {
-            ["Stone"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Zen Garden"] = {
-        ["durability"] = 150,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 416,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 4,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Gladiator Samurai Spear"] = {
-        ["isArenaItem"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 467,
+        ["id"] = 341,
         ["itemStats"] = {
-            ["meleeDamage"] = 65,
+            ["storageCapacity"] = 5,
         },
-        ["onlyAdminCanSpawn"] = true,
-        ["spear"] = true,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = true,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Iron",
+                },
+                ["Rate"] = 60,
+                ["Amount"] = 1,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 19,
+                ["FoodBoxRangeNeeded"] = 60,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Miner",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
             },
         },
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "A very powerful Spear",
         ["recipe"] = {
+            ["Stone"] = 20,
+            ["Log"] = 10,
+            ["Iron"] = 10,
+            ["Steel Pickaxe"] = 1,
+            ["Coins"] = 10,
         },
+        ["description"] = "",
     },
     ["Atlantean Armor"] = {
         ["itemType"] = {
@@ -2452,147 +5218,69 @@ return {
         },
         ["price"] = 999,
     },
-    ["Shelf"] = {
-        ["durability"] = 350,
+    ["Darksteel Axe"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 234,
-        ["recipe"] = {
-            ["Log"] = 4,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Darksteel Spear"] = {
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
+            ["1"] = "Axe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 466,
+        ["id"] = 265,
         ["itemStats"] = {
-            ["meleeDamage"] = 55,
+            ["axeStrength"] = 10,
+            ["meleeDamage"] = 30,
         },
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Steel Handle"] = 1,
+            ["Obsidian Nails"] = 1,
         },
-        ["spear"] = true,
         ["itemTier"] = 7,
         ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
+        ["dropOnDeathAnyways"] = true,
         ["weight"] = 0.1,
-        ["PostureBreakTime"] = 4,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
-        ["recipe"] = {
-        },
-    },
-    ["Stone Floor Small"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["id"] = 138,
-        ["placementParameters"] = {
-            ["rotateAtMiddle"] = true,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Chest"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 56,
-        ["itemStats"] = {
-            ["storageCapacity"] = 100,
-        },
-        ["itemTier"] = 1,
-        ["interactionData"] = {
-            ["interactionName"] = "Open",
-            ["opensStorage"] = true,
-        },
-        ["recipe"] = {
-            ["Log"] = 4,
-        },
         ["animations"] = {
-            ["interaction_idle"] = {
-                ["1"] = "rbxassetid://11505226843",
-            },
-            ["interaction_end"] = {
-                ["1"] = "rbxassetid://11505243111",
-            },
-            ["interaction_begin"] = {
-                ["1"] = "rbxassetid://11505222561",
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
             },
         },
-        ["description"] = "",
+        ["forceGenerateDroppedModel"] = true,
+        ["price"] = 999,
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. Perfect for chopping wood.",
     },
-    ["Stone Pillar"] = {
-        ["durability"] = 1000,
+    ["Gladiator Bronze Helmet"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 221,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 3,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Gladiator Bluesteel Spear"] = {
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 465,
+        ["id"] = 498,
         ["itemStats"] = {
-            ["meleeDamage"] = 45,
+            ["defense"] = 8,
         },
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["spear"] = true,
-        ["itemTier"] = 6,
+        ["itemTier"] = 2,
         ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["PostureBreakTime"] = 4,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
-        ["description"] = "A spear made out of the strongest metal in the known world",
+        ["description"] = "Bronze helmets have protected soldiers since ancient times. A reliable choice!",
         ["recipe"] = {
         },
     },
-    ["Iron Spear"] = {
+    ["Steel Spear"] = {
         ["itemType"] = {
             ["1"] = "Melee Weapon",
             ["2"] = "Tool",
         },
-        ["description"] = "An incredibly heavy spear, but it makes up for it with power!",
-        ["id"] = 444,
+        ["description"] = "Lightweight and strong, you can't beat a good steel spear!",
+        ["id"] = 445,
         ["itemStats"] = {
-            ["meleeDamage"] = 40,
+            ["meleeDamage"] = 50,
         },
         ["dropOnDeathAnyways"] = true,
         ["spear"] = true,
-        ["itemTier"] = 4,
+        ["itemTier"] = 5,
         ["PostureBreakTime"] = 4,
         ["animalDamageBoost"] = 1.35,
         ["weight"] = 0.1,
@@ -2605,62 +5293,11 @@ return {
         },
         ["forceGenerateDroppedModel"] = true,
         ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Rope"] = 1,
-            ["Iron Bar"] = 5,
+            ["Wooden Rod"] = 4,
+            ["Steel Bar"] = 5,
+            ["Rope"] = 2,
         },
         ["price"] = 999,
-    },
-    ["Boat"] = {
-        ["durability"] = 2000,
-        ["itemType"] = {
-            ["1"] = "Boat",
-        },
-        ["maxTorque"] = 1000000,
-        ["id"] = 121,
-        ["itemTier"] = 2,
-        ["cannotPlaceInCave"] = true,
-        ["maxForce"] = 100000,
-        ["thrust"] = 35,
-        ["turnPower"] = 0.4,
-        ["recipe"] = {
-            ["Wood Plank"] = 2,
-            ["Log"] = 10,
-            ["Copper Nails"] = 2,
-            ["Rope"] = 6,
-        },
-        ["description"] = "",
-    },
-    ["Glass Wall 6x6"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 387,
-        ["recipe"] = {
-            ["Ice Chunks"] = 5,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Fishmonger"] = {
-        ["itemTier"] = 1,
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Fishmonger",
-        },
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 278,
-        ["recipe"] = {
-            ["Stone"] = 3,
-            ["Log"] = 5,
-            ["Rope"] = 4,
-        },
-        ["durability"] = 200,
-        ["description"] = "",
     },
     ["Darksteel Swordsman"] = {
         ["durability"] = 500,
@@ -2713,34 +5350,6 @@ return {
         ["description"] = "Wood is used to craft and build almost everything in the world",
         ["price"] = 1,
     },
-    ["Leather Armor"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 28,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["description"] = "The most basic kind of armor, not very good, but better than nothing!",
-    },
-    ["Kingdom Sitting Skeleton"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 439,
-        ["recipe"] = {
-            ["Kingdom Skull"] = 1,
-        },
-        ["description"] = "",
-    },
     ["Royal Bed"] = {
         ["durability"] = 500,
         ["isBed"] = true,
@@ -2756,99 +5365,6 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Gladiator Wooden Club"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 461,
-        ["itemStats"] = {
-            ["meleeDamage"] = 20,
-        },
-        ["itemTier"] = 1,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["description"] = "It will get the job done, if you swing hard enough!",
-    },
-    ["Gladiator Katana"] = {
-        ["isArenaItem"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 460,
-        ["itemStats"] = {
-            ["meleeDamage"] = 68,
-        },
-        ["onlyAdminCanSpawn"] = true,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://87592945190823",
-            ["action"] = {
-                ["1"] = "rbxassetid://103024823656540",
-                ["2"] = "rbxassetid://80862714512559",
-            },
-        },
-        ["itemTier"] = 8,
-        ["cantUseShield"] = true,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["PostureBreakTime"] = 4,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "The Katana is an extremely effective sword, one of the best there is, and it's two handed nature allows those who are well trained to block a handful of arrows! But does not allow for the use of a shield.",
-        ["recipe"] = {
-        },
-    },
-    ["Rebirth Token"] = {
-        ["onlySupervisorCanSpawn"] = true,
-        ["cantBeDropped"] = true,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0,
-        ["id"] = 144,
-        ["cantPutInStorage"] = true,
-        ["noStackLimit"] = true,
-        ["description"] = "Used to purchase things in the rebirth shop. Obtained from rebirthing.",
-    },
-    ["Katana"] = {
-        ["description"] = "The Katana is an extremely effective sword, one of the best there is, and it's two handed nature allows those who are well trained to block a handful of arrows! But does not allow for the use of a shield.",
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 406,
-        ["itemStats"] = {
-            ["meleeDamage"] = 80,
-        },
-        ["cantUseShield"] = true,
-        ["dropOnDeathAnyways"] = true,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["PostureBreakTime"] = 4,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://87592945190823",
-            ["action"] = {
-                ["1"] = "rbxassetid://103024823656540",
-                ["2"] = "rbxassetid://80862714512559",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite Bar"] = 3,
-            ["Hide"] = 2,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
     ["Leaf"] = {
         ["recipe"] = {
         },
@@ -2860,151 +5376,35 @@ return {
         ["price"] = 1,
         ["description"] = "The closest you will come to touching grass this year: This leaf",
     },
-    ["Ship Construction"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 312,
-        ["recipe"] = {
-            ["Log"] = 40,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Steel Sword"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 457,
-        ["itemStats"] = {
-            ["meleeDamage"] = 44,
-        },
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["itemTier"] = 5,
-        ["cantBeDropped"] = true,
-        ["description"] = "Lightweight and strong, you can't beat a good steel sword!",
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["price"] = 240,
-    },
-    ["Gladiator Iron Sword"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 456,
-        ["itemStats"] = {
-            ["meleeDamage"] = 36,
-        },
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["itemTier"] = 4,
-        ["cantBeDropped"] = true,
-        ["description"] = "An incredibly heavy sword, but it makes up for it with power!",
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["price"] = 25,
-    },
-    ["Bronze Bag"] = {
-        ["itemTier"] = 2,
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 41,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 100,
-            ["defense"] = 8,
-        },
-        ["description"] = "Bronze pants been used since ancient times. A reliable choice!",
-        ["recipe"] = {
-            ["Copper Bar"] = 6,
-            ["Wooden Rod"] = 2,
-            ["Hide"] = 2,
-        },
-    },
-    ["Gladiator Bronze Sword"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 455,
-        ["itemStats"] = {
-            ["meleeDamage"] = 28,
-        },
-        ["isArenaItem"] = true,
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["description"] = "A tried and true weapon, bronze swords have been used since ancient times",
-    },
-    ["Awning"] = {
+    ["Book And Quill"] = {
         ["durability"] = 100,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 162,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
+        ["id"] = 166,
         ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Log"] = 2,
+            ["Leaf"] = 3,
+            ["Rope"] = 1,
         },
         ["description"] = "",
     },
-    ["Chicken"] = {
+    ["Obsidian Nails"] = {
         ["itemType"] = {
-            ["1"] = "Consumable",
+            ["1"] = "Resource",
         },
-        ["id"] = 14,
-        ["itemStats"] = {
-            ["food"] = 100,
+        ["cantPutInStorage"] = true,
+        ["id"] = 264,
+        ["dropOnDeathAnyways"] = true,
+        ["recipe"] = {
+            ["Coal"] = 5,
+            ["Obsidian"] = 1,
         },
-        ["itemTier"] = 1,
-        ["instantHealth"] = -10,
+        ["cantBeDropped"] = true,
         ["weight"] = 0.1,
-        ["description"] = "You had to kill a chicken to get this. You're a monster. Think about your life choices.",
-        ["effectsOnEat"] = {
-            ["1"] = "Food_Poisoning",
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
+        ["itemTier"] = 7,
+        ["forceGenerateDroppedModel"] = true,
+        ["price"] = 999,
+        ["description"] = "Obsidian is one of the sharpest materials you can find in nature. Nails from it are naturally, very sharp.",
     },
     ["Candelabra"] = {
         ["durability"] = 300,
@@ -3044,15 +5444,6 @@ return {
         },
         ["price"] = 8,
     },
-    ["Salmon"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 280,
-        ["description"] = "",
-    },
     ["Painting: Stronghold"] = {
         ["durability"] = 100,
         ["itemType"] = {
@@ -3080,32 +5471,6 @@ return {
         },
         ["itemTier"] = 3,
         ["description"] = "",
-    },
-    ["Gladiator Stone Knife"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 454,
-        ["itemStats"] = {
-            ["meleeDamage"] = 20,
-        },
-        ["isArenaItem"] = true,
-        ["recipe"] = {
-        },
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["itemTier"] = 2,
-        ["forceGenerateDroppedModel"] = true,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["description"] = "It's a sharpened stone on a stick. It's not good at killing things, but if you stab hard enough and long enough, it'll work!",
     },
     ["Hammer"] = {
         ["recipe"] = {
@@ -3138,28 +5503,6 @@ return {
         ["forceGenerateDroppedModel"] = true,
         ["PostureBreakTime"] = 3,
         ["description"] = "A darksteel shield forged with spikes and sheer malice against all who live.",
-    },
-    ["Mod Bag"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 453,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 9999999,
-            ["defense"] = 100,
-        },
-        ["itemTier"] = 9,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "",
-        ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Steel Bar"] = 6,
-            ["Hide"] = 2,
-        },
     },
     ["Bronze Archer"] = {
         ["durability"] = 500,
@@ -3200,24 +5543,6 @@ return {
             ["Coins"] = 10,
         },
         ["description"] = "",
-    },
-    ["Mod Helmet"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 452,
-        ["itemStats"] = {
-            ["defense"] = 100,
-        },
-        ["itemTier"] = 9,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "",
-        ["recipe"] = {
-        },
     },
     ["Hanging Fish"] = {
         ["durability"] = 100,
@@ -3323,45 +5648,12 @@ return {
         ["itemTier"] = 2,
         ["cantBeDropped"] = true,
         ["isArenaItem"] = true,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "Bronze pants have protected soldiers since ancient times. A reliable choice!",
         ["recipe"] = {
         },
-    },
-    ["Wood Wall 3x3"] = {
-        ["durability"] = 150,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 64,
-        ["recipe"] = {
-            ["Log"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["_Egg Compass"] = {
-        ["markerName"] = "HatchEgg",
-        ["itemType"] = {
-            ["1"] = "Compass",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["deprecated"] = true,
-        ["itemStats"] = {
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["description"] = "",
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["Idle"] = "rbxassetid://0",
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["id"] = 449,
     },
     ["Bronze Shield"] = {
         ["itemTier"] = 3,
@@ -3388,136 +5680,6 @@ return {
         ["id"] = 279,
         ["description"] = "",
     },
-    ["Scuba Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["id"] = 366,
-        ["itemStats"] = {
-            ["defense"] = 8,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "A set of pants made for the pressure of the depths of the sea!",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Copper Bar"] = 5,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["price"] = 999,
-    },
-    ["Samurai Spear"] = {
-        ["description"] = "A very powerful Spear",
-        ["dropOnDeathAnyways"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 448,
-        ["itemStats"] = {
-            ["meleeDamage"] = 80,
-        },
-        ["PostureBreakTime"] = 4,
-        ["spear"] = true,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite Bar"] = 5,
-            ["Wooden Rod"] = 8,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Darksteel Spear"] = {
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
-        ["dropOnDeathAnyways"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 447,
-        ["itemStats"] = {
-            ["meleeDamage"] = 70,
-        },
-        ["PostureBreakTime"] = 4,
-        ["spear"] = true,
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 5,
-            ["Wooden Rod"] = 6,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Big Rug"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 225,
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Hide"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Steel Spear"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["description"] = "Lightweight and strong, you can't beat a good steel spear!",
-        ["id"] = 445,
-        ["itemStats"] = {
-            ["meleeDamage"] = 50,
-        },
-        ["dropOnDeathAnyways"] = true,
-        ["spear"] = true,
-        ["itemTier"] = 5,
-        ["PostureBreakTime"] = 4,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Wooden Rod"] = 4,
-            ["Steel Bar"] = 5,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
     ["Iron Helmet"] = {
         ["itemTier"] = 3,
         ["description"] = "Iron helmets are incredibly heavy, but, also incredibly strong!",
@@ -3536,63 +5698,24 @@ return {
         },
         ["price"] = 18,
     },
-    ["Gladiator Steel Spear"] = {
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
+    ["Gladiator Steel Pants"] = {
         ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 464,
+        ["id"] = 484,
         ["itemStats"] = {
-            ["meleeDamage"] = 35,
+            ["defense"] = 12,
         },
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["spear"] = true,
-        ["itemTier"] = 5,
+        ["itemTier"] = 4,
         ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["PostureBreakTime"] = 4,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Lightweight and strong, you can't beat a good steel spear!",
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for pants!",
         ["recipe"] = {
-        },
-    },
-    ["Fire Retardant"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 443,
-        ["itemStats"] = {
-            ["food"] = 10,
-        },
-        ["description"] = "Using this will prevent you from being set on fire! You can still take damage directly from fire. It just won't also light YOU on fire.",
-        ["itemTier"] = 3,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-            ["2"] = "Fire Resistance",
-        },
-        ["recipe"] = {
-            ["Glow Mushroom"] = 5,
-            ["Bowl"] = 1,
-            ["Octopus"] = 1,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 10,
-        ["price"] = 5,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
         },
     },
     ["Bow"] = {
@@ -3672,53 +5795,6 @@ return {
         },
         ["description"] = "",
     },
-    ["Poison Antidote"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 442,
-        ["itemStats"] = {
-            ["food"] = 10,
-        },
-        ["description"] = "A carefully prepared antidote to prevent you from being poisoned!",
-        ["itemTier"] = 3,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-            ["2"] = "Poison Resistance",
-        },
-        ["recipe"] = {
-            ["Mushroom"] = 5,
-            ["Pepper"] = 5,
-            ["Bowl"] = 1,
-            ["Deathwish Mushroom"] = 5,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 10,
-        ["price"] = 5,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Leather Pants"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 27,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["description"] = "The most basic kind of pants, not very good, but better than nothing!",
-    },
     ["Pelt Rug"] = {
         ["durability"] = 200,
         ["itemType"] = {
@@ -3730,67 +5806,35 @@ return {
         },
         ["description"] = "",
     },
-    ["Poison Dagger"] = {
-        ["forceGenerateDroppedModel"] = true,
-        ["dropOnDeathAnyways"] = true,
+    ["Gladiator Darksteel Spear"] = {
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
         ["itemType"] = {
             ["1"] = "Melee Weapon",
             ["2"] = "Tool",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 441,
+        ["id"] = 466,
         ["itemStats"] = {
-            ["meleeDamage"] = 40,
+            ["meleeDamage"] = 55,
         },
-        ["dagger"] = true,
-        ["PostureBreakTime"] = 4,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["description"] = "By itself the dagger is too short to be effective, but once it stabs someone, they cannot heal for quite awhile, making it a dangerous combo with other weapons!",
-        ["weight"] = 0.1,
         ["animations"] = {
-            ["idle"] = "rbxassetid://121565995036184",
+            ["idle"] = "rbxassetid://111426115119032",
             ["action"] = {
-                ["1"] = "rbxassetid://121356898049119",
-                ["2"] = "rbxassetid://100976926090296",
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
             },
         },
-        ["hitEffects"] = {
-            ["1"] = {
-                ["Chance"] = 1,
-                ["Poisoned"] = 3,
-                ["Healing Disabled"] = 3,
-            },
-        },
+        ["spear"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["PostureBreakTime"] = 4,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
         ["recipe"] = {
-            ["Darksteel Bar"] = 2,
-            ["Poison Fang"] = 2,
-            ["Adamantite Bar"] = 2,
         },
-        ["price"] = 999,
-    },
-    ["Kingdom Skeleton"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 440,
-        ["recipe"] = {
-            ["Kingdom Skull"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Cauldron"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 186,
-        ["recipe"] = {
-            ["Iron Bar"] = 3,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
     },
     ["Castle Gate"] = {
         ["durability"] = 8000,
@@ -3814,129 +5858,73 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Well"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 88,
-        ["recipe"] = {
-            ["Stone"] = 4,
-            ["Log"] = 4,
-        },
+    ["Roof Ridge: Viking"] = {
+        ["durability"] = 100,
         ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Copper Smithy"] = {
-        ["durability"] = 200,
         ["itemType"] = {
             ["1"] = "Structure",
         },
         ["recipe"] = {
-            ["Chiseled Stones"] = 4,
+            ["Steel Nails"] = 1,
             ["Wood Plank"] = 2,
         },
-        ["id"] = 78,
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Copper Smithy",
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Trade Sign"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 177,
+        ["id"] = 525,
         ["placementParameters"] = {
             ["maxSlopeAngle"] = -1,
         },
-        ["recipe"] = {
-            ["Log"] = 2,
-            ["Iron Bar"] = 1,
-        },
+        ["craftingStyle"] = 2,
         ["description"] = "",
     },
-    ["Darksteel Sword"] = {
+    ["Gladiator Atlantean Pants"] = {
         ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 267,
-        ["itemStats"] = {
-            ["meleeDamage"] = 70,
-        },
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["dropOnDeathAnyways"] = true,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 3,
-            ["Hide"] = 1,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Bluesteel Armor"] = {
-        ["itemTier"] = 6,
-        ["description"] = "Armor made out of the strongest metal in the known world!",
-        ["itemType"] = {
-            ["1"] = "Shirt",
+            ["1"] = "Pants",
             ["2"] = "Clothing",
         },
-        ["weight"] = 0.1,
-        ["id"] = 200,
+        ["cantPutInStorage"] = true,
+        ["id"] = 486,
         ["itemStats"] = {
-            ["defense"] = 14,
+            ["defense"] = 16,
         },
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "The pants of mighty Atlantean warriors!",
         ["recipe"] = {
-            ["Refined Bluesteel"] = 3,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
         },
-        ["price"] = 1500,
     },
-    ["Bronze Spear"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["description"] = "A tried and true weapon, bronze spears have been used since ancient times",
-        ["id"] = 435,
-        ["itemStats"] = {
-            ["meleeDamage"] = 30,
-        },
-        ["dropOnDeathAnyways"] = true,
-        ["spear"] = true,
-        ["itemTier"] = 3,
-        ["PostureBreakTime"] = 4,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
+    ["Weapon Rack"] = {
+        ["durability"] = 1000,
+        ["interactionData"] = {
+            ["staticWeight"] = 1,
+            ["opensStorage"] = true,
+            ["interactionName"] = "Open",
+            ["requiredTypes"] = {
+                ["1"] = {
+                    ["1"] = "Melee Weapon",
+                    ["2"] = "Tool",
+                },
+                ["2"] = {
+                    ["1"] = "Ranged Weapon",
+                    ["2"] = "Tool",
+                    ["3"] = "Gun",
+                },
             },
         },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Copper Bar"] = 5,
-            ["Wooden Rod"] = 2,
-            ["Rope"] = 2,
+        ["itemType"] = {
+            ["1"] = "Structure",
         },
-        ["price"] = 999,
+        ["recipe"] = {
+            ["Wood Plank"] = 6,
+        },
+        ["id"] = 393,
+        ["itemStats"] = {
+            ["storageCapacity"] = 3,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
     },
     ["Shovel"] = {
         ["itemTier"] = 1,
@@ -3965,123 +5953,6 @@ return {
         ["price"] = 2,
         ["description"] = "They're like normal stones, but SLIGHTLY less likely to kill you!",
     },
-    ["Gladiator Iron Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 491,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["isArenaItem"] = true,
-        ["itemTier"] = 3,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "Iron armor is incredibly heavy, but, also incredibly strong!",
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["price"] = 25,
-    },
-    ["Stone Miner"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 339,
-        ["itemStats"] = {
-            ["storageCapacity"] = 20,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = true,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Stone",
-                },
-                ["Rate"] = 10,
-                ["Amount"] = 1,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 19,
-                ["FoodBoxRangeNeeded"] = 60,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Miner",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Stone"] = 30,
-            ["Log"] = 10,
-            ["Steel Pickaxe"] = 1,
-            ["Coins"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Bronze Swordsman"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 15,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Melee",
-            ["NPC_Name"] = "Bronze Swordsman",
-        },
-        ["id"] = 349,
-        ["recipe"] = {
-            ["Bronze Helmet"] = 1,
-            ["Bronze Pants"] = 1,
-            ["Bronze Armor"] = 1,
-            ["Bronze Shield"] = 1,
-            ["Bronze Sword"] = 1,
-            ["Coins"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Glider"] = {
-        ["itemType"] = {
-            ["1"] = "Glider",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 430,
-        ["itemStats"] = {
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["hold"] = "rbxassetid://86367732986089",
-            ["glide"] = "rbxassetid://83749034588820",
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "",
-        ["recipe"] = {
-            ["Log"] = 10,
-            ["Adamantite Nails"] = 5,
-            ["Rope"] = 15,
-        },
-    },
     ["Atlantean Ore"] = {
         ["itemType"] = {
             ["1"] = "Resource",
@@ -4095,17 +5966,6 @@ return {
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "Atlantean ore comes from rare under sea crytals found only in Atlantis. It is what powered the mighty old civilization, though it's not like they're using it anymore...",
         ["price"] = 999,
-    },
-    ["Sitting Skeleton"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 311,
-        ["recipe"] = {
-            ["Skull"] = 1,
-        },
-        ["description"] = "",
     },
     ["Stone Pathway"] = {
         ["durability"] = 250,
@@ -4140,94 +6000,25 @@ return {
         ["restricted"] = true,
         ["description"] = "Play some Tunes",
     },
-    ["Palisade Gate"] = {
-        ["durability"] = 3000,
+    ["Gladiator Bluesteel Helmet"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["interactionData"] = {
-            ["ownedByKingdom"] = true,
-            ["ownedByPlayer"] = true,
-        },
-        ["id"] = 129,
-        ["animations"] = {
-            ["interaction_idle"] = "rbxassetid://11753588016",
-            ["interaction_end"] = "rbxassetid://11753592507",
-            ["interaction_begin"] = "rbxassetid://11753584692",
-        },
-        ["recipe"] = {
-            ["Wood Plank"] = 1,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Samurai Bag"] = {
-        ["itemType"] = {
-            ["1"] = "Backpack",
+            ["1"] = "Helmet",
             ["2"] = "Clothing",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 405,
+        ["id"] = 501,
         ["itemStats"] = {
-            ["backpackCapacity"] = 750,
-            ["defense"] = 18,
+            ["defense"] = 14,
         },
-        ["itemTier"] = 8,
+        ["itemTier"] = 6,
         ["cantBeDropped"] = true,
-        ["description"] = "A sturdy Samurai bag, designed to distribute weight better on your back to let you carry more!",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A Helmet made out of the strongest metal in the known world!",
         ["recipe"] = {
-            ["Adamantite Bar"] = 6,
-            ["Wooden Rod"] = 4,
-            ["Hide"] = 2,
         },
-        ["price"] = 999,
-    },
-    ["Hay Bale"] = {
-        ["durability"] = 50,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 323,
-        ["recipe"] = {
-            ["Straw Bundle"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Heavy Galleon"] = {
-        ["durability"] = 8000,
-        ["itemType"] = {
-            ["1"] = "Boat",
-        },
-        ["maxTorque"] = 150000000,
-        ["id"] = 427,
-        ["itemTier"] = 8,
-        ["cannotPlaceInCave"] = true,
-        ["maxForce"] = 10000000,
-        ["thrust"] = 40,
-        ["turnPower"] = 0.4,
-        ["recipe"] = {
-            ["Obsidian Nails"] = 5,
-            ["Log"] = 100,
-            ["Rope"] = 25,
-            ["Wood Plank"] = 30,
-            ["Steel Bar"] = 20,
-        },
-        ["description"] = "",
-    },
-    ["Stone Slanted Wall"] = {
-        ["durability"] = 1200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 140,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
     },
     ["Carrot Farmer"] = {
         ["durability"] = 500,
@@ -4272,76 +6063,48 @@ return {
         },
         ["description"] = "",
     },
-    ["Adamantite Nails"] = {
+    ["Cabbage Farmer"] = {
+        ["durability"] = 500,
         ["itemType"] = {
-            ["1"] = "Resource",
+            ["1"] = "Helper",
+            ["2"] = "Structure",
         },
-        ["cantPutInStorage"] = true,
-        ["id"] = 426,
-        ["dropOnDeathAnyways"] = true,
-        ["recipe"] = {
-            ["Adamantite"] = 1,
-            ["Gold Nugget"] = 1,
-            ["Coal"] = 10,
-        },
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["itemTier"] = 8,
-        ["forceGenerateDroppedModel"] = true,
-        ["price"] = 999,
-        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
-    },
-    ["Half Wood"] = {
-        ["recipe"] = {
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 100,
-        ["description"] = "Wood is used to craft and build almost everything in the world",
-    },
-    ["Stone Floor"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["id"] = 139,
-        ["placementParameters"] = {
-            ["rotateAtMiddle"] = true,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Adamantite Pickaxe"] = {
-        ["itemType"] = {
-            ["1"] = "Pickaxe",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 425,
+        ["id"] = 337,
         ["itemStats"] = {
-            ["pickaxeStrength"] = 750,
+            ["storageCapacity"] = 10,
         },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = true,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Cabbage",
+                },
+                ["Rate"] = 10,
+                ["Amount"] = 2,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 22,
+                ["FoodBoxRangeNeeded"] = 70,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Farmer",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
             },
         },
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
         ["recipe"] = {
-            ["Adamantite Bar"] = 2,
-            ["Adamantite Nails"] = 1,
-            ["Steel Handle"] = 1,
+            ["Farming Scythe"] = 1,
+            ["Log"] = 10,
+            ["Coins"] = 10,
+            ["Cabbage"] = 20,
         },
-        ["description"] = "Sturdy Adamantite metal, fantastic for breaking metal and stone!",
+        ["description"] = "",
     },
     ["Bronze Armor"] = {
         ["itemTier"] = 2,
@@ -4360,72 +6123,6 @@ return {
             ["Hide"] = 1,
         },
         ["description"] = "Bronze armor has protected soldiers since ancient times. A reliable choice!",
-    },
-    ["Asian Forge"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Asian Forge",
-        },
-        ["id"] = 423,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 4,
-            ["Wood Plank"] = 20,
-            ["Bricks"] = 35,
-            ["Steel Bar"] = 15,
-        },
-        ["itemTier"] = 8,
-        ["description"] = "",
-    },
-    ["Mod Armor"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 451,
-        ["itemStats"] = {
-            ["defense"] = 100,
-        },
-        ["itemTier"] = 9,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
-        ["recipe"] = {
-        },
-    },
-    ["Bamboo"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 421,
-        ["recipe"] = {
-            ["Leaf"] = 5,
-            ["Log"] = 5,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Lantern Round"] = {
-        ["durability"] = 150,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Coal"] = 2,
-            ["Log"] = 5,
-        },
-        ["id"] = 420,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -2,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
     },
     ["Serving Barrel"] = {
         ["durability"] = 200,
@@ -4451,22 +6148,6 @@ return {
         },
         ["description"] = "",
     },
-    ["Lantern"] = {
-        ["durability"] = 150,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Coal"] = 2,
-            ["Log"] = 5,
-        },
-        ["id"] = 419,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -2,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
     ["Gladiator Darksteel Helmet"] = {
         ["itemType"] = {
             ["1"] = "Helmet",
@@ -4480,34 +6161,36 @@ return {
         ["itemTier"] = 7,
         ["cantBeDropped"] = true,
         ["isArenaItem"] = true,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "Darksteel helmets are as strong as they come, forged from the heart of the volcanic metals.",
         ["recipe"] = {
         },
     },
-    ["Admin Bag"] = {
-        ["restricted"] = true,
+    ["Samurai Bag"] = {
         ["itemType"] = {
             ["1"] = "Backpack",
             ["2"] = "Clothing",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 154,
+        ["id"] = 405,
         ["itemStats"] = {
-            ["backpackCapacity"] = 9999999,
-            ["defense"] = 100,
+            ["backpackCapacity"] = 750,
+            ["defense"] = 18,
         },
-        ["itemTier"] = 9,
+        ["itemTier"] = 8,
         ["cantBeDropped"] = true,
+        ["description"] = "A sturdy Samurai bag, designed to distribute weight better on your back to let you carry more!",
         ["weight"] = 0.1,
-        ["description"] = "",
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
         ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Steel Bar"] = 6,
+            ["Adamantite Bar"] = 6,
+            ["Wooden Rod"] = 4,
             ["Hide"] = 2,
         },
+        ["price"] = 999,
     },
     ["Sword Sign"] = {
         ["durability"] = 100,
@@ -4521,18 +6204,6 @@ return {
         ["recipe"] = {
             ["Log"] = 2,
             ["Iron Bar"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Pine Tree"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 242,
-        ["recipe"] = {
-            ["Leaf"] = 5,
-            ["Log"] = 5,
         },
         ["description"] = "",
     },
@@ -4576,33 +6247,27 @@ return {
         ["description"] = "Can be used to tame animals, or to bake bread!",
         ["plantName"] = "Wheat",
     },
-    ["Armor Stand"] = {
-        ["durability"] = 1000,
+    ["_Egg Compass"] = {
+        ["markerName"] = "HatchEgg",
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Compass",
+            ["2"] = "Tool",
         },
-        ["interactionData"] = {
-            ["interactionName"] = "Open",
-            ["opensArmorStand"] = true,
+        ["cantPutInStorage"] = true,
+        ["deprecated"] = true,
+        ["itemStats"] = {
         },
-        ["id"] = 394,
-        ["recipe"] = {
-            ["Wood Plank"] = 6,
-        },
-        ["itemTier"] = 1,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
         ["description"] = "",
-    },
-    ["Books"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["Idle"] = "rbxassetid://0",
         },
-        ["id"] = 165,
+        ["forceGenerateDroppedModel"] = true,
         ["recipe"] = {
-            ["Leaf"] = 2,
-            ["Rope"] = 1,
         },
-        ["description"] = "",
+        ["id"] = 449,
     },
     ["Royal Couch"] = {
         ["durability"] = 750,
@@ -4618,263 +6283,25 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Campfire"] = {
-        ["durability"] = 100,
+    ["Gladiator Arrow"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 74,
-        ["recipe"] = {
-            ["Stone"] = 3,
-            ["Log"] = 2,
-        },
-        ["interactionData"] = {
-            ["interactionName"] = "Cook",
-            ["opensCraftingTree"] = "Campfire",
-        },
-        ["description"] = "",
-    },
-    ["Admin Helmet"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
+            ["1"] = "Ammo",
         },
         ["cantPutInStorage"] = true,
-        ["id"] = 153,
+        ["id"] = 505,
         ["itemStats"] = {
-            ["defense"] = 100,
-        },
-        ["itemTier"] = 9,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "",
-        ["recipe"] = {
-        },
-    },
-    ["Asian Gate"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 417,
-        ["recipe"] = {
-            ["Iron Bar"] = 2,
-            ["Log"] = 20,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Gladiator Atlantean Trident"] = {
-        ["isArenaItem"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 468,
-        ["itemStats"] = {
-            ["meleeDamage"] = 75,
-        },
-        ["onlyAdminCanSpawn"] = true,
-        ["spear"] = true,
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "The mighty weapon of the Atlantean warriors! It has the unique ability to allow the user to dash underwater, unlike any other weapon!",
-        ["recipe"] = {
-        },
-    },
-    ["Asian Brazier"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 415,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 4,
-            ["Log"] = 2,
-            ["Coal"] = 2,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Bluesteel Furnace"] = {
-        ["durability"] = 750,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Bluesteel Furnace",
-        },
-        ["id"] = 199,
-        ["recipe"] = {
-            ["Steel Nails"] = 2,
-            ["Shingles"] = 10,
-            ["Bricks"] = 20,
-            ["Wood Plank"] = 10,
-        },
-        ["itemTier"] = 4,
-        ["description"] = "",
-    },
-    ["Asian Roof Top"] = {
-        ["durability"] = 800,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 413,
-        ["recipe"] = {
-            ["Wood Plank"] = 1,
-            ["Shingles"] = 4,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Asian Roof Corner"] = {
-        ["durability"] = 800,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 412,
-        ["recipe"] = {
-            ["Wood Plank"] = 1,
-            ["Shingles"] = 4,
-        },
-        ["craftingStyle"] = 1,
-        ["description"] = "",
-    },
-    ["Darksteel Pickaxe"] = {
-        ["itemType"] = {
-            ["1"] = "Pickaxe",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 266,
-        ["itemStats"] = {
-            ["pickaxeStrength"] = 500,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 2,
-            ["Steel Handle"] = 1,
-            ["Obsidian Nails"] = 1,
-        },
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. Fantastic for mining.",
-    },
-    ["Gladiator Bluesteel Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 493,
-        ["itemStats"] = {
-            ["defense"] = 14,
-        },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Armor made out of the strongest metal in the known world!",
-        ["recipe"] = {
-        },
-    },
-    ["Gold Nugget"] = {
-        ["onlySupervisorCanSpawn"] = true,
-        ["cantBeDropped"] = true,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 207,
-        ["forceGenerateDroppedModel"] = true,
-        ["cantPutInStorage"] = true,
-        ["description"] = "Gold Nuggets aren't worth very much on their own, but they can be turned into Coins at a Coin Press!",
-    },
-    ["Adamantite"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 409,
-        ["dropOnDeathAnyways"] = true,
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
-        ["price"] = 2000,
-    },
-    ["Plate And Utensils"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 303,
-        ["recipe"] = {
-            ["Iron Bar"] = 2,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Asian Wall"] = {
-        ["recipe"] = {
-            ["Leaf"] = 2,
-            ["Log"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 408,
-        ["durability"] = 800,
-        ["description"] = "",
-    },
-    ["Gladiator Darksteel Sword"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 459,
-        ["itemStats"] = {
-            ["meleeDamage"] = 60,
+            ["damage"] = 1,
         },
         ["isArenaItem"] = true,
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
         ["recipe"] = {
         },
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["price"] = 1,
+        ["forceGenerateDroppedModel"] = true,
+        ["itemTier"] = 2,
+        ["description"] = "It's an arrow. You shoot people with it. This is generally considered fatal.",
     },
     ["Gold Pile"] = {
         ["durability"] = 200,
@@ -4911,46 +6338,6 @@ return {
             ["Rope"] = 5,
         },
     },
-    ["Iron Fishing Rod"] = {
-        ["itemType"] = {
-            ["1"] = "Fishing Rod",
-            ["2"] = "Tool",
-        },
-        ["targetSpeed"] = 1,
-        ["id"] = 274,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["timeNeededInTarget"] = 5,
-        ["recipe"] = {
-            ["Wood Plank"] = 4,
-            ["Rope"] = 5,
-            ["Iron Bar"] = 3,
-        },
-        ["itemTier"] = 1,
-        ["rodColor"] = 0.639216, 0.635294, 0.647059,
-        ["catchTime"] = NumberRange.new(2, 3),
-        ["weight"] = 0.1,
-        ["targetSize"] = 0.4,
-        ["canCatchFish"] = {
-            ["1"] = "Carp",
-            ["2"] = "Salmon",
-            ["3"] = "Sea Snapper",
-            ["4"] = "Cod",
-            ["5"] = "Shrimp",
-            ["6"] = "Mussel",
-            ["7"] = "Hide",
-            ["8"] = "Giant Tuna",
-            ["9"] = "Iron",
-            ["10"] = "Octopus",
-            ["11"] = "Leaf",
-            ["12"] = "Rope",
-        },
-        ["description"] = "",
-        ["timeToFish"] = 19,
-    },
     ["Crafting Table"] = {
         ["durability"] = 100,
         ["itemType"] = {
@@ -4966,28 +6353,6 @@ return {
             ["Log"] = 5,
         },
         ["description"] = "",
-    },
-    ["Samurai Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 404,
-        ["itemStats"] = {
-            ["defense"] = 18,
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["description"] = "Samurai helmets allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite Bar"] = 2,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
     },
     ["Bluesteel Bag"] = {
         ["itemTier"] = 6,
@@ -5008,52 +6373,6 @@ return {
             ["Hide"] = 2,
         },
         ["price"] = 3000,
-    },
-    ["Samurai Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 403,
-        ["itemStats"] = {
-            ["defense"] = 18,
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["description"] = "Samurai armor allows for ease of movement while also providing fantastic protection with the Adamantite metal.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite Bar"] = 3,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["price"] = 999,
-    },
-    ["Samurai Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 402,
-        ["itemStats"] = {
-            ["defense"] = 18,
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["description"] = "Samurai pants allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Adamantite Bar"] = 3,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["price"] = 999,
     },
     ["Bluesteel Fishing Rod"] = {
         ["itemType"] = {
@@ -5097,19 +6416,6 @@ return {
         ["description"] = "",
         ["timeToFish"] = 13,
     },
-    ["Fireplace"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 170,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 2,
-            ["Coal"] = 3,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
     ["Wood Wall 6x6"] = {
         ["recipe"] = {
             ["Log"] = 1,
@@ -5128,7 +6434,7 @@ return {
         ["itemTier"] = 4,
         ["cantBeDropped"] = true,
         ["chargedFOVModifier"] = -24,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["forceGenerateDroppedModel"] = true,
         ["chargeTime"] = 1.4,
         ["itemType"] = {
@@ -5156,67 +6462,30 @@ return {
         ["useLeftHand"] = true,
         ["reloadTime"] = 0.5,
         ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
+            ["1"] = "Gladiator Arrow",
         },
         ["recipe"] = {
         },
         ["rangedWeaponType"] = "Charge",
     },
-    ["Chandelier"] = {
-        ["durability"] = 300,
+    ["Gladiator Iron Pants"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
         },
-        ["recipe"] = {
-            ["Coal"] = 2,
-            ["Iron Bar"] = 5,
-        },
-        ["id"] = 188,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -2,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Lectern"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 396,
-        ["recipe"] = {
-            ["Wood Plank"] = 5,
-            ["Log"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Cooked Chicken"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 15,
+        ["cantPutInStorage"] = true,
+        ["id"] = 483,
         ["itemStats"] = {
-            ["food"] = 150,
+            ["defense"] = 10,
         },
-        ["description"] = "Did you know chicken and frog legs taste nearly exactly the same? Well I have to know it. So now you do too.",
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Iron pants are incredibly heavy, but, also incredibly strong!",
         ["recipe"] = {
-            ["Chicken"] = 1,
-            ["Leaf"] = 1,
-        },
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-        },
-        ["itemTier"] = 1,
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 15,
-        ["price"] = 2,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
         },
     },
     ["Mussel"] = {
@@ -5226,61 +6495,6 @@ return {
         },
         ["weight"] = 0.1,
         ["id"] = 288,
-        ["description"] = "",
-    },
-    ["Room Divider"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 395,
-        ["recipe"] = {
-            ["Log"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Weapon Rack"] = {
-        ["durability"] = 1000,
-        ["interactionData"] = {
-            ["staticWeight"] = 1,
-            ["opensStorage"] = true,
-            ["interactionName"] = "Open",
-            ["requiredTypes"] = {
-                ["1"] = {
-                    ["1"] = "Melee Weapon",
-                    ["2"] = "Tool",
-                },
-                ["2"] = {
-                    ["1"] = "Ranged Weapon",
-                    ["2"] = "Tool",
-                    ["3"] = "Gun",
-                },
-            },
-        },
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Wood Plank"] = 6,
-        },
-        ["id"] = 393,
-        ["itemStats"] = {
-            ["storageCapacity"] = 3,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Royal Bathtub"] = {
-        ["durability"] = 300,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 391,
-        ["recipe"] = {
-            ["Iron Bar"] = 4,
-        },
-        ["itemTier"] = 2,
         ["description"] = "",
     },
     ["Giant Tuna"] = {
@@ -5330,6 +6544,1591 @@ return {
         },
         ["price"] = 999,
     },
+    ["Bat Gargoyle"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 320,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Cannon"] = {
+        ["durability"] = 1000,
+        ["validAmmoTypes"] = {
+            ["1"] = "Cannon Ammo",
+        },
+        ["itemType"] = {
+            ["1"] = "Cannon",
+            ["2"] = "Structure",
+        },
+        ["cannonStats"] = {
+            ["pitchLimit"] = {
+                ["1"] = -36,
+                ["2"] = 17,
+            },
+            ["yawSpeed"] = 20,
+            ["AIDamage"] = 70,
+            ["launchSFXVolume"] = 1,
+            ["choppableDamage"] = 70,
+            ["ammoModelWeightModifier"] = -10000,
+            ["pitchSpeed"] = 28,
+            ["moveSpeed"] = 3,
+            ["launchParticle"] = "CannonExplosion",
+            ["launchDebounce"] = 8,
+            ["canControlPitch"] = true,
+            ["playerDamage"] = 70,
+            ["launchModel"] = "Cannonball",
+            ["structureDamage"] = 1000,
+            ["launchGuideBeamTimeLength"] = 0.1,
+            ["launchSFX"] = "rbxassetid://120205379304925",
+            ["launchSpeed"] = 200,
+        },
+        ["id"] = 369,
+        ["recipe"] = {
+            ["Wooden Rod"] = 6,
+            ["Wood Plank"] = 15,
+            ["Darksteel Bar"] = 4,
+            ["Rope"] = 15,
+        },
+        ["itemTier"] = 3,
+        ["description"] = "TODO",
+    },
+    ["Vicanite Pickaxe"] = {
+        ["itemType"] = {
+            ["1"] = "Pickaxe",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 550,
+        ["itemStats"] = {
+            ["pickaxeStrength"] = 1000,
+        },
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Steel Handle"] = 1,
+            ["Vicanite Bar"] = 3,
+        },
+        ["description"] = "Sturdy Vicanite metal, fantastic for breaking metal and stone!",
+    },
+    ["Vicanite Axe"] = {
+        ["itemType"] = {
+            ["1"] = "Axe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 549,
+        ["itemStats"] = {
+            ["axeStrength"] = 15,
+            ["meleeDamage"] = 45,
+        },
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Steel Handle"] = 1,
+            ["Vicanite Bar"] = 3,
+        },
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["price"] = 999,
+        ["description"] = "Sturdy Vicanite metal, fantastic for splitting wood!",
+    },
+    ["Painting: Ashes"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 548,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Stone Slanted Wall UpsideDown"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 381,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Lion Head"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 321,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Chiseled Stones"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Painting: Stallion"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 547,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Small Power Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 507,
+        ["itemStats"] = {
+            ["damage"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Powered Up (Short)",
+        },
+        ["description"] = "A potion to make you more powerful for 30 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Gladiator Steel Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 492,
+        ["itemStats"] = {
+            ["defense"] = 12,
+        },
+        ["itemTier"] = 4,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for armor!",
+        ["recipe"] = {
+        },
+    },
+    ["Viking Pillar"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 530,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+            ["Wood Plank"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Bathtub"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 187,
+        ["recipe"] = {
+            ["Log"] = 4,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Juggernaut Bag"] = {
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 544,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 1000,
+            ["defense"] = 20,
+        },
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A bag made of the rare Vicanite ore that allows for even more space than once thought possible",
+        ["recipe"] = {
+            ["Darksteel Bar"] = 6,
+            ["Wooden Rod"] = 4,
+            ["Vicanite Bar"] = 6,
+            ["Hide"] = 8,
+        },
+    },
+    ["Juggernaut Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 542,
+        ["itemStats"] = {
+            ["sluggish"] = 5,
+            ["defense"] = 20,
+        },
+        ["description"] = "A powerful Chestplate forged from Vicanite that offers strong defense in exchange for slower movespeed",
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["weight"] = 0.1,
+        ["slowdownAmount"] = 5,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Rope"] = 5,
+            ["Vicanite Bar"] = 3,
+            ["Hide"] = 5,
+        },
+        ["price"] = 25,
+    },
+    ["Vicanite Refinery"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Vicanite Refinery",
+        },
+        ["id"] = 540,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 4,
+            ["Wood Plank"] = 20,
+            ["Bricks"] = 35,
+            ["Steel Bar"] = 15,
+        },
+        ["itemTier"] = 9,
+        ["description"] = "",
+    },
+    ["Viking Slanted Wall UpsideDown"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 527,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Blacksmith Sign"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 174,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Log"] = 2,
+            ["Iron Bar"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Painting: Encounter"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 248,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Iron Pants"] = {
+        ["itemTier"] = 3,
+        ["description"] = "Iron pants are incredibly heavy, but, also incredibly strong!",
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 34,
+        ["itemStats"] = {
+            ["defense"] = 10,
+        },
+        ["recipe"] = {
+            ["Rope"] = 2,
+            ["Iron Bar"] = 3,
+            ["Hide"] = 1,
+        },
+        ["price"] = 25,
+    },
+    ["Vicanite Bar"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 538,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "Vicanite is an extremely strong ore, but is much heavier than other metals.",
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Coal"] = 5,
+            ["Vicanite"] = 1,
+            ["Gold Nugget"] = 1,
+        },
+        ["price"] = 500,
+    },
+    ["Gladiator Leather Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 481,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["description"] = "The most basic kind of pants, not very good, but better than nothing!",
+    },
+    ["Large Wood House"] = {
+        ["id"] = 146,
+        ["recipe"] = {
+            ["Log"] = 100,
+            ["Iron Bar"] = 4,
+            ["Wood Plank"] = 4,
+            ["Iron Nails"] = 2,
+            ["Leaf"] = 80,
+        },
+        ["itemType"] = {
+            ["1"] = "Prefab",
+            ["2"] = "Structure",
+        },
+        ["description"] = "",
+    },
+    ["Vicanite"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 539,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A rare ore that was once growing in the coldest biomes that had mysteriously disappeared, until now",
+        ["price"] = 400,
+    },
+    ["Viking Window"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 537,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Viking Wall 6x3"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 536,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Wood Pile"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 169,
+        ["recipe"] = {
+            ["Log"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Bluesteel Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "A spear made out of the strongest metal in the known world",
+        ["id"] = 446,
+        ["itemStats"] = {
+            ["meleeDamage"] = 60,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 6,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Refined Bluesteel"] = 5,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Potted Plant"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 322,
+        ["recipe"] = {
+            ["Log"] = 4,
+            ["Leaf"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Spicy Veggie Meal"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 215,
+        ["itemStats"] = {
+            ["food"] = 600,
+        },
+        ["itemTier"] = 2,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Good_Meal",
+            ["2"] = "Ate_Spicy_Food",
+        },
+        ["description"] = "A very spicy salad basically. Will give you a bit of spring in your step, and provides more food than other comparable foods.",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 40,
+        ["recipe"] = {
+            ["Pepper"] = 6,
+            ["Cabbage Salad"] = 2,
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Viking Round Pillar"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 533,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 3,
+            ["Wood Plank"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Street Lamp"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 301,
+        ["recipe"] = {
+            ["Coal"] = 2,
+            ["Iron Bar"] = 10,
+        },
+        ["itemTier"] = 3,
+        ["description"] = "",
+    },
+    ["Steel Bag"] = {
+        ["itemTier"] = 4,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for a bag!",
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 43,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 250,
+            ["defense"] = 12,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Steel Bar"] = 6,
+            ["Hide"] = 2,
+        },
+        ["price"] = 480,
+    },
+    ["Deer Trophy"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 238,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Log"] = 1,
+            ["Hide"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Copper Miner"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 340,
+        ["itemStats"] = {
+            ["storageCapacity"] = 10,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["RequiresTerrainFloor"] = true,
+            ["Production"] = {
+                ["TheseItems"] = {
+                    ["1"] = "Copper",
+                },
+                ["Rate"] = 20,
+                ["Amount"] = 1,
+            },
+            ["Operation"] = {
+                ["Cost"] = 1,
+                ["Rate"] = 19,
+                ["FoodBoxRangeNeeded"] = 60,
+            },
+            ["MaxNPCs"] = 1,
+            ["NPC_Type"] = "Gathering",
+            ["NPC_Name"] = "Miner",
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["interactionName"] = "Collect Resources",
+            ["AllowedToStore"] = {
+            },
+        },
+        ["recipe"] = {
+            ["Stone"] = 20,
+            ["Log"] = 10,
+            ["Copper"] = 10,
+            ["Steel Pickaxe"] = 1,
+            ["Coins"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Viking Roof Ridge"] = {
+        ["durability"] = 800,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 532,
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+            ["Shingles"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Gladiator Iron Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 499,
+        ["itemStats"] = {
+            ["defense"] = 10,
+        },
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Iron helmets are incredibly heavy, but, also incredibly strong!",
+        ["recipe"] = {
+        },
+    },
+    ["Viking Gate"] = {
+        ["durability"] = 750,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 529,
+        ["recipe"] = {
+            ["Steel Bar"] = 2,
+            ["Log"] = 40,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Hearty Stew"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 217,
+        ["itemStats"] = {
+            ["food"] = 1000,
+        },
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Ate_Good_Meal",
+        },
+        ["description"] = "A very hearty and filling stew that could feed a small army. Gives more health bonuses, and more hunger, than any other food.",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 60,
+        ["recipe"] = {
+            ["Carrot"] = 10,
+            ["Cabbage"] = 20,
+            ["Delicious Stew"] = 2,
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Thatch Roof Corner"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 69,
+        ["recipe"] = {
+            ["Leaf"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Viking Door"] = {
+        ["durability"] = 1200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 528,
+        ["recipe"] = {
+            ["Steel Nails"] = 2,
+            ["Log"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Roof Ridge: Snake"] = {
+        ["durability"] = 100,
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Steel Nails"] = 1,
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 524,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Viking Wall Decor Dragon"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+        },
+        ["id"] = 521,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Bread Sign"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 175,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Log"] = 2,
+            ["Iron Bar"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Glider"] = {
+        ["itemType"] = {
+            ["1"] = "Glider",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 430,
+        ["itemStats"] = {
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["HasAbility"] = {
+            ["TriggeredBy"] = "None",
+            ["Name"] = "GliderCooldown",
+            ["Cooldown"] = 6,
+        },
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["hold"] = "rbxassetid://86367732986089",
+            ["glide"] = "rbxassetid://83749034588820",
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "",
+        ["recipe"] = {
+            ["Log"] = 10,
+            ["Adamantite Nails"] = 5,
+            ["Rope"] = 15,
+        },
+    },
+    ["Ballista Bolt"] = {
+        ["recipe"] = {
+            ["Iron Bar"] = 1,
+        },
+        ["canProjectileDamageStructures"] = true,
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 156,
+        ["itemStats"] = {
+            ["damage"] = 1,
+        },
+        ["itemTier"] = 3,
+        ["description"] = "A massive bolt made of pure Iron, that can be fired out of a Ballista.",
+    },
+    ["Viking Hearth"] = {
+        ["durability"] = 400,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 519,
+        ["recipe"] = {
+            ["Stone"] = 12,
+            ["Log"] = 12,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Viking Brazier"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 517,
+        ["recipe"] = {
+            ["Log"] = 2,
+            ["Coal"] = 2,
+            ["Steel Bar"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Viking Bed"] = {
+        ["durability"] = 800,
+        ["isBed"] = true,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 515,
+        ["recipe"] = {
+            ["Wood Plank"] = 6,
+            ["Straw Bundle"] = 6,
+            ["Steel Nails"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Shrimp"] = {
+        ["itemTier"] = 1,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 286,
+        ["description"] = "",
+    },
+    ["Royal Chest"] = {
+        ["durability"] = 2000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 514,
+        ["itemStats"] = {
+            ["storageCapacity"] = 500,
+        },
+        ["itemTier"] = 4,
+        ["interactionData"] = {
+            ["interactionName"] = "Open",
+            ["opensStorage"] = true,
+        },
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Wood Plank"] = 10,
+            ["Obsidian Nails"] = 2,
+            ["Coins"] = 10,
+        },
+        ["animations"] = {
+            ["interaction_idle"] = {
+                ["1"] = "rbxassetid://11505226843",
+            },
+            ["interaction_end"] = {
+                ["1"] = "rbxassetid://11505243111",
+            },
+            ["interaction_begin"] = {
+                ["1"] = "rbxassetid://11505222561",
+            },
+        },
+        ["description"] = "",
+    },
+    ["Snowball"] = {
+        ["itemType"] = {
+            ["1"] = "Snowball",
+            ["2"] = "Tool",
+        },
+        ["id"] = 513,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["itemTier"] = 3,
+        ["HasAbility"] = {
+            ["TriggeredBy"] = "None",
+            ["Name"] = "SnowballCooldown",
+            ["Cooldown"] = 1,
+        },
+        ["RagdollImmunityLength"] = 4,
+        ["weight"] = 0.1,
+        ["RagdollLength"] = 4,
+        ["recipe"] = {
+            ["Ice Chunks"] = 1,
+        },
+        ["price"] = 1,
+        ["description"] = "A snowball, toss it at someone you hate",
+    },
+    ["Medium Defense Potion"] = {
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 511,
+        ["itemStats"] = {
+            ["defense"] = 20,
+            ["food"] = 0,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Potion Sickness (Medium)",
+            ["2"] = "Defense Up (Medium)",
+        },
+        ["description"] = "A potion to increase your defenses for 60 seconds!",
+        ["weight"] = 0.1,
+        ["recipe"] = {
+        },
+        ["cantEatIfHasEffect"] = {
+            ["1"] = "Potion Sickness (Short)",
+            ["2"] = "Potion Sickness (Medium)",
+            ["3"] = "Potion Sickness (Long)",
+        },
+        ["price"] = 1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Pretzel"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 23,
+        ["itemStats"] = {
+            ["food"] = 200,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "You're not supposed to have this item in the game yet...",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 10,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Painting: Horizon"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 546,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 4,
+            ["Log"] = 2,
+        },
+        ["description"] = "",
+    },
+    ["Blue Flowers"] = {
+        ["durability"] = 50,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 326,
+        ["recipe"] = {
+            ["Leaf"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Gladiator Musket Ammo"] = {
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 506,
+        ["itemStats"] = {
+            ["damage"] = 0,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["recipe"] = {
+        },
+        ["cantBeDropped"] = true,
+        ["price"] = 250,
+        ["weight"] = 0,
+        ["ProjectileGoStraight"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["itemTier"] = 7,
+        ["description"] = "A round steel bullet, and a package of powder to ignite the shot. Dangerous in a musket.",
+    },
+    ["Brazier"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 87,
+        ["recipe"] = {
+            ["Coal"] = 1,
+            ["Iron Bar"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Food Box"] = {
+        ["durability"] = 750,
+        ["itemType"] = {
+            ["1"] = "Helper",
+            ["2"] = "Structure",
+        },
+        ["id"] = 334,
+        ["itemStats"] = {
+            ["storageCapacity"] = 1000,
+        },
+        ["itemTier"] = 1,
+        ["HelperDetails"] = {
+            ["IsFoodBox"] = true,
+        },
+        ["interactionData"] = {
+            ["opensStorage"] = true,
+            ["InvalidItemMessage"] = "Must be food!",
+            ["interactionName"] = "Deposit Food",
+            ["AllowedToStore"] = {
+                ["1"] = {
+                    ["1"] = "Consumable",
+                },
+            },
+        },
+        ["recipe"] = {
+            ["Wood Plank"] = 10,
+            ["Steel Nails"] = 4,
+            ["Shingles"] = 6,
+        },
+        ["description"] = "",
+    },
+    ["Spicy Meat Meal"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 214,
+        ["itemStats"] = {
+            ["food"] = 850,
+        },
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Amazing_Meal",
+            ["2"] = "Ate_Spicy_Food",
+        },
+        ["description"] = "A bit of spice added onto a delicious meal of meat and greens, will give you a bit of spring in your step",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 50,
+        ["recipe"] = {
+            ["Pepper"] = 6,
+            ["Rib Meal"] = 1,
+            ["Cabbage"] = 6,
+        },
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Rock"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 243,
+        ["recipe"] = {
+            ["Stone"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Darksteel Bar"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 259,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "Darksteel is forged from the unholy mixing of Obsidian and Steel. Stronger, sharper, better, than any other metal.",
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Obsidian"] = 1,
+            ["Coal"] = 5,
+            ["Steel Bar"] = 1,
+        },
+        ["price"] = 2,
+    },
+    ["Viking Roof"] = {
+        ["durability"] = 800,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 531,
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+            ["Shingles"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Gladiator Bronze Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 490,
+        ["itemStats"] = {
+            ["defense"] = 8,
+        },
+        ["itemTier"] = 2,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["description"] = "Bronze armor has protected soldiers since ancient times. A reliable choice!",
+    },
+    ["Gladiator Darksteel Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 495,
+        ["itemStats"] = {
+            ["defense"] = 18,
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Darksteel armor is as strong as it comes, forged from the heart of the volcanic metals.",
+        ["recipe"] = {
+        },
+    },
+    ["Battleaxe"] = {
+        ["description"] = "A powerful battleaxe that slows your enemies with the power of Vicanite",
+        ["price"] = 999,
+        ["itemTier"] = 9,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["forceGenerateDroppedModel"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 545,
+        ["itemStats"] = {
+            ["meleeDamage"] = 90,
+        },
+        ["cantUseShield"] = true,
+        ["dropOnDeathAnyways"] = true,
+        ["canShieldBlock"] = true,
+        ["PostureBreakTime"] = 4,
+        ["hitEffects"] = {
+            ["1"] = {
+                ["Sluggish"] = 5,
+                ["Chance"] = 1,
+            },
+        },
+        ["animations"] = {
+            ["idle"] = "rbxassetid://87592945190823",
+            ["action"] = {
+                ["1"] = "rbxassetid://103024823656540",
+                ["2"] = "rbxassetid://80862714512559",
+            },
+        },
+        ["recipe"] = {
+            ["Obsidian Nails"] = 2,
+            ["Darksteel Bar"] = 4,
+            ["Vicanite Bar"] = 4,
+            ["Rope"] = 10,
+        },
+    },
+    ["Gladiator Samurai Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 496,
+        ["itemStats"] = {
+            ["defense"] = 20,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Samurai armor allows for ease of movement while also providing fantastic protection with the Adamantite metal.",
+        ["recipe"] = {
+        },
+    },
+    ["Stone Window"] = {
+        ["durability"] = 2400,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 130,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Samurai Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 403,
+        ["itemStats"] = {
+            ["defense"] = 18,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["description"] = "Samurai armor allows for ease of movement while also providing fantastic protection with the Adamantite metal.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 3,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["price"] = 999,
+    },
+    ["Gladiator Samurai Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 488,
+        ["itemStats"] = {
+            ["defense"] = 20,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Samurai pants allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
+        ["recipe"] = {
+        },
+    },
+    ["Gladiator Steel Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 457,
+        ["itemStats"] = {
+            ["meleeDamage"] = 44,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemTier"] = 5,
+        ["cantBeDropped"] = true,
+        ["description"] = "Lightweight and strong, you can't beat a good steel sword!",
+        ["weight"] = 0,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["price"] = 240,
+    },
+    ["_deprecated_musket_ammo"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["weight"] = 0,
+        ["id"] = 375,
+        ["description"] = "",
+        ["deprecated"] = true,
+    },
+    ["Gladiator Atlantean Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 480,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 4,
+        ["description"] = "A shield made of for the mighty warriors of old Atlantis.",
+    },
+    ["Gladiator Darksteel Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 479,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 3,
+        ["description"] = "A darksteel shield forged with spikes and sheer malice against all who live.",
+    },
+    ["Atlantean Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 358,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["recipe"] = {
+            ["Atlantean Steel"] = 4,
+            ["Coral"] = 5,
+            ["Rope"] = 2,
+            ["Tool Handle"] = 1,
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 4,
+        ["description"] = "A shield made of for the mighty warriors of old Atlantis.",
+    },
+    ["Gladiator Wooden Club"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 461,
+        ["itemStats"] = {
+            ["meleeDamage"] = 20,
+        },
+        ["itemTier"] = 1,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["description"] = "It will get the job done, if you swing hard enough!",
+    },
+    ["Palisade Wall"] = {
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 2,
+        },
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 67,
+        ["durability"] = 1500,
+        ["description"] = "",
+    },
+    ["Iron Bag"] = {
+        ["itemTier"] = 3,
+        ["description"] = "Iron bags are incredibly heavy, but, also incredibly strong!",
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 42,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 150,
+            ["defense"] = 10,
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Hide"] = 2,
+            ["Iron Bar"] = 6,
+        },
+        ["price"] = 55,
+    },
+    ["Gladiator Iron Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 476,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 4,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 6,
+        ["description"] = "An iron shield, sturdy, and effective!",
+    },
+    ["Wood Stairs"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 228,
+        ["recipe"] = {
+            ["Log"] = 3,
+        },
+        ["description"] = "",
+    },
+    ["Coins"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 208,
+        ["noStackLimit"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0,
+        ["onlySupervisorCanSpawn"] = true,
+        ["description"] = "Coins can be used to purchase various unique and powerful things from Merchants around the map!",
+        ["recipe"] = {
+            ["Gold Nugget"] = 1,
+            ["amount"] = 3,
+        },
+    },
+    ["Gladiator Musket"] = {
+        ["description"] = "Invented in the early medieval ages, muskets are powerful, but extremely slow to fire and expensive to maintain.",
+        ["projectileVelocity"] = 900,
+        ["animations"] = {
+            ["action_hold_1p"] = "rbxassetid://114296015052629",
+            ["idle_1p"] = "rbxassetid://80683494687557",
+            ["action_hold"] = "rbxassetid://114296015052629",
+            ["reload"] = "rbxassetid://127707482228931",
+            ["idle"] = "rbxassetid://80683494687557",
+            ["action"] = "rbxassetid://83536341863663",
+            ["action_release"] = "rbxassetid://11631655121",
+            ["action_release_1p"] = "rbxassetid://11630595766",
+            ["action_1p"] = "rbxassetid://83536341863663",
+            ["reload_1p"] = "rbxassetid://127707482228931",
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["chargedFOVModifier"] = -15,
+        ["weight"] = 0,
+        ["forceGenerateDroppedModel"] = true,
+        ["chargeTime"] = 0.9,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 474,
+        ["itemStats"] = {
+            ["rangedDamage"] = 120,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["useLeftHand"] = false,
+        ["reloadTime"] = 7,
+        ["validAmmoTypes"] = {
+            ["1"] = "Gladiator Musket Ammo",
+        },
+        ["recipe"] = {
+        },
+        ["rangedWeaponType"] = "gun",
+    },
+    ["Poison Fang"] = {
+        ["recipe"] = {
+        },
+        ["cantBeDropped"] = true,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 1,
+        ["id"] = 438,
+        ["forceGenerateDroppedModel"] = true,
+        ["cantPutInStorage"] = true,
+        ["description"] = "The poison gland of the deadly cave spider. Useful for coating an arrow in poison.",
+    },
     ["Water Trough"] = {
         ["durability"] = 500,
         ["itemType"] = {
@@ -5341,6 +8140,828 @@ return {
             ["Wood Plank"] = 2,
         },
         ["description"] = "",
+    },
+    ["Gladiator Samurai Spear"] = {
+        ["isArenaItem"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 467,
+        ["itemStats"] = {
+            ["meleeDamage"] = 65,
+        },
+        ["onlyAdminCanSpawn"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A very powerful Spear",
+        ["recipe"] = {
+        },
+    },
+    ["Gladiator Bluesteel Spear"] = {
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 465,
+        ["itemStats"] = {
+            ["meleeDamage"] = 45,
+        },
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["spear"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0,
+        ["PostureBreakTime"] = 4,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "A spear made out of the strongest metal in the known world",
+        ["recipe"] = {
+        },
+    },
+    ["Darksteel Forge"] = {
+        ["durability"] = 999,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Darksteel Forge",
+        },
+        ["id"] = 269,
+        ["recipe"] = {
+            ["Wood Plank"] = 20,
+            ["Shingles"] = 15,
+            ["Bricks"] = 35,
+            ["Bluesteel Nails"] = 4,
+        },
+        ["itemTier"] = 7,
+        ["description"] = "",
+    },
+    ["Copper Nails"] = {
+        ["recipe"] = {
+            ["Copper"] = 1,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 105,
+        ["itemTier"] = 1,
+        ["price"] = 2,
+        ["description"] = "Nails are an important part of building any complex object",
+    },
+    ["Arbalest"] = {
+        ["description"] = "The Arbalest is a bigger, more powerful version of a crossbow, that comes with a built in crank to increase firing power.",
+        ["projectileVelocity"] = 1400,
+        ["price"] = 1500,
+        ["itemTier"] = 6,
+        ["weight"] = 0.1,
+        ["aimFOVModifier"] = -15,
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["id"] = 198,
+        ["itemStats"] = {
+            ["rangedDamage"] = 25,
+        },
+        ["aimTime"] = 0.4,
+        ["animations"] = {
+            ["reload"] = "rbxassetid://11714138134",
+            ["idle_loaded"] = "rbxassetid://11714139803",
+            ["idle"] = "rbxassetid://11714136539",
+            ["idle_1p"] = "rbxassetid://11713857434",
+            ["idle_loaded_1p"] = "rbxassetid://11713862158",
+            ["action"] = "rbxassetid://11714141761",
+            ["action_1p"] = "rbxassetid://11713864410",
+            ["reload_1p"] = "rbxassetid://11713859958",
+        },
+        ["validAmmoTypes"] = {
+            ["1"] = "Arrow",
+            ["2"] = "Fire Arrow",
+            ["3"] = "Poison Arrow",
+        },
+        ["recipe"] = {
+            ["Wooden Rod"] = 12,
+            ["Bluesteel Nails"] = 2,
+            ["Rope"] = 12,
+        },
+        ["clipSize"] = 1,
+        ["reloadTime"] = 1.8,
+        ["automatic"] = false,
+        ["cooldown"] = 0.1,
+        ["rangedWeaponType"] = "normal",
+    },
+    ["Gladiator Bluesteel Shield"] = {
+        ["itemType"] = {
+            ["1"] = "Shield",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 478,
+        ["isArenaItem"] = true,
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["PostureBreakTime"] = 4,
+        ["description"] = "A thick shield used by the Imperial Legions themselves.",
+    },
+    ["Gladiator Katana"] = {
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 460,
+        ["itemStats"] = {
+            ["meleeDamage"] = 68,
+        },
+        ["animations"] = {
+            ["idle"] = "rbxassetid://87592945190823",
+            ["action"] = {
+                ["1"] = "rbxassetid://103024823656540",
+                ["2"] = "rbxassetid://80862714512559",
+            },
+        },
+        ["cantBeDropped"] = true,
+        ["itemTier"] = 8,
+        ["cantUseShield"] = true,
+        ["canShieldBlock"] = true,
+        ["weight"] = 0,
+        ["PostureBreakTime"] = 4,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "The Katana is an extremely effective sword, one of the best there is, and it's two handed nature allows those who are well trained to block a handful of arrows! But does not allow for the use of a shield.",
+        ["recipe"] = {
+        },
+    },
+    ["Ornate Table"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 83,
+        ["recipe"] = {
+            ["Iron Nails"] = 2,
+            ["Wood Plank"] = 2,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Gladiator Bluesteel Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 485,
+        ["itemStats"] = {
+            ["defense"] = 14,
+        },
+        ["itemTier"] = 6,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Pants made out of the strongest metal in the known world!",
+        ["recipe"] = {
+        },
+    },
+    ["Hanging Mirror"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 397,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Ice Chunks"] = 5,
+            ["Wood Plank"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Gladiator Bronze Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 455,
+        ["itemStats"] = {
+            ["meleeDamage"] = 28,
+        },
+        ["isArenaItem"] = true,
+        ["itemTier"] = 3,
+        ["cantBeDropped"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["weight"] = 0,
+        ["recipe"] = {
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["description"] = "A tried and true weapon, bronze swords have been used since ancient times",
+    },
+    ["Mod Bag"] = {
+        ["restricted"] = true,
+        ["itemType"] = {
+            ["1"] = "Backpack",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 453,
+        ["itemStats"] = {
+            ["backpackCapacity"] = 9999999,
+            ["defense"] = 100,
+        },
+        ["itemTier"] = 10,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["description"] = "",
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Steel Bar"] = 6,
+            ["Hide"] = 2,
+        },
+    },
+    ["Samurai Spear"] = {
+        ["description"] = "A very powerful Spear",
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 448,
+        ["itemStats"] = {
+            ["meleeDamage"] = 80,
+        },
+        ["PostureBreakTime"] = 4,
+        ["spear"] = true,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 5,
+            ["Wooden Rod"] = 8,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Turkey Decoration"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 307,
+        ["recipe"] = {
+            ["Log"] = 2,
+            ["Cooked Meat"] = 4,
+        },
+        ["description"] = "",
+    },
+    ["Bubble Spawner"] = {
+        ["itemTier"] = 4,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["cannotPlaceInCave"] = true,
+        ["id"] = 363,
+        ["recipe"] = {
+            ["Coral"] = 10,
+            ["Atlantean Ore"] = 1,
+            ["Bricks"] = 10,
+            ["Ice Chunks"] = 10,
+        },
+        ["description"] = "",
+        ["durability"] = 500,
+    },
+    ["Darksteel Spear"] = {
+        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. There is almost nothing more deadly in combat.",
+        ["dropOnDeathAnyways"] = true,
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 447,
+        ["itemStats"] = {
+            ["meleeDamage"] = 70,
+        },
+        ["PostureBreakTime"] = 4,
+        ["spear"] = true,
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 5,
+            ["Wooden Rod"] = 6,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Iron Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "An incredibly heavy spear, but it makes up for it with power!",
+        ["id"] = 444,
+        ["itemStats"] = {
+            ["meleeDamage"] = 40,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 4,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Wooden Rod"] = 2,
+            ["Rope"] = 1,
+            ["Iron Bar"] = 5,
+        },
+        ["price"] = 999,
+    },
+    ["Fire Retardant"] = {
+        ["itemType"] = {
+            ["1"] = "Consumable",
+        },
+        ["id"] = 443,
+        ["itemStats"] = {
+            ["food"] = 10,
+        },
+        ["description"] = "Using this will prevent you from being set on fire! You can still take damage directly from fire. It just won't also light YOU on fire.",
+        ["itemTier"] = 3,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+            ["2"] = "Fire Resistance",
+        },
+        ["recipe"] = {
+            ["Glow Mushroom"] = 5,
+            ["Bowl"] = 1,
+            ["Octopus"] = 1,
+        },
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 10,
+        ["price"] = 5,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
+    },
+    ["Kingdom Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 440,
+        ["recipe"] = {
+            ["Kingdom Skull"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Statue Right"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 330,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Bronze Spear"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["description"] = "A tried and true weapon, bronze spears have been used since ancient times",
+        ["id"] = 435,
+        ["itemStats"] = {
+            ["meleeDamage"] = 30,
+        },
+        ["dropOnDeathAnyways"] = true,
+        ["spear"] = true,
+        ["itemTier"] = 3,
+        ["PostureBreakTime"] = 4,
+        ["animalDamageBoost"] = 1.35,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["idle"] = "rbxassetid://111426115119032",
+            ["action"] = {
+                ["1"] = "rbxassetid://83680947349185",
+                ["2"] = "rbxassetid://135723716409683",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Copper Bar"] = 5,
+            ["Wooden Rod"] = 2,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Heavy Galleon"] = {
+        ["durability"] = 8000,
+        ["itemType"] = {
+            ["1"] = "Boat",
+        },
+        ["maxTorque"] = 150000000,
+        ["id"] = 427,
+        ["itemTier"] = 8,
+        ["cannotPlaceInCave"] = true,
+        ["maxForce"] = 10000000,
+        ["thrust"] = 40,
+        ["turnPower"] = 0.4,
+        ["recipe"] = {
+            ["Obsidian Nails"] = 5,
+            ["Log"] = 100,
+            ["Rope"] = 25,
+            ["Wood Plank"] = 30,
+            ["Steel Bar"] = 20,
+        },
+        ["description"] = "",
+    },
+    ["Asian Forge"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["interactionData"] = {
+            ["interactionName"] = "Craft",
+            ["opensCraftingTree"] = "Asian Forge",
+        },
+        ["id"] = 423,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 4,
+            ["Wood Plank"] = 20,
+            ["Bricks"] = 35,
+            ["Steel Bar"] = 15,
+        },
+        ["itemTier"] = 8,
+        ["description"] = "",
+    },
+    ["Bamboo"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 421,
+        ["recipe"] = {
+            ["Leaf"] = 5,
+            ["Log"] = 5,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Lantern"] = {
+        ["durability"] = 150,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["recipe"] = {
+            ["Coal"] = 2,
+            ["Log"] = 5,
+        },
+        ["id"] = 419,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -2,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Asian Gate"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 417,
+        ["recipe"] = {
+            ["Iron Bar"] = 2,
+            ["Log"] = 20,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["City Bell"] = {
+        ["durability"] = 300,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 80,
+        ["recipe"] = {
+            ["Iron Bar"] = 1,
+            ["Log"] = 2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Asian Brazier"] = {
+        ["durability"] = 250,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 415,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 4,
+            ["Log"] = 2,
+            ["Coal"] = 2,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Ivy"] = {
+        ["durability"] = 50,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 324,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
+        },
+        ["recipe"] = {
+            ["Leaf"] = 10,
+        },
+        ["description"] = "",
+    },
+    ["Asian Roof Top"] = {
+        ["durability"] = 800,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 413,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Shingles"] = 4,
+        },
+        ["craftingStyle"] = 1,
+        ["description"] = "",
+    },
+    ["Adamantite"] = {
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 409,
+        ["dropOnDeathAnyways"] = true,
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0.1,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Adamantite is an extremely rare ore found only in the furthest reachest of the world. It's harder than any other material, but needs smelted with gold to harden properly.",
+        ["price"] = 2000,
+    },
+    ["Bronze Pants"] = {
+        ["itemTier"] = 2,
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 30,
+        ["itemStats"] = {
+            ["defense"] = 8,
+        },
+        ["description"] = "Bronze pants have protected soldiers since ancient times. A reliable choice!",
+        ["recipe"] = {
+            ["Copper Bar"] = 3,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+    },
+    ["Samurai Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 404,
+        ["itemStats"] = {
+            ["defense"] = 18,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["description"] = "Samurai helmets allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 2,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Gladiator Leather Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 489,
+        ["itemStats"] = {
+            ["defense"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["description"] = "The most basic kind of armor, not very good, but better than nothing!",
+    },
+    ["Samurai Pants"] = {
+        ["itemType"] = {
+            ["1"] = "Pants",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 402,
+        ["itemStats"] = {
+            ["defense"] = 18,
+        },
+        ["itemTier"] = 8,
+        ["cantBeDropped"] = true,
+        ["description"] = "Samurai pants allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Adamantite Bar"] = 3,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["price"] = 999,
+    },
+    ["Darksteel Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 262,
+        ["itemStats"] = {
+            ["defense"] = 16,
+        },
+        ["itemTier"] = 7,
+        ["cantBeDropped"] = true,
+        ["description"] = "Darksteel helmets are as strong as they come, forged from the heart of the volcanic metals.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 2,
+            ["Rope"] = 2,
+        },
+        ["price"] = 999,
+    },
+    ["Gladiator Iron Sword"] = {
+        ["itemType"] = {
+            ["1"] = "Melee Weapon",
+            ["2"] = "Tool",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 456,
+        ["itemStats"] = {
+            ["meleeDamage"] = 36,
+        },
+        ["isArenaItem"] = true,
+        ["onlyAdminCanSpawn"] = true,
+        ["itemTier"] = 4,
+        ["cantBeDropped"] = true,
+        ["description"] = "An incredibly heavy sword, but it makes up for it with power!",
+        ["weight"] = 0,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11388101600",
+                ["2"] = "rbxassetid://11388094115",
+            },
+        },
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+        },
+        ["price"] = 25,
+    },
+    ["Room Divider"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 395,
+        ["recipe"] = {
+            ["Log"] = 5,
+        },
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Gladiator Crossbow"] = {
+        ["description"] = "Crossbows revolutionized warfare. They're easy to load, and quick to fire accurately. Very deadly.",
+        ["projectileVelocity"] = 1400,
+        ["price"] = 200,
+        ["itemTier"] = 5,
+        ["cantBeDropped"] = true,
+        ["weight"] = 0,
+        ["forceGenerateDroppedModel"] = true,
+        ["aimFOVModifier"] = -15,
+        ["validAmmoTypes"] = {
+            ["1"] = "Gladiator Arrow",
+        },
+        ["itemType"] = {
+            ["1"] = "Ranged Weapon",
+            ["2"] = "Tool",
+            ["3"] = "Gun",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 472,
+        ["itemStats"] = {
+            ["rangedDamage"] = 50,
+        },
+        ["aimTime"] = 0.4,
+        ["clipSize"] = 1,
+        ["animations"] = {
+            ["reload"] = "rbxassetid://11714138134",
+            ["idle_loaded"] = "rbxassetid://11714139803",
+            ["idle"] = "rbxassetid://11714136539",
+            ["idle_1p"] = "rbxassetid://11713857434",
+            ["idle_loaded_1p"] = "rbxassetid://11713862158",
+            ["action"] = "rbxassetid://11714141761",
+            ["action_1p"] = "rbxassetid://11713864410",
+            ["reload_1p"] = "rbxassetid://11713859958",
+        },
+        ["isArenaItem"] = true,
+        ["recipe"] = {
+        },
+        ["onlyAdminCanSpawn"] = true,
+        ["reloadTime"] = 1.8,
+        ["automatic"] = false,
+        ["cooldown"] = 0.1,
+        ["rangedWeaponType"] = "normal",
     },
     ["Round Table"] = {
         ["durability"] = 500,
@@ -5438,34 +9059,6 @@ return {
         ["equipAnimation"] = "rbxassetid://114605568374762",
         ["description"] = "A war horn can't make very many different noises, but it's very useful in battle to signal an attack or retreat!",
     },
-    ["Cannon Ammo"] = {
-        ["recipe"] = {
-            ["Black Powder"] = 1,
-            ["Steel Bar"] = 1,
-        },
-        ["cantBeDropped"] = false,
-        ["itemType"] = {
-            ["1"] = "Ammo",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 370,
-        ["itemTier"] = 7,
-        ["description"] = "A round steel cannon ball, and a package of powder to ignite the shot. Extremely dangerous when fired.",
-    },
-    ["Bat Gargoyle"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 320,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Chiseled Stones"] = 5,
-        },
-        ["description"] = "",
-    },
     ["Wood Slanted Wall UpsideDown"] = {
         ["durability"] = 300,
         ["itemType"] = {
@@ -5477,85 +9070,79 @@ return {
         },
         ["description"] = "",
     },
-    ["Musket"] = {
-        ["description"] = "Invented in the early medieval ages, muskets are powerful, but extremely slow to fire and expensive to maintain.",
-        ["projectileVelocity"] = 900,
-        ["animations"] = {
-            ["action_hold_1p"] = "rbxassetid://114296015052629",
-            ["idle_1p"] = "rbxassetid://80683494687557",
-            ["action_hold"] = "rbxassetid://114296015052629",
-            ["reload"] = "rbxassetid://127707482228931",
-            ["idle"] = "rbxassetid://80683494687557",
-            ["action"] = "rbxassetid://83536341863663",
-            ["action_release"] = "rbxassetid://11631655121",
-            ["action_release_1p"] = "rbxassetid://11630595766",
-            ["action_1p"] = "rbxassetid://83536341863663",
-            ["reload_1p"] = "rbxassetid://127707482228931",
+    ["Darksteel Armor"] = {
+        ["itemType"] = {
+            ["1"] = "Shirt",
+            ["2"] = "Clothing",
+        },
+        ["cantPutInStorage"] = true,
+        ["id"] = 261,
+        ["itemStats"] = {
+            ["defense"] = 16,
         },
         ["itemTier"] = 7,
         ["cantBeDropped"] = true,
-        ["chargedFOVModifier"] = -15,
-        ["weight"] = 0.2,
-        ["chargeTime"] = 0.9,
+        ["description"] = "Darksteel armor is as strong as it comes, forged from the heart of the volcanic metals.",
+        ["weight"] = 0.1,
+        ["dropOnDeathAnyways"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["recipe"] = {
+            ["Darksteel Bar"] = 3,
+            ["Rope"] = 2,
+            ["Hide"] = 1,
+        },
+        ["price"] = 999,
+    },
+    ["_deprecated_musket"] = {
+        ["restricted"] = true,
         ["itemType"] = {
             ["1"] = "Ranged Weapon",
             ["2"] = "Tool",
             ["3"] = "Gun",
         },
-        ["cantPutInStorage"] = true,
-        ["id"] = 379,
-        ["itemStats"] = {
-            ["rangedDamage"] = 75,
-        },
-        ["destroyOnDeathAnyways"] = true,
-        ["useLeftHand"] = false,
-        ["reloadTime"] = 7,
-        ["validAmmoTypes"] = {
-            ["1"] = "Musket Ammo",
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 10,
-            ["Darksteel Bar"] = 5,
-            ["Rope"] = 10,
-        },
-        ["rangedWeaponType"] = "gun",
+        ["weight"] = 0,
+        ["id"] = 368,
+        ["description"] = "",
+        ["deprecated"] = true,
     },
-    ["Cannon"] = {
+    ["Trebuchet"] = {
         ["durability"] = 1000,
         ["validAmmoTypes"] = {
-            ["1"] = "Cannon Ammo",
+            ["1"] = "Chiseled Stones",
         },
         ["itemType"] = {
-            ["1"] = "Cannon",
+            ["1"] = "Trebuchet",
             ["2"] = "Structure",
         },
         ["cannonStats"] = {
             ["pitchLimit"] = {
-                ["1"] = -36,
-                ["2"] = 17,
+                ["1"] = 37,
+                ["2"] = 85,
             },
             ["yawSpeed"] = 20,
-            ["AIDamage"] = 70,
-            ["launchSFXVolume"] = 1,
-            ["choppableDamage"] = 70,
-            ["ammoModelWeightModifier"] = -10000,
-            ["pitchSpeed"] = 28,
-            ["moveSpeed"] = 3,
-            ["launchParticle"] = "CannonExplosion",
-            ["launchDebounce"] = 8,
-            ["canControlPitch"] = true,
-            ["playerDamage"] = 70,
-            ["launchModel"] = "Cannonball",
-            ["structureDamage"] = 1000,
-            ["launchGuideBeamTimeLength"] = 0.1,
-            ["launchSFX"] = "rbxassetid://120205379304925",
+            ["AIDamage"] = 80,
+            ["launchSFXVolume"] = 0.15,
+            ["choppableDamage"] = 100,
+            ["launchPitchAnimationFadeInTime"] = 0.1,
+            ["pitchSpeed"] = 10,
+            ["launchPitchAnimation"] = "FlingTrebuchet",
+            ["canControlRootPitch"] = true,
+            ["moveSpeed"] = 5,
+            ["launchDebounce"] = 4,
+            ["playerDamage"] = 80,
+            ["structureDamage"] = 1200,
+            ["launchGuideBeamTimeLength"] = 0.3,
+            ["launchDelayed"] = 0.2,
+            ["launchPitchAnimationFadeOutTime"] = 1.75,
+            ["launchModel"] = "ChiseledStones",
+            ["launchSFX"] = "rbxassetid://140250894812120",
             ["launchSpeed"] = 200,
         },
-        ["id"] = 369,
+        ["id"] = 372,
         ["recipe"] = {
             ["Wooden Rod"] = 6,
             ["Wood Plank"] = 15,
-            ["Darksteel Bar"] = 4,
+            ["Iron Bar"] = 4,
             ["Rope"] = 15,
         },
         ["itemTier"] = 3,
@@ -5606,235 +9193,19 @@ return {
         ["itemTier"] = 3,
         ["description"] = "TODO",
     },
-    ["Black Powder"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 377,
+    ["Cannon Ammo"] = {
         ["recipe"] = {
-            ["Sulfur"] = 1,
-            ["Coal"] = 3,
+            ["Black Powder"] = 1,
+            ["Steel Bar"] = 1,
         },
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["itemTier"] = 7,
-        ["price"] = 200,
-        ["description"] = "An incredibly explosive substance, useful for setting things on fire, or blowing them up",
-    },
-    ["Sulfur"] = {
         ["cantBeDropped"] = false,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 376,
-        ["cantPutInStorage"] = true,
-        ["description"] = "Sulfur is a key ingredient in Black Powder and other alchemical recipes",
-        ["price"] = 50,
-    },
-    ["_deprecated_musket"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["weight"] = 0,
-        ["id"] = 368,
-        ["description"] = "",
-        ["deprecated"] = true,
-    },
-    ["Meal Decoration"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 308,
-        ["recipe"] = {
-            ["Cooked Meat"] = 4,
-            ["Log"] = 2,
-            ["Bread"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Carrot"] = {
-        ["itemType"] = {
-            ["1"] = "Seed",
-            ["2"] = "Resource",
-            ["3"] = "Consumable",
-        },
-        ["id"] = 95,
-        ["itemStats"] = {
-            ["food"] = 20,
-        },
-        ["itemTier"] = 1,
-        ["instantHealth"] = 2,
-        ["price"] = 1,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["description"] = "A delicious, all around good food",
-        ["plantName"] = "Carrots",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Cooked Fish"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 17,
-        ["itemStats"] = {
-            ["food"] = 60,
-        },
-        ["recipe"] = {
-            ["Meat"] = 1,
-            ["Leaf"] = 1,
-        },
-        ["description"] = "Want to simply directly cook your fish instead of making a meal? Look no further than cooked fish! It's just like regular fish, but cooked!",
-        ["price"] = 10,
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 5,
-        ["itemTier"] = 1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Trebuchet"] = {
-        ["durability"] = 1000,
-        ["validAmmoTypes"] = {
-            ["1"] = "Chiseled Stones",
-        },
-        ["itemType"] = {
-            ["1"] = "Trebuchet",
-            ["2"] = "Structure",
-        },
-        ["cannonStats"] = {
-            ["pitchLimit"] = {
-                ["1"] = 37,
-                ["2"] = 85,
-            },
-            ["yawSpeed"] = 20,
-            ["AIDamage"] = 80,
-            ["launchSFXVolume"] = 0.15,
-            ["choppableDamage"] = 100,
-            ["launchPitchAnimationFadeInTime"] = 0.1,
-            ["pitchSpeed"] = 10,
-            ["launchPitchAnimation"] = "FlingTrebuchet",
-            ["canControlRootPitch"] = true,
-            ["moveSpeed"] = 5,
-            ["launchDebounce"] = 4,
-            ["playerDamage"] = 80,
-            ["structureDamage"] = 1200,
-            ["launchGuideBeamTimeLength"] = 0.3,
-            ["launchDelayed"] = 0.2,
-            ["launchPitchAnimationFadeOutTime"] = 1.75,
-            ["launchModel"] = "ChiseledStones",
-            ["launchSFX"] = "rbxassetid://140250894812120",
-            ["launchSpeed"] = 200,
-        },
-        ["id"] = 372,
-        ["recipe"] = {
-            ["Wooden Rod"] = 6,
-            ["Wood Plank"] = 15,
-            ["Iron Bar"] = 4,
-            ["Rope"] = 15,
-        },
-        ["itemTier"] = 3,
-        ["description"] = "TODO",
-    },
-    ["Musket Ammo"] = {
         ["itemType"] = {
             ["1"] = "Ammo",
         },
-        ["cantPutInStorage"] = true,
-        ["id"] = 378,
-        ["itemStats"] = {
-            ["damage"] = 0,
-        },
-        ["recipe"] = {
-            ["Black Powder"] = 10,
-            ["Steel Bar"] = 10,
-            ["amount"] = 10,
-        },
-        ["cantBeDropped"] = true,
         ["weight"] = 0.1,
-        ["ProjectileGoStraight"] = true,
-        ["price"] = 250,
+        ["id"] = 370,
         ["itemTier"] = 7,
-        ["description"] = "A round steel bullet, and a package of powder to ignite the shot. Dangerous in a musket.",
-    },
-    ["Wood Door"] = {
-        ["durability"] = 1200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 132,
-        ["description"] = "",
-        ["recipe"] = {
-            ["Log"] = 2,
-        },
-    },
-    ["Stone Slanted Wall UpsideDown"] = {
-        ["durability"] = 1200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 381,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Lion Head"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 321,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Chiseled Stones"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Wooden Club"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 3,
-        ["itemStats"] = {
-            ["meleeDamage"] = 15,
-        },
-        ["recipe"] = {
-            ["Log"] = 4,
-            ["Leaf"] = 1,
-            ["Rope"] = 1,
-        },
-        ["description"] = "It will get the job done, if you swing hard enough!",
-    },
-    ["Wood Pile"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 169,
-        ["recipe"] = {
-            ["Log"] = 10,
-        },
-        ["description"] = "",
+        ["description"] = "A round steel cannon ball, and a package of powder to ignite the shot. Extremely dangerous when fired.",
     },
     ["Scuba Helmet"] = {
         ["itemType"] = {
@@ -5856,62 +9227,6 @@ return {
             ["Hide"] = 1,
         },
         ["price"] = 999,
-    },
-    ["Obsidian Fishing Rod"] = {
-        ["itemType"] = {
-            ["1"] = "Fishing Rod",
-            ["2"] = "Tool",
-        },
-        ["targetSpeed"] = 1,
-        ["id"] = 277,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["timeNeededInTarget"] = 3,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 3,
-            ["Wood Plank"] = 4,
-            ["Rope"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["rodColor"] = 0.0666667, 0.0666667, 0.0666667,
-        ["catchTime"] = NumberRange.new(2, 3),
-        ["weight"] = 0.1,
-        ["targetSize"] = 0.2,
-        ["canCatchFish"] = {
-            ["1"] = "Carp",
-            ["2"] = "Salmon",
-            ["3"] = "Sea Snapper",
-            ["4"] = "Cod",
-            ["5"] = "Shrimp",
-            ["6"] = "Mussel",
-            ["7"] = "Hide",
-            ["8"] = "Giant Tuna",
-            ["9"] = "Iron",
-            ["10"] = "Octopus",
-            ["11"] = "Squid",
-            ["12"] = "Lobster",
-            ["13"] = "Whale",
-            ["14"] = "Gold Nugget",
-            ["15"] = "Leaf",
-            ["16"] = "Rope",
-        },
-        ["description"] = "",
-        ["timeToFish"] = 10,
-    },
-    ["Bathtub"] = {
-        ["durability"] = 300,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 187,
-        ["recipe"] = {
-            ["Log"] = 4,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
     },
     ["Atlantean Workbench"] = {
         ["durability"] = 750,
@@ -5963,113 +9278,6 @@ return {
         },
         ["price"] = 999,
     },
-    ["Skull On A Stick"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 160,
-        ["recipe"] = {
-            ["Skull"] = 1,
-            ["Log"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Blacksmith Sign"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 174,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Log"] = 2,
-            ["Iron Bar"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Painting: Encounter"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 248,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Iron Pants"] = {
-        ["itemTier"] = 3,
-        ["description"] = "Iron pants are incredibly heavy, but, also incredibly strong!",
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 34,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Iron Bar"] = 3,
-            ["Hide"] = 1,
-        },
-        ["price"] = 25,
-    },
-    ["Ice Ramp"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 252,
-        ["recipe"] = {
-            ["Ice Chunks"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Leather Pants"] = {
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 481,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["description"] = "The most basic kind of pants, not very good, but better than nothing!",
-    },
-    ["Large Wood House"] = {
-        ["id"] = 146,
-        ["recipe"] = {
-            ["Log"] = 100,
-            ["Iron Bar"] = 4,
-            ["Wood Plank"] = 4,
-            ["Iron Nails"] = 2,
-            ["Leaf"] = 80,
-        },
-        ["itemType"] = {
-            ["1"] = "Prefab",
-            ["2"] = "Structure",
-        },
-        ["description"] = "",
-    },
     ["Atlantean Trident"] = {
         ["itemType"] = {
             ["1"] = "Melee Weapon",
@@ -6105,68 +9313,6 @@ return {
         },
         ["price"] = 999,
     },
-    ["Darksteel Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 262,
-        ["itemStats"] = {
-            ["defense"] = 16,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["description"] = "Darksteel helmets are as strong as they come, forged from the heart of the volcanic metals.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 2,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Bluesteel Archer"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 346,
-        ["itemStats"] = {
-            ["storageCapacity"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 17,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Ranged",
-            ["NPC_Name"] = "Bluesteel Archer",
-        },
-        ["interactionData"] = {
-            ["OnlyStoreSpecificNamedItems"] = true,
-            ["InvalidItemMessage"] = "Must be arrows!",
-            ["opensStorage"] = true,
-            ["AllowedToStore"] = {
-                ["1"] = "Arrow",
-            },
-            ["interactionName"] = "Deposit Arrows",
-        },
-        ["recipe"] = {
-            ["Bluesteel Pants"] = 1,
-            ["Bluesteel Helmet"] = 1,
-            ["Bluesteel Armor"] = 1,
-            ["Crossbow"] = 1,
-            ["Coins"] = 10,
-        },
-        ["description"] = "",
-    },
     ["Steel Swordsman"] = {
         ["durability"] = 500,
         ["itemType"] = {
@@ -6194,181 +9340,6 @@ return {
             ["Coins"] = 10,
         },
         ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Bluesteel Spear"] = {
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["description"] = "A spear made out of the strongest metal in the known world",
-        ["id"] = 446,
-        ["itemStats"] = {
-            ["meleeDamage"] = 60,
-        },
-        ["dropOnDeathAnyways"] = true,
-        ["spear"] = true,
-        ["itemTier"] = 6,
-        ["PostureBreakTime"] = 4,
-        ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["idle"] = "rbxassetid://111426115119032",
-            ["action"] = {
-                ["1"] = "rbxassetid://83680947349185",
-                ["2"] = "rbxassetid://135723716409683",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Wooden Rod"] = 4,
-            ["Refined Bluesteel"] = 5,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Ladder"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 79,
-        ["recipe"] = {
-            ["Wooden Rod"] = 1,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Spicy Veggie Meal"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 215,
-        ["itemStats"] = {
-            ["food"] = 600,
-        },
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Good_Meal",
-            ["2"] = "Ate_Spicy_Food",
-        },
-        ["description"] = "A very spicy salad basically. Will give you a bit of spring in your step, and provides more food than other comparable foods.",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 40,
-        ["recipe"] = {
-            ["Pepper"] = 6,
-            ["Cabbage Salad"] = 2,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Spike Trap"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 431,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 3,
-            ["Log"] = 10,
-            ["Steel Bar"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Street Lamp"] = {
-        ["durability"] = 300,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 301,
-        ["recipe"] = {
-            ["Coal"] = 2,
-            ["Iron Bar"] = 10,
-        },
-        ["itemTier"] = 3,
-        ["description"] = "",
-    },
-    ["Steel Bag"] = {
-        ["itemTier"] = 4,
-        ["description"] = "Both lightweight and strong, steel is a fantastic choice for a bag!",
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 43,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 250,
-            ["defense"] = 12,
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Steel Bar"] = 6,
-            ["Hide"] = 2,
-        },
-        ["price"] = 480,
-    },
-    ["Deer Trophy"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 238,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Log"] = 1,
-            ["Hide"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Copper Miner"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 340,
-        ["itemStats"] = {
-            ["storageCapacity"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = true,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Copper",
-                },
-                ["Rate"] = 20,
-                ["Amount"] = 1,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 19,
-                ["FoodBoxRangeNeeded"] = 60,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Miner",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Stone"] = 20,
-            ["Log"] = 10,
-            ["Copper"] = 10,
-            ["Steel Pickaxe"] = 1,
-            ["Coins"] = 10,
-        },
         ["description"] = "",
     },
     ["Jester"] = {
@@ -6436,220 +9407,18 @@ return {
         },
         ["description"] = "",
     },
-    ["Wood Cutter"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 342,
-        ["itemStats"] = {
-            ["storageCapacity"] = 20,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Log",
-                },
-                ["Rate"] = 10,
-                ["Amount"] = 2,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 23,
-                ["FoodBoxRangeNeeded"] = 80,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Woodcutter",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Coins"] = 10,
-            ["Log"] = 30,
-            ["Wood Plank"] = 5,
-            ["Steel Axe"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Hearty Stew"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 217,
-        ["itemStats"] = {
-            ["food"] = 1000,
-        },
-        ["itemTier"] = 3,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-            ["2"] = "Ate_Good_Meal",
-        },
-        ["description"] = "A very hearty and filling stew that could feed a small army. Gives more health bonuses, and more hunger, than any other food.",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 60,
-        ["recipe"] = {
-            ["Carrot"] = 10,
-            ["Cabbage"] = 20,
-            ["Delicious Stew"] = 2,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Thatch Roof Corner"] = {
-        ["durability"] = 300,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 69,
-        ["recipe"] = {
-            ["Leaf"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Stone Pillar Round"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 222,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 3,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Iron Miner"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 341,
-        ["itemStats"] = {
-            ["storageCapacity"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = true,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Iron",
-                },
-                ["Rate"] = 60,
-                ["Amount"] = 1,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 19,
-                ["FoodBoxRangeNeeded"] = 60,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Miner",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Stone"] = 20,
-            ["Log"] = 10,
-            ["Iron"] = 10,
-            ["Steel Pickaxe"] = 1,
-            ["Coins"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Stone Seat"] = {
-        ["durability"] = 800,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 231,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 5,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Bread Sign"] = {
+    ["Stable Sign"] = {
         ["durability"] = 100,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 175,
+        ["id"] = 176,
         ["placementParameters"] = {
             ["maxSlopeAngle"] = -1,
         },
         ["recipe"] = {
             ["Log"] = 2,
             ["Iron Bar"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Iron"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 55,
-        ["description"] = "Iron needs to be smelted into bars, to be used",
-        ["price"] = 8,
-    },
-    ["Cabbage Farmer"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 337,
-        ["itemStats"] = {
-            ["storageCapacity"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = true,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Cabbage",
-                },
-                ["Rate"] = 10,
-                ["Amount"] = 2,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 22,
-                ["FoodBoxRangeNeeded"] = 70,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Farmer",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Farming Scythe"] = 1,
-            ["Log"] = 10,
-            ["Coins"] = 10,
-            ["Cabbage"] = 20,
         },
         ["description"] = "",
     },
@@ -6696,1768 +9465,6 @@ return {
         },
         ["description"] = "",
     },
-    ["Coal"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 53,
-        ["description"] = "Coal burns really well. Very useful for torches and fires.",
-        ["price"] = 1,
-    },
-    ["Pink Flowers"] = {
-        ["durability"] = 50,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 327,
-        ["recipe"] = {
-            ["Leaf"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Shrimp"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 286,
-        ["description"] = "",
-    },
-    ["Drawbridge"] = {
-        ["durability"] = 3000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["animations"] = {
-            ["interaction_opened"] = "rbxassetid://16258800496",
-            ["interaction_closed"] = "rbxassetid://16258798686",
-        },
-        ["id"] = 332,
-        ["recipe"] = {
-            ["Wood Plank"] = 10,
-            ["Bricks"] = 2,
-            ["Rope"] = 20,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Statue Left"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 331,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Darksteel Axe"] = {
-        ["itemType"] = {
-            ["1"] = "Axe",
-            ["2"] = "Melee Weapon",
-            ["3"] = "Tool",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 265,
-        ["itemStats"] = {
-            ["axeStrength"] = 10,
-            ["meleeDamage"] = 30,
-        },
-        ["recipe"] = {
-            ["Darksteel Bar"] = 2,
-            ["Steel Handle"] = 1,
-            ["Obsidian Nails"] = 1,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["dropOnDeathAnyways"] = true,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11428946958",
-            },
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["price"] = 999,
-        ["description"] = "Darksteel is the strongest, sharpest metal known to civilization. Perfect for chopping wood.",
-    },
-    ["Pretzel"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 23,
-        ["itemStats"] = {
-            ["food"] = 200,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "You're not supposed to have this item in the game yet...",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 10,
-        ["price"] = 10,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Statue Center"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 329,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Blue Flowers"] = {
-        ["durability"] = 50,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 326,
-        ["recipe"] = {
-            ["Leaf"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Arbalest"] = {
-        ["description"] = "The Arbalest is a bigger, more powerful version of a crossbow, that comes with a built in crank to increase firing power.",
-        ["projectileVelocity"] = 1400,
-        ["price"] = 1500,
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["forceGenerateDroppedModel"] = true,
-        ["aimFOVModifier"] = -15,
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 473,
-        ["itemStats"] = {
-            ["rangedDamage"] = 60,
-        },
-        ["aimTime"] = 0.4,
-        ["clipSize"] = 1,
-        ["animations"] = {
-            ["reload"] = "rbxassetid://11714138134",
-            ["idle_loaded"] = "rbxassetid://11714139803",
-            ["idle"] = "rbxassetid://11714136539",
-            ["idle_1p"] = "rbxassetid://11713857434",
-            ["idle_loaded_1p"] = "rbxassetid://11713862158",
-            ["action"] = "rbxassetid://11714141761",
-            ["action_1p"] = "rbxassetid://11713864410",
-            ["reload_1p"] = "rbxassetid://11713859958",
-        },
-        ["isArenaItem"] = true,
-        ["recipe"] = {
-        },
-        ["onlyAdminCanSpawn"] = true,
-        ["reloadTime"] = 1.8,
-        ["automatic"] = false,
-        ["cooldown"] = 0.1,
-        ["rangedWeaponType"] = "normal",
-    },
-    ["Brazier"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 87,
-        ["recipe"] = {
-            ["Coal"] = 1,
-            ["Iron Bar"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Food Box"] = {
-        ["durability"] = 750,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 334,
-        ["itemStats"] = {
-            ["storageCapacity"] = 1000,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["IsFoodBox"] = true,
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["InvalidItemMessage"] = "Must be food!",
-            ["interactionName"] = "Deposit Food",
-            ["AllowedToStore"] = {
-                ["1"] = {
-                    ["1"] = "Consumable",
-                },
-            },
-        },
-        ["recipe"] = {
-            ["Wood Plank"] = 10,
-            ["Steel Nails"] = 4,
-            ["Shingles"] = 6,
-        },
-        ["description"] = "",
-    },
-    ["Spicy Meat Meal"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 214,
-        ["itemStats"] = {
-            ["food"] = 850,
-        },
-        ["itemTier"] = 3,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Amazing_Meal",
-            ["2"] = "Ate_Spicy_Food",
-        },
-        ["description"] = "A bit of spice added onto a delicious meal of meat and greens, will give you a bit of spring in your step",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 50,
-        ["recipe"] = {
-            ["Pepper"] = 6,
-            ["Rib Meal"] = 1,
-            ["Cabbage"] = 6,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Red Flowers"] = {
-        ["durability"] = 50,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 325,
-        ["recipe"] = {
-            ["Leaf"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Ivy"] = {
-        ["durability"] = 50,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 324,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Potted Plant"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 322,
-        ["recipe"] = {
-            ["Log"] = 4,
-            ["Leaf"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Longship"] = {
-        ["durability"] = 2500,
-        ["itemType"] = {
-            ["1"] = "Boat",
-        },
-        ["maxTorque"] = 1000000,
-        ["id"] = 205,
-        ["itemTier"] = 3,
-        ["cannotPlaceInCave"] = true,
-        ["maxForce"] = 100000,
-        ["thrust"] = 40,
-        ["turnPower"] = 0.5,
-        ["recipe"] = {
-            ["Wood Plank"] = 25,
-            ["Log"] = 40,
-            ["Iron Nails"] = 10,
-            ["Rope"] = 15,
-        },
-        ["description"] = "",
-    },
-    ["Scale"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 318,
-        ["recipe"] = {
-            ["Coins"] = 5,
-            ["Iron Bar"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Wall Torch"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Coal"] = 1,
-            ["Iron Bar"] = 1,
-        },
-        ["id"] = 172,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Gladiator Samurai Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 496,
-        ["itemStats"] = {
-            ["defense"] = 20,
-        },
-        ["itemTier"] = 8,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["description"] = "Samurai armor allows for ease of movement while also providing fantastic protection with the Adamantite metal.",
-        ["recipe"] = {
-        },
-    },
-    ["Stone Window"] = {
-        ["durability"] = 2400,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 130,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Longbow"] = {
-        ["chargeTime"] = 1.4,
-        ["price"] = 40,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["projectileVelocity"] = 1300,
-        ["id"] = 124,
-        ["itemStats"] = {
-            ["rangedDamage"] = 20,
-        },
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 6,
-            ["Iron Nails"] = 2,
-            ["Rope"] = 6,
-        },
-        ["itemTier"] = 4,
-        ["animations"] = {
-            ["action"] = "rbxassetid://11630580011",
-            ["action_1p"] = "rbxassetid://11630440383",
-            ["action_hold_1p"] = "rbxassetid://11630462550",
-            ["idle_1p"] = "rbxassetid://11630464542",
-            ["action_release"] = "rbxassetid://11631655121",
-            ["action_release_1p"] = "rbxassetid://11630595766",
-            ["idle"] = "rbxassetid://11630578059",
-            ["action_hold"] = "rbxassetid://11631660410",
-        },
-        ["chargedFOVModifier"] = -24,
-        ["weight"] = 0.1,
-        ["reloadTime"] = 0.5,
-        ["useLeftHand"] = true,
-        ["description"] = "Longbows are extremely powerful bows, but they take a lot of strength to draw back and fire!",
-        ["rangedWeaponType"] = "Charge",
-    },
-    ["Coin Pile"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 314,
-        ["recipe"] = {
-            ["Coins"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Skeleton"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 310,
-        ["recipe"] = {
-            ["Skull"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["_deprecated_musket_ammo"] = {
-        ["restricted"] = true,
-        ["itemType"] = {
-            ["1"] = "Ammo",
-        },
-        ["weight"] = 0,
-        ["id"] = 375,
-        ["description"] = "",
-        ["deprecated"] = true,
-    },
-    ["Turkey Decoration"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 307,
-        ["recipe"] = {
-            ["Log"] = 2,
-            ["Cooked Meat"] = 4,
-        },
-        ["description"] = "",
-    },
-    ["Crossbow"] = {
-        ["description"] = "Crossbows revolutionized warfare. They're easy to load, and quick to fire accurately. Very deadly.",
-        ["projectileVelocity"] = 1400,
-        ["price"] = 200,
-        ["itemTier"] = 5,
-        ["weight"] = 0.1,
-        ["aimFOVModifier"] = -15,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["id"] = 125,
-        ["itemStats"] = {
-            ["rangedDamage"] = 22,
-        },
-        ["aimTime"] = 0.4,
-        ["animations"] = {
-            ["reload"] = "rbxassetid://11714138134",
-            ["idle_loaded"] = "rbxassetid://11714139803",
-            ["idle"] = "rbxassetid://11714136539",
-            ["idle_1p"] = "rbxassetid://11713857434",
-            ["idle_loaded_1p"] = "rbxassetid://11713862158",
-            ["action"] = "rbxassetid://11714141761",
-            ["action_1p"] = "rbxassetid://11713864410",
-            ["reload_1p"] = "rbxassetid://11713859958",
-        },
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 8,
-            ["Steel Nails"] = 2,
-            ["Rope"] = 8,
-        },
-        ["clipSize"] = 1,
-        ["reloadTime"] = 1.8,
-        ["automatic"] = false,
-        ["cooldown"] = 0.1,
-        ["rangedWeaponType"] = "normal",
-    },
-    ["Atlantean Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 358,
-        ["dropOnDeathAnyways"] = true,
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-            ["Atlantean Steel"] = 4,
-            ["Coral"] = 5,
-            ["Rope"] = 2,
-            ["Tool Handle"] = 1,
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 4,
-        ["description"] = "A shield made of for the mighty warriors of old Atlantis.",
-    },
-    ["Sushi Meal"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 291,
-        ["itemStats"] = {
-            ["food"] = 700,
-        },
-        ["description"] = "Delicious sushi, that provides extra health! Did you know that sushi simply means vinegar and rice? It actually has nothing to do with fish.",
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-            ["2"] = "Ate_Good_Meal",
-        },
-        ["recipe"] = {
-            ["Carrot"] = 6,
-            ["Cooked Fish"] = 9,
-            ["Coral"] = 5,
-            ["Cabbage"] = 6,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 40,
-        ["price"] = 20,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Palisade Wall"] = {
-        ["recipe"] = {
-            ["Wood Plank"] = 1,
-            ["Log"] = 2,
-        },
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 67,
-        ["durability"] = 1500,
-        ["description"] = "",
-    },
-    ["Iron Bag"] = {
-        ["itemTier"] = 3,
-        ["description"] = "Iron bags are incredibly heavy, but, also incredibly strong!",
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 42,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 150,
-            ["defense"] = 10,
-        },
-        ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Hide"] = 2,
-            ["Iron Bar"] = 6,
-        },
-        ["price"] = 55,
-    },
-    ["Bowl"] = {
-        ["recipe"] = {
-            ["Log"] = 2,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 91,
-        ["description"] = "Only barbarians eat with their hands. Now, you can eat with a bowl! Wow! Amazing!",
-    },
-    ["Iron Nails"] = {
-        ["recipe"] = {
-            ["Iron"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 114,
-        ["price"] = 8,
-        ["itemTier"] = 2,
-        ["description"] = "Nails are an important part of building any complex object",
-    },
-    ["Coins"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 208,
-        ["noStackLimit"] = true,
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0,
-        ["onlySupervisorCanSpawn"] = true,
-        ["description"] = "Coins can be used to purchase various unique and powerful things from Merchants around the map!",
-        ["recipe"] = {
-            ["Gold Nugget"] = 1,
-            ["amount"] = 3,
-        },
-    },
-    ["Training Dummy"] = {
-        ["durability"] = 1500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 302,
-        ["recipe"] = {
-            ["Straw Bundle"] = 3,
-            ["Log"] = 2,
-        },
-        ["itemTier"] = 3,
-        ["description"] = "",
-    },
-    ["Poison Fang"] = {
-        ["recipe"] = {
-        },
-        ["cantBeDropped"] = true,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 1,
-        ["id"] = 438,
-        ["forceGenerateDroppedModel"] = true,
-        ["cantPutInStorage"] = true,
-        ["description"] = "The poison gland of the deadly cave spider. Useful for coating an arrow in poison.",
-    },
-    ["Bluesteel Shield"] = {
-        ["itemTier"] = 6,
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 297,
-        ["recipe"] = {
-            ["Refined Bluesteel"] = 4,
-            ["Rope"] = 2,
-            ["Tool Handle"] = 1,
-        },
-        ["PostureBreakTime"] = 4,
-        ["description"] = "A thick shield used by the Imperial Legions themselves.",
-    },
-    ["Iron Shield"] = {
-        ["itemTier"] = 4,
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 295,
-        ["recipe"] = {
-            ["Iron Bar"] = 4,
-            ["Rope"] = 2,
-            ["Tool Handle"] = 1,
-        },
-        ["PostureBreakTime"] = 6,
-        ["description"] = "An iron shield, sturdy, and effective!",
-    },
-    ["Wood Floor"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 71,
-        ["placementParameters"] = {
-            ["rotateAtMiddle"] = true,
-        },
-        ["recipe"] = {
-            ["Log"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Darksteel Forge"] = {
-        ["durability"] = 999,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Darksteel Forge",
-        },
-        ["id"] = 269,
-        ["recipe"] = {
-            ["Wood Plank"] = 20,
-            ["Shingles"] = 15,
-            ["Bricks"] = 35,
-            ["Bluesteel Nails"] = 4,
-        },
-        ["itemTier"] = 7,
-        ["description"] = "",
-    },
-    ["Copper Nails"] = {
-        ["recipe"] = {
-            ["Copper"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 105,
-        ["itemTier"] = 1,
-        ["price"] = 2,
-        ["description"] = "Nails are an important part of building any complex object",
-    },
-    ["Raw Bluesteel"] = {
-        ["itemTier"] = 6,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 193,
-        ["description"] = "Bluesteel is an incredibly hard to create material. It can only be forged in the Imperial factories themselves, by master smiths. But once created, it can be refined in a furnace and turned into powerful items.",
-        ["price"] = 400,
-    },
-    ["Gladiator Bluesteel Shield"] = {
-        ["itemType"] = {
-            ["1"] = "Shield",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 478,
-        ["isArenaItem"] = true,
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["forceGenerateDroppedModel"] = true,
-        ["PostureBreakTime"] = 4,
-        ["description"] = "A thick shield used by the Imperial Legions themselves.",
-    },
-    ["Kingdom Flag"] = {
-        ["itemTier"] = 1,
-        ["neverDropOnDeath"] = true,
-        ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 292,
-        ["recipe"] = {
-            ["Steel Handle"] = 2,
-            ["Leaf"] = 10,
-            ["Rope"] = 2,
-        },
-        ["description"] = "The banner of your mighty kingdom. Show off your might to your foes!",
-        ["price"] = 250,
-    },
-    ["Ornate Table"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 83,
-        ["recipe"] = {
-            ["Iron Nails"] = 2,
-            ["Wood Plank"] = 2,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Decorative Banner"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 184,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -2,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 2,
-            ["Rope"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Whale"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 289,
-        ["description"] = "",
-    },
-    ["Wood Plank"] = {
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Log"] = 4,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 111,
-        ["itemTier"] = 1,
-        ["price"] = 5,
-        ["description"] = "Wood planks are great for building more complicated wooden structures!",
-    },
-    ["Royal Throne"] = {
-        ["durability"] = 750,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 93,
-        ["recipe"] = {
-            ["Steel Nails"] = 2,
-            ["Wood Plank"] = 5,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Tile Roof Ridge"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 141,
-        ["recipe"] = {
-            ["Shingles"] = 2,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Iron Pickaxe"] = {
-        ["itemType"] = {
-            ["1"] = "Pickaxe",
-            ["2"] = "Tool",
-        },
-        ["id"] = 47,
-        ["itemStats"] = {
-            ["pickaxeStrength"] = 75,
-        },
-        ["itemTier"] = 3,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["recipe"] = {
-            ["Tool Handle"] = 1,
-            ["Iron Nails"] = 1,
-            ["Iron Bar"] = 2,
-        },
-        ["price"] = 25,
-        ["description"] = "A heavy and powerful pickaxe",
-    },
-    ["Bubble Spawner"] = {
-        ["itemTier"] = 4,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["cannotPlaceInCave"] = true,
-        ["id"] = 363,
-        ["recipe"] = {
-            ["Coral"] = 10,
-            ["Atlantean Ore"] = 1,
-            ["Bricks"] = 10,
-            ["Ice Chunks"] = 10,
-        },
-        ["description"] = "",
-        ["durability"] = 500,
-    },
-    ["Steel Fishing Rod"] = {
-        ["itemType"] = {
-            ["1"] = "Fishing Rod",
-            ["2"] = "Tool",
-        },
-        ["targetSpeed"] = 1,
-        ["id"] = 275,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["timeNeededInTarget"] = 5,
-        ["recipe"] = {
-            ["Wood Plank"] = 4,
-            ["Rope"] = 5,
-            ["Steel Bar"] = 3,
-        },
-        ["itemTier"] = 1,
-        ["rodColor"] = 0.278431, 0.266667, 0.27451,
-        ["catchTime"] = NumberRange.new(2, 3),
-        ["weight"] = 0.1,
-        ["targetSize"] = 0.3,
-        ["canCatchFish"] = {
-            ["1"] = "Carp",
-            ["2"] = "Salmon",
-            ["3"] = "Sea Snapper",
-            ["4"] = "Cod",
-            ["5"] = "Shrimp",
-            ["6"] = "Mussel",
-            ["7"] = "Hide",
-            ["8"] = "Giant Tuna",
-            ["9"] = "Iron",
-            ["10"] = "Octopus",
-            ["11"] = "Squid",
-            ["12"] = "Leaf",
-            ["13"] = "Rope",
-        },
-        ["description"] = "",
-        ["timeToFish"] = 16,
-    },
-    ["Bronze Fishing Rod"] = {
-        ["itemType"] = {
-            ["1"] = "Fishing Rod",
-            ["2"] = "Tool",
-        },
-        ["targetSpeed"] = 1,
-        ["id"] = 273,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["timeNeededInTarget"] = 6,
-        ["recipe"] = {
-            ["Copper Bar"] = 3,
-            ["Wood Plank"] = 4,
-            ["Rope"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["rodColor"] = 0.529412, 0.333333, 0.192157,
-        ["catchTime"] = NumberRange.new(2, 3),
-        ["weight"] = 0.1,
-        ["targetSize"] = 0.5,
-        ["canCatchFish"] = {
-            ["1"] = "Carp",
-            ["2"] = "Salmon",
-            ["3"] = "Sea Snapper",
-            ["4"] = "Cod",
-            ["5"] = "Shrimp",
-            ["6"] = "Mussel",
-            ["7"] = "Hide",
-            ["8"] = "Giant Tuna",
-            ["9"] = "Leaf",
-            ["10"] = "Rope",
-        },
-        ["description"] = "",
-        ["timeToFish"] = 22,
-    },
-    ["Road Sign"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 167,
-        ["recipe"] = {
-            ["Log"] = 4,
-        },
-        ["description"] = "",
-    },
-    ["Igloo"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 253,
-        ["recipe"] = {
-            ["Ice Chunks"] = 25,
-        },
-        ["description"] = "",
-    },
-    ["Statue Right"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 330,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Obsidian Nails"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 264,
-        ["dropOnDeathAnyways"] = true,
-        ["recipe"] = {
-            ["Coal"] = 5,
-            ["Obsidian"] = 1,
-        },
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["itemTier"] = 7,
-        ["forceGenerateDroppedModel"] = true,
-        ["price"] = 999,
-        ["description"] = "Obsidian is one of the sharpest materials you can find in nature. Nails from it are naturally, very sharp.",
-    },
-    ["Darksteel Bag"] = {
-        ["itemType"] = {
-            ["1"] = "Backpack",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 263,
-        ["itemStats"] = {
-            ["backpackCapacity"] = 500,
-            ["defense"] = 16,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["description"] = "Darksteel bags are as strong as they come, forged from the heart of the volcanic metals.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 6,
-            ["Wooden Rod"] = 2,
-            ["Hide"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Coin Press"] = {
-        ["durability"] = 750,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["recipe"] = {
-            ["Wood Plank"] = 6,
-            ["Bricks"] = 10,
-            ["Steel Bar"] = 3,
-        },
-        ["id"] = 209,
-        ["interactionData"] = {
-            ["interactionName"] = "Craft",
-            ["opensCraftingTree"] = "Coin Press",
-        },
-        ["itemTier"] = 3,
-        ["description"] = "",
-    },
-    ["Atlantean Helmet"] = {
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 354,
-        ["itemStats"] = {
-            ["defense"] = 14,
-        },
-        ["itemTier"] = 6,
-        ["cantBeDropped"] = true,
-        ["description"] = "The iconic helmet worn by the soldiers of Atlantis, before it fell so many centuries ago.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Atlantean Steel"] = 2,
-            ["Coral"] = 3,
-            ["Rope"] = 2,
-        },
-        ["price"] = 999,
-    },
-    ["Cup"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 164,
-        ["recipe"] = {
-            ["Log"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Darksteel Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 261,
-        ["itemStats"] = {
-            ["defense"] = 16,
-        },
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["description"] = "Darksteel armor is as strong as it comes, forged from the heart of the volcanic metals.",
-        ["weight"] = 0.1,
-        ["dropOnDeathAnyways"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Darksteel Bar"] = 3,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["price"] = 999,
-    },
-    ["City Bell"] = {
-        ["durability"] = 300,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 80,
-        ["recipe"] = {
-            ["Iron Bar"] = 1,
-            ["Log"] = 2,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Castle Wall"] = {
-        ["durability"] = 8000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 126,
-        ["recipe"] = {
-            ["Bricks"] = 3,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Sausages"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 25,
-        ["itemStats"] = {
-            ["food"] = 200,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "You're not supposed to have this item in the game yet...",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 10,
-        ["price"] = 10,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Darksteel Bar"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 259,
-        ["dropOnDeathAnyways"] = true,
-        ["itemTier"] = 7,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["description"] = "Darksteel is forged from the unholy mixing of Obsidian and Steel. Stronger, sharper, better, than any other metal.",
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-            ["Obsidian"] = 1,
-            ["Coal"] = 5,
-            ["Steel Bar"] = 1,
-        },
-        ["price"] = 2,
-    },
-    ["Elephant Armor"] = {
-        ["itemTier"] = 4,
-        ["itemType"] = {
-            ["1"] = "MountEquipment",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 257,
-        ["itemStats"] = {
-            ["defense"] = 25,
-        },
-        ["description"] = "Can be equiped to a tamed elephant, to armor them up!",
-        ["recipe"] = {
-            ["Rope"] = 6,
-            ["Steel Nails"] = 1,
-            ["Steel Bar"] = 15,
-        },
-    },
-    ["Bronze Pants"] = {
-        ["itemTier"] = 2,
-        ["itemType"] = {
-            ["1"] = "Pants",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 30,
-        ["itemStats"] = {
-            ["defense"] = 8,
-        },
-        ["description"] = "Bronze pants have protected soldiers since ancient times. A reliable choice!",
-        ["recipe"] = {
-            ["Copper Bar"] = 3,
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-    },
-    ["Skull Decoration"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 159,
-        ["recipe"] = {
-            ["Skull"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Gladiator Leather Armor"] = {
-        ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 489,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["itemTier"] = 1,
-        ["cantBeDropped"] = true,
-        ["isArenaItem"] = true,
-        ["weight"] = 0.1,
-        ["onlyAdminCanSpawn"] = true,
-        ["forceGenerateDroppedModel"] = true,
-        ["recipe"] = {
-        },
-        ["description"] = "The most basic kind of armor, not very good, but better than nothing!",
-    },
-    ["Paint Brush"] = {
-        ["itemTier"] = 5,
-        ["cantBeDropped"] = true,
-        ["itemType"] = {
-            ["1"] = "PaintBrush",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 0,
-        ["id"] = 254,
-        ["cantPutInStorage"] = true,
-        ["description"] = "Use this to paint your constructions",
-    },
-    ["Meat"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 18,
-        ["itemStats"] = {
-            ["food"] = 50,
-        },
-        ["description"] = "Meat needs cooked in order to be eaten",
-        ["recipe"] = {
-            ["Carp"] = 1,
-            ["amount"] = 1,
-        },
-        ["instantHealth"] = -10,
-        ["effectsOnEat"] = {
-            ["1"] = "Food_Poisoning",
-        },
-        ["weight"] = 0.1,
-        ["itemTier"] = 1,
-        ["altRecipes"] = {
-            ["1"] = {
-                ["Salmon"] = 1,
-                ["amount"] = 2,
-            },
-            ["2"] = {
-                ["Sea Snapper"] = 1,
-                ["amount"] = 3,
-            },
-            ["3"] = {
-                ["Cod"] = 1,
-                ["amount"] = 4,
-            },
-            ["4"] = {
-                ["Giant Tuna"] = 1,
-                ["amount"] = 6,
-            },
-            ["5"] = {
-                ["Octopus"] = 1,
-                ["amount"] = 6,
-            },
-            ["6"] = {
-                ["Squid"] = 1,
-                ["amount"] = 6,
-            },
-            ["7"] = {
-                ["Shrimp"] = 1,
-                ["amount"] = 2,
-            },
-            ["8"] = {
-                ["Lobster"] = 1,
-                ["amount"] = 8,
-            },
-            ["9"] = {
-                ["Mussel"] = 1,
-                ["amount"] = 2,
-            },
-            ["10"] = {
-                ["Whale"] = 1,
-                ["amount"] = 20,
-            },
-        },
-        ["price"] = 1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Leather Helmet"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Helmet",
-            ["2"] = "Clothing",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 29,
-        ["itemStats"] = {
-            ["defense"] = 5,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Hide"] = 1,
-        },
-        ["description"] = "The most basic kind of helmet, not very good, but better than nothing!",
-    },
-    ["Map"] = {
-        ["itemTier"] = 1,
-        ["itemType"] = {
-            ["1"] = "Map",
-            ["2"] = "Tool",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 271,
-        ["description"] = "A map that marks the locations of friends, kingdoms, and places you've explored!",
-        ["recipe"] = {
-            ["Rope"] = 1,
-            ["Leaf"] = 10,
-        },
-    },
-    ["Gladiator Crossbow"] = {
-        ["description"] = "Crossbows revolutionized warfare. They're easy to load, and quick to fire accurately. Very deadly.",
-        ["projectileVelocity"] = 1400,
-        ["price"] = 200,
-        ["itemTier"] = 5,
-        ["cantBeDropped"] = true,
-        ["weight"] = 0.1,
-        ["forceGenerateDroppedModel"] = true,
-        ["aimFOVModifier"] = -15,
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["cantPutInStorage"] = true,
-        ["id"] = 472,
-        ["itemStats"] = {
-            ["rangedDamage"] = 50,
-        },
-        ["aimTime"] = 0.4,
-        ["clipSize"] = 1,
-        ["animations"] = {
-            ["reload"] = "rbxassetid://11714138134",
-            ["idle_loaded"] = "rbxassetid://11714139803",
-            ["idle"] = "rbxassetid://11714136539",
-            ["idle_1p"] = "rbxassetid://11713857434",
-            ["idle_loaded_1p"] = "rbxassetid://11713862158",
-            ["action"] = "rbxassetid://11714141761",
-            ["action_1p"] = "rbxassetid://11713864410",
-            ["reload_1p"] = "rbxassetid://11713859958",
-        },
-        ["isArenaItem"] = true,
-        ["recipe"] = {
-        },
-        ["onlyAdminCanSpawn"] = true,
-        ["reloadTime"] = 1.8,
-        ["automatic"] = false,
-        ["cooldown"] = 0.1,
-        ["rangedWeaponType"] = "normal",
-    },
-    ["Painting: Rest"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 246,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Painting: Royalty"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 245,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Log"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Rock"] = {
-        ["durability"] = 250,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 243,
-        ["recipe"] = {
-            ["Stone"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Cypress Tree"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 240,
-        ["recipe"] = {
-            ["Leaf"] = 5,
-            ["Log"] = 5,
-        },
-        ["description"] = "",
-    },
-    ["Berry Pie"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 190,
-        ["itemStats"] = {
-            ["food"] = 500,
-        },
-        ["description"] = "Now this, this is a good pie! Far better than any Carrot Pie... who eats carrots in a pie anyways!? Monsters...",
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Good_Meal",
-        },
-        ["recipe"] = {
-            ["Egg"] = 2,
-            ["Bread"] = 4,
-            ["Berry"] = 15,
-        },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 40,
-        ["price"] = 30,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Ornate Chair"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 92,
-        ["recipe"] = {
-            ["Iron Nails"] = 2,
-            ["Wood Plank"] = 1,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Bookshelf"] = {
-        ["durability"] = 350,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 233,
-        ["recipe"] = {
-            ["Log"] = 4,
-            ["Leaf"] = 10,
-            ["Rope"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Stone Table"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 232,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 10,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Meat Hunter"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["id"] = 338,
-        ["itemStats"] = {
-            ["storageCapacity"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Production"] = {
-                ["TheseItems"] = {
-                    ["1"] = "Meat",
-                },
-                ["Rate"] = 10,
-                ["Amount"] = 2,
-            },
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 23,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Gathering",
-            ["NPC_Name"] = "Butcher",
-        },
-        ["interactionData"] = {
-            ["opensStorage"] = true,
-            ["interactionName"] = "Collect Resources",
-            ["AllowedToStore"] = {
-            },
-        },
-        ["recipe"] = {
-            ["Crossbow"] = 1,
-            ["Log"] = 10,
-            ["Meat"] = 30,
-            ["Coins"] = 10,
-        },
-        ["description"] = "",
-    },
-    ["Wooden Bench"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 230,
-        ["recipe"] = {
-            ["Wood Plank"] = 2,
-            ["Log"] = 4,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Wood Stairs"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 228,
-        ["recipe"] = {
-            ["Log"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Berry"] = {
-        ["itemType"] = {
-            ["1"] = "Seed",
-            ["2"] = "Resource",
-            ["3"] = "Consumable",
-        },
-        ["id"] = 113,
-        ["itemStats"] = {
-            ["food"] = 20,
-        },
-        ["recipe"] = {
-        },
-        ["instantHealth"] = 2,
-        ["itemTier"] = 1,
-        ["weight"] = 0.1,
-        ["price"] = 1,
-        ["description"] = "Berries are the most common type of food. They won't feed you very well, but there's a lot of them!",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-        ["plantName"] = "Berries",
-    },
-    ["Wood Pillar"] = {
-        ["durability"] = 750,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 220,
-        ["recipe"] = {
-            ["Log"] = 3,
-        },
-        ["description"] = "",
-    },
-    ["Iron Swordsman"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Helper",
-            ["2"] = "Structure",
-        },
-        ["HelperDetails"] = {
-            ["RequiresTerrainFloor"] = false,
-            ["Operation"] = {
-                ["Cost"] = 1,
-                ["Rate"] = 15,
-                ["FoodBoxRangeNeeded"] = 40,
-            },
-            ["MaxNPCs"] = 1,
-            ["NPC_Type"] = "Melee",
-            ["NPC_Name"] = "Iron Swordsman",
-        },
-        ["id"] = 350,
-        ["recipe"] = {
-            ["Iron Sword"] = 1,
-            ["Iron Armor"] = 1,
-            ["Iron Helmet"] = 1,
-            ["Iron Pants"] = 1,
-            ["Iron Shield"] = 1,
-            ["Coins"] = 10,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Carpet Style 1"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 223,
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Hide"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Round Rug"] = {
-        ["durability"] = 200,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 226,
-        ["recipe"] = {
-            ["Leaf"] = 4,
-            ["Hide"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Farming Scythe"] = {
-        ["itemType"] = {
-            ["1"] = "Scythe",
-            ["2"] = "Melee Weapon",
-            ["3"] = "Tool",
-        },
-        ["id"] = 219,
-        ["itemStats"] = {
-            ["axeStrength"] = 1,
-            ["meleeDamage"] = 20,
-        },
-        ["itemTier"] = 4,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11428946958",
-            },
-        },
-        ["recipe"] = {
-            ["Steel Bar"] = 2,
-            ["Steel Nails"] = 1,
-            ["Tool Handle"] = 2,
-        },
-        ["description"] = "A specialized tool great for farming. It can harvest plants from a much further range than any other tool.",
-        ["price"] = 250,
-    },
-    ["Cabbage Salad"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 213,
-        ["itemStats"] = {
-            ["food"] = 300,
-        },
-        ["itemTier"] = 1,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Meal",
-        },
-        ["description"] = "It's a bunch of plants in a bowl. Does it taste good? No. Is it good for you? Yes. Provides more food than other comparable foods.",
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 20,
-        ["recipe"] = {
-            ["Leaf"] = 6,
-            ["Bowl"] = 1,
-            ["Cabbage"] = 6,
-        },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Stable Sign"] = {
-        ["durability"] = 100,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 176,
-        ["placementParameters"] = {
-            ["maxSlopeAngle"] = -1,
-        },
-        ["recipe"] = {
-            ["Log"] = 2,
-            ["Iron Bar"] = 1,
-        },
-        ["description"] = "",
-    },
-    ["Pepper"] = {
-        ["itemType"] = {
-            ["1"] = "Seed",
-            ["2"] = "Resource",
-            ["3"] = "Consumable",
-        },
-        ["id"] = 211,
-        ["itemStats"] = {
-            ["food"] = 20,
-        },
-        ["itemTier"] = 1,
-        ["instantHealth"] = -1,
-        ["price"] = 2,
-        ["weight"] = 0.1,
-        ["recipe"] = {
-        },
-        ["description"] = "A spicy pepper, goes fantastic on a good meal, but not very pleasant to eat alone",
-        ["plantName"] = "Peppers",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
     ["Stone Wall 6x3"] = {
         ["durability"] = 1200,
         ["itemType"] = {
@@ -8479,22 +9486,14 @@ return {
         ["id"] = 285,
         ["description"] = "",
     },
-    ["Imperial Ship"] = {
-        ["durability"] = 4500,
+    ["Statue Left"] = {
+        ["durability"] = 1000,
         ["itemType"] = {
-            ["1"] = "Boat",
+            ["1"] = "Structure",
         },
-        ["maxTorque"] = 10000000,
-        ["id"] = 206,
-        ["itemTier"] = 3,
-        ["maxForce"] = 1000000,
-        ["thrust"] = 35,
-        ["turnPower"] = 0.4,
+        ["id"] = 331,
         ["recipe"] = {
-            ["Wood Plank"] = 20,
-            ["Log"] = 50,
-            ["Iron Nails"] = 10,
-            ["Rope"] = 15,
+            ["Chiseled Stones"] = 10,
         },
         ["description"] = "",
     },
@@ -8512,75 +9511,27 @@ return {
         },
         ["description"] = "",
     },
-    ["Gladiator Bow"] = {
-        ["description"] = "A primitive, but effective, hunting bow",
-        ["projectileVelocity"] = 900,
-        ["animations"] = {
-            ["action"] = "rbxassetid://11630580011",
-            ["action_1p"] = "rbxassetid://11630440383",
-            ["action_hold_1p"] = "rbxassetid://11630462550",
-            ["idle_1p"] = "rbxassetid://11630464542",
-            ["action_release"] = "rbxassetid://11631655121",
-            ["action_release_1p"] = "rbxassetid://11630595766",
-            ["idle"] = "rbxassetid://11630578059",
-            ["action_hold"] = "rbxassetid://11631660410",
-        },
-        ["itemTier"] = 2,
-        ["cantBeDropped"] = true,
-        ["chargedFOVModifier"] = -15,
-        ["weight"] = 0.1,
-        ["forceGenerateDroppedModel"] = true,
-        ["chargeTime"] = 0.9,
+    ["Statue Center"] = {
+        ["durability"] = 1000,
         ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
+            ["1"] = "Structure",
         },
-        ["cantPutInStorage"] = true,
-        ["id"] = 469,
-        ["itemStats"] = {
-            ["rangedDamage"] = 20,
-        },
-        ["isArenaItem"] = true,
-        ["onlyAdminCanSpawn"] = true,
-        ["useLeftHand"] = true,
-        ["reloadTime"] = 0.5,
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
+        ["id"] = 329,
         ["recipe"] = {
+            ["Chiseled Stones"] = 10,
         },
-        ["rangedWeaponType"] = "Charge",
+        ["description"] = "",
     },
-    ["Carrot Pie"] = {
+    ["Red Flowers"] = {
+        ["durability"] = 50,
         ["itemType"] = {
-            ["1"] = "Consumable",
+            ["1"] = "Structure",
         },
-        ["id"] = 13,
-        ["itemStats"] = {
-            ["food"] = 500,
-        },
-        ["description"] = "I like pie. Do I like carrot pie? No. No I do not. It's an abomination to life itself. But I made it in this game. Why? Because this world is mine to do with as I please, and I choose to make you all suffer.",
-        ["itemTier"] = 2,
-        ["effectsOnEat"] = {
-            ["1"] = "Ate_Good_Meal",
-        },
+        ["id"] = 325,
         ["recipe"] = {
-            ["Carrot"] = 15,
-            ["Bread"] = 4,
-            ["Egg"] = 2,
+            ["Leaf"] = 10,
         },
-        ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["durationHealth"] = 40,
-        ["price"] = 30,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
+        ["description"] = "",
     },
     ["Asian Lamp"] = {
         ["durability"] = 250,
@@ -8596,98 +9547,65 @@ return {
         ["craftingStyle"] = 1,
         ["description"] = "",
     },
-    ["Arbalest"] = {
-        ["description"] = "The Arbalest is a bigger, more powerful version of a crossbow, that comes with a built in crank to increase firing power.",
-        ["projectileVelocity"] = 1400,
-        ["price"] = 1500,
-        ["itemTier"] = 6,
-        ["weight"] = 0.1,
-        ["aimFOVModifier"] = -15,
-        ["itemType"] = {
-            ["1"] = "Ranged Weapon",
-            ["2"] = "Tool",
-            ["3"] = "Gun",
-        },
-        ["id"] = 198,
-        ["itemStats"] = {
-            ["rangedDamage"] = 25,
-        },
-        ["aimTime"] = 0.4,
-        ["animations"] = {
-            ["reload"] = "rbxassetid://11714138134",
-            ["idle_loaded"] = "rbxassetid://11714139803",
-            ["idle"] = "rbxassetid://11714136539",
-            ["idle_1p"] = "rbxassetid://11713857434",
-            ["idle_loaded_1p"] = "rbxassetid://11713862158",
-            ["action"] = "rbxassetid://11714141761",
-            ["action_1p"] = "rbxassetid://11713864410",
-            ["reload_1p"] = "rbxassetid://11713859958",
-        },
-        ["validAmmoTypes"] = {
-            ["1"] = "Arrow",
-            ["2"] = "Fire Arrow",
-            ["3"] = "Poison Arrow",
-        },
+    ["Stone Knife"] = {
         ["recipe"] = {
-            ["Wooden Rod"] = 12,
-            ["Bluesteel Nails"] = 2,
-            ["Rope"] = 12,
-        },
-        ["clipSize"] = 1,
-        ["reloadTime"] = 1.8,
-        ["automatic"] = false,
-        ["cooldown"] = 0.1,
-        ["rangedWeaponType"] = "normal",
-    },
-    ["Steel Handle"] = {
-        ["recipe"] = {
-            ["Tool Handle"] = 1,
-            ["Steel Bar"] = 1,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 196,
-        ["itemTier"] = 6,
-        ["description"] = "A handle is an important part of any tool",
-    },
-    ["Tile Roof Corner"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 136,
-        ["recipe"] = {
-            ["Shingles"] = 2,
+            ["Wooden Rod"] = 2,
+            ["Stone"] = 4,
+            ["Hide"] = 1,
         },
         ["itemTier"] = 2,
-        ["description"] = "",
-    },
-    ["Iron Sword"] = {
         ["itemType"] = {
             ["1"] = "Melee Weapon",
             ["2"] = "Tool",
         },
-        ["id"] = 7,
-        ["itemStats"] = {
-            ["meleeDamage"] = 40,
-        },
-        ["itemTier"] = 4,
         ["weight"] = 0.1,
+        ["id"] = 103,
+        ["itemStats"] = {
+            ["meleeDamage"] = 20,
+        },
         ["animations"] = {
             ["action"] = {
                 ["1"] = "rbxassetid://11388101600",
                 ["2"] = "rbxassetid://11388094115",
             },
         },
-        ["description"] = "An incredibly heavy sword, but it makes up for it with power!",
-        ["recipe"] = {
-            ["Rope"] = 1,
-            ["Iron Bar"] = 3,
-            ["Hide"] = 1,
+        ["description"] = "It's a sharpened stone on a stick. It's not good at killing things, but if you stab hard enough and long enough, it'll work!",
+    },
+    ["Decorative Chest"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
         },
-        ["price"] = 25,
+        ["id"] = 316,
+        ["recipe"] = {
+            ["Coins"] = 25,
+            ["Wood Plank"] = 5,
+        },
+        ["description"] = "",
+    },
+    ["Skeleton"] = {
+        ["durability"] = 200,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 310,
+        ["recipe"] = {
+            ["Skull"] = 1,
+        },
+        ["description"] = "",
+    },
+    ["Map Table"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 189,
+        ["recipe"] = {
+            ["Iron Nails"] = 2,
+            ["Wood Plank"] = 2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
     },
     ["Jewelry Stand"] = {
         ["durability"] = 200,
@@ -8724,55 +9642,76 @@ return {
         },
         ["description"] = "A better, more reliable pickaxe",
     },
-    ["Wooden Shield"] = {
-        ["itemTier"] = 2,
+    ["Imperial Ship"] = {
+        ["durability"] = 4500,
+        ["itemType"] = {
+            ["1"] = "Boat",
+        },
+        ["maxTorque"] = 10000000,
+        ["id"] = 206,
+        ["itemTier"] = 3,
+        ["maxForce"] = 1000000,
+        ["thrust"] = 35,
+        ["turnPower"] = 0.4,
+        ["recipe"] = {
+            ["Wood Plank"] = 20,
+            ["Log"] = 50,
+            ["Iron Nails"] = 10,
+            ["Rope"] = 15,
+        },
+        ["description"] = "",
+    },
+    ["Bluesteel Shield"] = {
+        ["itemTier"] = 6,
         ["itemType"] = {
             ["1"] = "Shield",
             ["2"] = "Clothing",
         },
         ["weight"] = 0.1,
-        ["id"] = 293,
+        ["id"] = 297,
         ["recipe"] = {
-            ["Wood Plank"] = 4,
+            ["Refined Bluesteel"] = 4,
             ["Rope"] = 2,
             ["Tool Handle"] = 1,
         },
-        ["PostureBreakTime"] = 8,
-        ["description"] = "The most basic kind of shield. Will it stop an arrow? Maybe.",
+        ["PostureBreakTime"] = 4,
+        ["description"] = "A thick shield used by the Imperial Legions themselves.",
     },
-    ["Wood House"] = {
-        ["id"] = 145,
-        ["recipe"] = {
-            ["Leaf"] = 16,
-            ["Log"] = 40,
-        },
+    ["Farming Scythe"] = {
         ["itemType"] = {
-            ["1"] = "Prefab",
-            ["2"] = "Structure",
+            ["1"] = "Scythe",
+            ["2"] = "Melee Weapon",
+            ["3"] = "Tool",
         },
-        ["description"] = "",
-    },
-    ["Map Table"] = {
-        ["durability"] = 500,
-        ["itemType"] = {
-            ["1"] = "Structure",
+        ["id"] = 219,
+        ["itemStats"] = {
+            ["axeStrength"] = 1,
+            ["meleeDamage"] = 20,
         },
-        ["id"] = 189,
+        ["itemTier"] = 4,
+        ["weight"] = 0.1,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11428946958",
+            },
+        },
         ["recipe"] = {
-            ["Iron Nails"] = 2,
-            ["Wood Plank"] = 2,
+            ["Steel Bar"] = 2,
+            ["Steel Nails"] = 1,
+            ["Tool Handle"] = 2,
         },
-        ["itemTier"] = 2,
-        ["description"] = "",
+        ["description"] = "A specialized tool great for farming. It can harvest plants from a much further range than any other tool.",
+        ["price"] = 250,
     },
-    ["Barrel"] = {
+    ["Big Rug"] = {
         ["durability"] = 200,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 181,
+        ["id"] = 225,
         ["recipe"] = {
-            ["Log"] = 3,
+            ["Leaf"] = 4,
+            ["Hide"] = 1,
         },
         ["description"] = "",
     },
@@ -8839,16 +9778,46 @@ return {
         ["useLeftHand"] = true,
         ["rangedWeaponType"] = "Charge",
     },
-    ["Straw Bundle"] = {
-        ["recipe"] = {
-            ["Leaf"] = 4,
-        },
+    ["Steel Fishing Rod"] = {
         ["itemType"] = {
-            ["1"] = "Resource",
+            ["1"] = "Fishing Rod",
+            ["2"] = "Tool",
         },
+        ["targetSpeed"] = 1,
+        ["id"] = 275,
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://11370416454",
+            },
+        },
+        ["timeNeededInTarget"] = 5,
+        ["recipe"] = {
+            ["Wood Plank"] = 4,
+            ["Rope"] = 5,
+            ["Steel Bar"] = 3,
+        },
+        ["itemTier"] = 1,
+        ["rodColor"] = 0.278431, 0.266667, 0.27451,
+        ["catchTime"] = NumberRange.new(2, 3),
         ["weight"] = 0.1,
-        ["id"] = 97,
-        ["description"] = "A very good source of padding, usually for beds!",
+        ["targetSize"] = 0.3,
+        ["canCatchFish"] = {
+            ["1"] = "Carp",
+            ["2"] = "Salmon",
+            ["3"] = "Sea Snapper",
+            ["4"] = "Cod",
+            ["5"] = "Shrimp",
+            ["6"] = "Mussel",
+            ["7"] = "Hide",
+            ["8"] = "Giant Tuna",
+            ["9"] = "Iron",
+            ["10"] = "Octopus",
+            ["11"] = "Squid",
+            ["12"] = "Leaf",
+            ["13"] = "Rope",
+        },
+        ["description"] = "",
+        ["timeToFish"] = 16,
     },
     ["Bluesteel Axe"] = {
         ["itemType"] = {
@@ -8876,17 +9845,22 @@ return {
         ["price"] = 1500,
         ["description"] = "An axe made out of the strongest metal in the known world",
     },
-    ["Chimney"] = {
-        ["durability"] = 1000,
+    ["Elephant Armor"] = {
+        ["itemTier"] = 4,
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "MountEquipment",
         },
-        ["id"] = 171,
+        ["weight"] = 0.1,
+        ["id"] = 257,
+        ["itemStats"] = {
+            ["defense"] = 25,
+        },
+        ["description"] = "Can be equiped to a tamed elephant, to armor them up!",
         ["recipe"] = {
-            ["Chiseled Stones"] = 3,
+            ["Rope"] = 6,
+            ["Steel Nails"] = 1,
+            ["Steel Bar"] = 15,
         },
-        ["itemTier"] = 2,
-        ["description"] = "",
     },
     ["Bronze Axe"] = {
         ["itemTier"] = 2,
@@ -8925,36 +9899,35 @@ return {
         },
         ["description"] = "",
     },
-    ["Thatch Roof Ridge"] = {
-        ["durability"] = 300,
+    ["Sulfur"] = {
+        ["cantBeDropped"] = false,
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Resource",
         },
-        ["id"] = 70,
-        ["recipe"] = {
-            ["Leaf"] = 2,
-        },
-        ["description"] = "",
-    },
-    ["Banana"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 367,
-        ["itemStats"] = {
-            ["food"] = 25,
-        },
-        ["itemTier"] = 1,
-        ["instantHealth"] = 3,
         ["weight"] = 0.1,
-        ["price"] = 1,
-        ["recipe"] = {
+        ["id"] = 376,
+        ["cantPutInStorage"] = true,
+        ["description"] = "Sulfur is a key ingredient in Black Powder and other alchemical recipes",
+        ["price"] = 50,
+    },
+    ["Gladiator Steel Helmet"] = {
+        ["itemType"] = {
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
         },
-        ["description"] = "Banana's aren't very good for cooking, but Monkies absolutely love them!",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
+        ["cantPutInStorage"] = true,
+        ["id"] = 500,
+        ["itemStats"] = {
+            ["defense"] = 12,
+        },
+        ["itemTier"] = 4,
+        ["cantBeDropped"] = true,
+        ["isArenaItem"] = true,
+        ["weight"] = 0,
+        ["onlyAdminCanSpawn"] = true,
+        ["forceGenerateDroppedModel"] = true,
+        ["description"] = "Both lightweight and strong, steel is a fantastic choice for a helmet!",
+        ["recipe"] = {
         },
     },
     ["Egg"] = {
@@ -8976,27 +9949,25 @@ return {
             },
         },
     },
-    ["Book And Quill"] = {
-        ["durability"] = 100,
+    ["Igloo"] = {
+        ["durability"] = 1000,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 166,
+        ["id"] = 253,
         ["recipe"] = {
-            ["Leaf"] = 3,
-            ["Rope"] = 1,
+            ["Ice Chunks"] = 25,
         },
         ["description"] = "",
     },
-    ["Hut"] = {
-        ["id"] = 143,
-        ["recipe"] = {
-        },
+    ["Ice Chunks"] = {
         ["itemType"] = {
-            ["1"] = "Prefab",
-            ["2"] = "Structure",
+            ["1"] = "Resource",
         },
-        ["description"] = "",
+        ["weight"] = 0.1,
+        ["id"] = 250,
+        ["description"] = "Ice can be used to make slippery ice floors and some unique buildings!",
+        ["price"] = 1,
     },
     ["Gladiator Samurai Helmet"] = {
         ["itemType"] = {
@@ -9011,39 +9982,36 @@ return {
         ["itemTier"] = 8,
         ["cantBeDropped"] = true,
         ["isArenaItem"] = true,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["onlyAdminCanSpawn"] = true,
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "Samurai helmets allow for ease of movement while also providing fantastic protection with the Adamantite metal.",
         ["recipe"] = {
         },
     },
-    ["Ballista Bolt"] = {
-        ["recipe"] = {
-            ["Iron Bar"] = 1,
-        },
-        ["canProjectileDamageStructures"] = true,
-        ["itemType"] = {
-            ["1"] = "Ammo",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 156,
-        ["itemStats"] = {
-            ["damage"] = 1,
-        },
-        ["itemTier"] = 3,
-        ["description"] = "A massive bolt made of pure Iron, that can be fired out of a Ballista.",
-    },
-    ["Blue Jar"] = {
-        ["durability"] = 100,
+    ["Bookshelf"] = {
+        ["durability"] = 350,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 304,
+        ["id"] = 233,
         ["recipe"] = {
-            ["Iron Bar"] = 1,
-            ["Rope"] = 1,
+            ["Log"] = 4,
+            ["Leaf"] = 10,
+            ["Rope"] = 3,
         },
+        ["description"] = "",
+    },
+    ["Stone Table"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 232,
+        ["recipe"] = {
+            ["Chiseled Stones"] = 10,
+        },
+        ["itemTier"] = 2,
         ["description"] = "",
     },
     ["_Coins"] = {
@@ -9057,99 +10025,52 @@ return {
         ["deprecated"] = true,
         ["description"] = "",
     },
-    ["Cabbage"] = {
+    ["Stone Seat"] = {
+        ["durability"] = 800,
         ["itemType"] = {
-            ["1"] = "Seed",
-            ["2"] = "Resource",
-            ["3"] = "Consumable",
+            ["1"] = "Structure",
         },
-        ["id"] = 210,
-        ["itemStats"] = {
-            ["food"] = 30,
-        },
-        ["itemTier"] = 1,
-        ["instantHealth"] = 3,
-        ["price"] = 1,
-        ["weight"] = 0.1,
+        ["id"] = 231,
         ["recipe"] = {
+            ["Chiseled Stones"] = 5,
         },
-        ["description"] = "A hearty leafy food, a great staple to mix with other foods, but not very fun to eat raw",
-        ["plantName"] = "Cabbages",
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
-    },
-    ["Fish"] = {
-        ["itemType"] = {
-            ["1"] = "Consumable",
-        },
-        ["id"] = 16,
-        ["itemStats"] = {
-            ["food"] = 50,
-        },
+        ["itemTier"] = 2,
         ["description"] = "",
+    },
+    ["Wooden Rod"] = {
         ["recipe"] = {
-            ["Carp"] = 1,
-            ["amount"] = 1,
+            ["Rope"] = 1,
+            ["Log"] = 3,
         },
-        ["instantHealth"] = -10,
-        ["price"] = 1,
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
         ["weight"] = 0.1,
-        ["durationHealthRate"] = 1,
-        ["effectsOnEat"] = {
-            ["1"] = "Food_Poisoning",
+        ["id"] = 116,
+        ["price"] = 3,
+        ["description"] = "Wooden rods are needed when you want to craft many different things!",
+    },
+    ["Wooden Bench"] = {
+        ["durability"] = 500,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 230,
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+            ["Log"] = 4,
         },
         ["itemTier"] = 1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://7376331525",
-            },
-        },
+        ["description"] = "",
     },
-    ["Iron Armor"] = {
-        ["itemTier"] = 3,
-        ["description"] = "Iron armor is incredibly heavy, but, also incredibly strong!",
+    ["Whale"] = {
+        ["itemTier"] = 1,
         ["itemType"] = {
-            ["1"] = "Shirt",
-            ["2"] = "Clothing",
+            ["1"] = "Resource",
         },
         ["weight"] = 0.1,
-        ["id"] = 35,
-        ["itemStats"] = {
-            ["defense"] = 10,
-        },
-        ["recipe"] = {
-            ["Rope"] = 2,
-            ["Iron Bar"] = 3,
-            ["Hide"] = 1,
-        },
-        ["price"] = 25,
-    },
-    ["Bluesteel Pickaxe"] = {
-        ["itemType"] = {
-            ["1"] = "Pickaxe",
-            ["2"] = "Tool",
-        },
-        ["id"] = 195,
-        ["itemStats"] = {
-            ["pickaxeStrength"] = 300,
-        },
-        ["itemTier"] = 6,
-        ["weight"] = 0.1,
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11370416454",
-            },
-        },
-        ["description"] = "A pickaxe made out of the strongest metal in the known world",
-        ["recipe"] = {
-            ["Steel Handle"] = 1,
-            ["Refined Bluesteel"] = 2,
-            ["Bluesteel Nails"] = 1,
-        },
-        ["price"] = 1500,
+        ["id"] = 289,
+        ["description"] = "",
     },
     ["Spicy Fish Meal"] = {
         ["itemType"] = {
@@ -9179,15 +10100,32 @@ return {
             },
         },
     },
-    ["Kingdom Banner"] = {
-        ["durability"] = 500,
+    ["Cabbage Salad"] = {
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Consumable",
         },
-        ["id"] = 122,
+        ["id"] = 213,
+        ["itemStats"] = {
+            ["food"] = 300,
+        },
+        ["itemTier"] = 1,
+        ["effectsOnEat"] = {
+            ["1"] = "Ate_Meal",
+        },
+        ["description"] = "It's a bunch of plants in a bowl. Does it taste good? No. Is it good for you? Yes. Provides more food than other comparable foods.",
+        ["weight"] = 0.1,
+        ["durationHealthRate"] = 1,
+        ["durationHealth"] = 20,
         ["recipe"] = {
+            ["Leaf"] = 6,
+            ["Bowl"] = 1,
+            ["Cabbage"] = 6,
         },
-        ["description"] = "",
+        ["animations"] = {
+            ["action"] = {
+                ["1"] = "rbxassetid://7376331525",
+            },
+        },
     },
     ["Tall Candelabra"] = {
         ["durability"] = 300,
@@ -9202,17 +10140,23 @@ return {
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Stool"] = {
-        ["durability"] = 100,
+    ["Bluesteel Helmet"] = {
+        ["itemTier"] = 6,
+        ["description"] = "A Helmet made out of the strongest metal in the known world!",
         ["itemType"] = {
-            ["1"] = "Structure",
+            ["1"] = "Helmet",
+            ["2"] = "Clothing",
         },
-        ["id"] = 179,
+        ["weight"] = 0.1,
+        ["id"] = 202,
+        ["itemStats"] = {
+            ["defense"] = 14,
+        },
         ["recipe"] = {
-            ["Log"] = 2,
+            ["Rope"] = 2,
+            ["Refined Bluesteel"] = 2,
         },
-        ["itemTier"] = 1,
-        ["description"] = "",
+        ["price"] = 1000,
     },
     ["Gladiator Bronze Spear"] = {
         ["isArenaItem"] = true,
@@ -9237,134 +10181,103 @@ return {
         ["itemTier"] = 3,
         ["cantBeDropped"] = true,
         ["animalDamageBoost"] = 1.35,
-        ["weight"] = 0.1,
+        ["weight"] = 0,
         ["PostureBreakTime"] = 4,
         ["forceGenerateDroppedModel"] = true,
         ["description"] = "A tried and true weapon, bronze spears have been used since ancient times",
         ["recipe"] = {
         },
     },
-    ["Treasure Chest"] = {
-        ["durability"] = 1000,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 58,
-        ["itemStats"] = {
-            ["storageCapacity"] = 300,
-        },
-        ["itemTier"] = 3,
-        ["interactionData"] = {
-            ["interactionName"] = "Open",
-            ["opensStorage"] = true,
-        },
+    ["Steel Handle"] = {
         ["recipe"] = {
-            ["Wood Plank"] = 2,
-            ["Steel Nails"] = 1,
+            ["Tool Handle"] = 1,
             ["Steel Bar"] = 1,
         },
-        ["animations"] = {
-            ["interaction_idle"] = {
-                ["1"] = "rbxassetid://11505226843",
-            },
-            ["interaction_end"] = {
-                ["1"] = "rbxassetid://11505243111",
-            },
-            ["interaction_begin"] = {
-                ["1"] = "rbxassetid://11505222561",
-            },
-        },
-        ["description"] = "",
-    },
-    ["Wooden Rod"] = {
-        ["recipe"] = {
-            ["Rope"] = 1,
-            ["Log"] = 3,
-        },
         ["itemType"] = {
             ["1"] = "Resource",
         },
         ["weight"] = 0.1,
-        ["id"] = 116,
-        ["price"] = 3,
-        ["description"] = "Wooden rods are needed when you want to craft many different things!",
-    },
-    ["Copper"] = {
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 54,
-        ["description"] = "Copper needs to be smelted into bars, to be used",
-        ["price"] = 2,
-    },
-    ["Tool Handle"] = {
-        ["recipe"] = {
-            ["Stone"] = 1,
-            ["Log"] = 3,
-        },
-        ["itemType"] = {
-            ["1"] = "Resource",
-        },
-        ["weight"] = 0.1,
-        ["id"] = 115,
+        ["id"] = 196,
+        ["itemTier"] = 6,
         ["description"] = "A handle is an important part of any tool",
     },
-    ["Stone Throne"] = {
+    ["Wall Torch"] = {
         ["durability"] = 200,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 227,
         ["recipe"] = {
-            ["Chiseled Stones"] = 15,
+            ["Coal"] = 1,
+            ["Iron Bar"] = 1,
+        },
+        ["id"] = 172,
+        ["placementParameters"] = {
+            ["maxSlopeAngle"] = -1,
         },
         ["itemTier"] = 2,
         ["description"] = "",
     },
-    ["Sharp Rock"] = {
-        ["recipe"] = {
-            ["Stone"] = 3,
-        },
+    ["Chimney"] = {
+        ["durability"] = 1000,
         ["itemType"] = {
-            ["1"] = "Rock",
-            ["2"] = "Pickaxe",
-            ["3"] = "Axe",
-            ["4"] = "Melee Weapon",
-            ["5"] = "Tool",
+            ["1"] = "Structure",
         },
-        ["weight"] = 0.1,
-        ["id"] = 110,
-        ["itemStats"] = {
-            ["meleeDamage"] = 10,
-            ["axeStrength"] = 1,
-            ["pickaxeStrength"] = 1,
-        },
-        ["description"] = "The most basic kind of tool, it can be used to gather any resource. Though it isn't very good at it.",
-    },
-    ["Stone Knife"] = {
+        ["id"] = 171,
         ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Stone"] = 4,
-            ["Hide"] = 1,
+            ["Chiseled Stones"] = 3,
         },
         ["itemTier"] = 2,
+        ["description"] = "",
+    },
+    ["Viking Wall"] = {
+        ["durability"] = 600,
         ["itemType"] = {
-            ["1"] = "Melee Weapon",
-            ["2"] = "Tool",
+            ["1"] = "Structure",
+        },
+        ["itemTier"] = 1,
+        ["id"] = 535,
+        ["recipe"] = {
+            ["Wood Plank"] = 1,
+            ["Log"] = 2,
+        },
+        ["craftingStyle"] = 2,
+        ["description"] = "",
+    },
+    ["Bowl"] = {
+        ["recipe"] = {
+            ["Log"] = 2,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
         },
         ["weight"] = 0.1,
-        ["id"] = 103,
-        ["itemStats"] = {
-            ["meleeDamage"] = 20,
+        ["id"] = 91,
+        ["description"] = "Only barbarians eat with their hands. Now, you can eat with a bowl! Wow! Amazing!",
+    },
+    ["Viking Table"] = {
+        ["durability"] = 900,
+        ["itemType"] = {
+            ["1"] = "Structure",
         },
-        ["animations"] = {
-            ["action"] = {
-                ["1"] = "rbxassetid://11388101600",
-                ["2"] = "rbxassetid://11388094115",
-            },
+        ["id"] = 520,
+        ["recipe"] = {
+            ["Steel Nails"] = 2,
+            ["Wood Plank"] = 6,
         },
-        ["description"] = "It's a sharpened stone on a stick. It's not good at killing things, but if you stab hard enough and long enough, it'll work!",
+        ["itemTier"] = 1,
+        ["description"] = "",
+    },
+    ["Tile Roof Ridge"] = {
+        ["durability"] = 1000,
+        ["itemType"] = {
+            ["1"] = "Structure",
+        },
+        ["id"] = 141,
+        ["recipe"] = {
+            ["Shingles"] = 2,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "",
     },
     ["Wood Pole Half"] = {
         ["durability"] = 100,
@@ -9377,16 +10290,16 @@ return {
         },
         ["description"] = "",
     },
-    ["Serving Counter"] = {
-        ["durability"] = 200,
+    ["Stone Wall 6x6"] = {
+        ["durability"] = 2400,
         ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 178,
+        ["id"] = 135,
         ["recipe"] = {
-            ["Log"] = 3,
+            ["Chiseled Stones"] = 1,
         },
-        ["itemTier"] = 1,
+        ["itemTier"] = 2,
         ["description"] = "",
     },
     ["Cooked Meat"] = {
@@ -9416,42 +10329,49 @@ return {
             },
         },
     },
-    ["Watch Tower"] = {
-        ["id"] = 149,
-        ["recipe"] = {
-            ["Wooden Rod"] = 2,
-            ["Log"] = 28,
-            ["Leaf"] = 2,
-        },
-        ["itemType"] = {
-            ["1"] = "Prefab",
-            ["2"] = "Structure",
-        },
-        ["description"] = "",
-    },
-    ["Pole Torch"] = {
-        ["durability"] = 75,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 86,
-        ["recipe"] = {
-            ["Coal"] = 1,
-            ["Log"] = 1,
-        },
-        ["itemTier"] = 1,
-        ["description"] = "",
-    },
-    ["Stone Stairs"] = {
+    ["Boat"] = {
         ["durability"] = 2000,
         ["itemType"] = {
+            ["1"] = "Boat",
+        },
+        ["maxTorque"] = 1000000,
+        ["id"] = 121,
+        ["itemTier"] = 2,
+        ["cannotPlaceInCave"] = true,
+        ["maxForce"] = 100000,
+        ["thrust"] = 35,
+        ["turnPower"] = 0.4,
+        ["recipe"] = {
+            ["Wood Plank"] = 2,
+            ["Log"] = 10,
+            ["Copper Nails"] = 2,
+            ["Rope"] = 6,
+        },
+        ["description"] = "",
+    },
+    ["Tool Handle"] = {
+        ["recipe"] = {
+            ["Stone"] = 1,
+            ["Log"] = 3,
+        },
+        ["itemType"] = {
+            ["1"] = "Resource",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 115,
+        ["description"] = "A handle is an important part of any tool",
+    },
+    ["Meal Decoration"] = {
+        ["durability"] = 100,
+        ["itemType"] = {
             ["1"] = "Structure",
         },
-        ["id"] = 133,
+        ["id"] = 308,
         ["recipe"] = {
-            ["Chiseled Stones"] = 3,
+            ["Cooked Meat"] = 4,
+            ["Log"] = 2,
+            ["Bread"] = 1,
         },
-        ["itemTier"] = 2,
         ["description"] = "",
     },
     ["Fancy Grave"] = {
@@ -9465,6 +10385,24 @@ return {
         },
         ["description"] = "",
     },
+    ["Arrow"] = {
+        ["recipe"] = {
+            ["Wooden Rod"] = 4,
+            ["Stone"] = 4,
+            ["amount"] = 10,
+        },
+        ["price"] = 1,
+        ["itemType"] = {
+            ["1"] = "Ammo",
+        },
+        ["weight"] = 0.1,
+        ["id"] = 73,
+        ["itemStats"] = {
+            ["damage"] = 1,
+        },
+        ["itemTier"] = 2,
+        ["description"] = "It's an arrow. You shoot people with it. This is generally considered fatal.",
+    },
     ["Thatch Roof"] = {
         ["durability"] = 300,
         ["itemType"] = {
@@ -9475,17 +10413,5 @@ return {
             ["Leaf"] = 2,
         },
         ["description"] = "",
-    },
-    ["Stone Wall 3x3"] = {
-        ["durability"] = 600,
-        ["itemType"] = {
-            ["1"] = "Structure",
-        },
-        ["id"] = 137,
-        ["recipe"] = {
-            ["Chiseled Stones"] = 1,
-        },
-        ["itemTier"] = 2,
-        ["description"] = "",
-    },
+    }
 }
